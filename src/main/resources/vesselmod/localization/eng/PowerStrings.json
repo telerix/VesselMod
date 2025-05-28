@@ -1,0 +1,150 @@
+{
+  "${modID}:CorruptedNail": {
+    "NAME": "Corrupted Nail",
+    "DESCRIPTIONS": [
+      "Whenever you deal unblocked Attack damage, apply #b",
+      " #yInfection."
+    ]
+  },
+
+  "${modID}:DreamNoMore": {
+    "NAME": "Dream No More",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yStatus or #yCurse card, make it #yEthereal and draw #b",
+      " card. If the card is a #yVoid, gain [E] .",
+      " cards. If the card is a #yVoid, gain [E] ."
+    ]
+  },
+
+  "${modID}:EmanatingGlow": {
+    "NAME": "Emanating Glow",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yInfection to all enemies."
+    ]
+  },
+
+  "${modID}:Feint": {
+    "NAME": "Feint",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, gain #b",
+      " #yBlock."
+    ]
+  },
+
+  "${modID}:Infection": {
+    "NAME": "Infection",
+    "DESCRIPTIONS": [
+      "Lose HP equal to #yInfection stacks whenever #yInfection is applied. At the end of its turn, lose #b1 stack of #yInfection."
+    ]
+  },
+
+  "${modID}:MantisTraining": {
+    "NAME": "Mantis Training",
+    "DESCRIPTIONS": [
+      "Increases attack damage of \"Strike\" and \"Slash\" cards by #b",
+      "."
+    ]
+  },
+
+  "${modID}:NoMindToThink": {
+    "NAME": "No Mind To Think",
+    "DESCRIPTIONS": [
+      "Whenever you gain #ySoul, gain #b",
+      " #yBlock."
+    ]
+  },
+
+  "${modID}:Quickcast": {
+    "NAME": "Quickcast",
+    "DESCRIPTIONS": [
+      "Your next #ySpell is played twice.",
+      "Your next #b",
+      " #ySpells are played twice."
+    ]
+  },
+
+  "${modID}:SpellBoost": {
+    "NAME": "Spell Boost",
+    "DESCRIPTIONS": [
+      "#ySpells deal #b",
+      "% more damage."
+    ]
+  },
+
+  "${modID}:SpellMastery": {
+  "NAME": "Spell Mastery",
+  "DESCRIPTIONS": [
+    "Whenever you play a #ySpell, your next #ySpell deals #b",
+    "% more damage."
+    ]
+  },
+
+  "${modID}:SoulAbsorption": {
+    "NAME": "Soul Absorption",
+    "DESCRIPTIONS": [
+      "Whenever a card is #yExhausted, gain #b",
+      " #ySoul."
+    ]
+  },
+  "${modID}:SoulDrain": {
+    "NAME": "Soul Drain",
+    "DESCRIPTIONS": [
+      "At the end of your turn, lose #b",
+      " #ySoul."
+    ]
+  },
+
+  "${modID}:SpellTwister": {
+    "NAME": "Spell Twister",
+    "DESCRIPTIONS": [
+      "Whenever you play a #ySpell, gain #b",
+      " #ySoul."
+    ]
+  },
+
+  "${modID}:SpikeWall": {
+    "NAME": "Spike Wall",
+    "DESCRIPTIONS": [
+      "When attacked, deals #b",
+      " damage back."
+    ]
+  },
+
+  "${modID}:VoidEmbrace": {
+    "NAME": "Void Embrace",
+    "DESCRIPTIONS": [
+      "Whenever an #yEthereal card #yExhausts, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+
+  "${modID}:VoidForm": {
+    "NAME": "Void Form",
+    "DESCRIPTIONS": [
+      "All your Attacks become #yEthereal and cost #b0 #ySoul when drawn."
+    ]
+  },
+
+  "${modID}:VoidUnity": {
+    "NAME": "Void Unity",
+    "DESCRIPTIONS": [
+      "At the end of your turn, play ALL #yEthereal cards in your hand and #yexhaust them."
+    ]
+  },
+
+  "${modID}:WaywardCompass": {
+    "NAME": "Wayward Compass",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw #b2 additional cards."
+    ]
+  },
+
+  "${modID}:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  }
+}

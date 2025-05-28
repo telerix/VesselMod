@@ -1,0 +1,40 @@
+{
+  "${modID}:ReconstructAction": {
+    "TEXT": [
+      "Reconstruct"
+    ]
+  },
+
+  "${modID}:CardInHandToEtherealAction": {
+    "TEXT": [
+      "Add Ethereal to"
+    ]
+  },
+
+  "${modID}:SkipSoulTutorial": {
+    "TEXT": [
+      "Skip Soul Tutorial"
+    ]
+  },
+
+  "${modID}:SoulMechanics": {
+    "TEXT": [
+      "Not enough #rSoul."
+    ]
+  },
+
+  "${modID}:Example": {
+    "TEXT": [
+      "This is",
+      "an array of Strings."
+    ],
+    "EXTRA_TEXT": [
+      "This is another",
+      "array of Strings."
+    ],
+    "TEXT_DICT": {
+      "This": "Contains pairs of Strings, used to get values based on keys.",
+      "This is a key": "This is a value."
+    }
+  }
+}

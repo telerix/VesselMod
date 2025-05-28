@@ -1,0 +1,13 @@
+{
+  "${modID}:Vessel": {
+    "NAMES": [
+      "The Vessel",
+      "the Vessel"
+    ],
+    "TEXT": [
+      "A hollow vessel born from the Abyss of Hallownest. NL Master of Nail Arts and Soul manipulation, with the Forgotten Light on its side.",
+      " NL You ready your nail...",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~empty~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ]
+  }
+}

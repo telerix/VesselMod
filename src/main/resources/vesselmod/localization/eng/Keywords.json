@@ -1,0 +1,63 @@
+[
+  { "PROPER_NAME": "Infection",
+    "NAMES": [
+      "infection"
+    ],
+    "DESCRIPTION": "Infected creatures lose HP whenever Infection is applied. NL Each turn, Infection is reduced by 1."},
+
+  { "PROPER_NAME": "Soul",
+    "NAMES": [
+      "soul"
+    ],
+    "DESCRIPTION": "When an enemy receives non-Spell attack damage, gain 1 Soul."},
+
+  { "PROPER_NAME": "Spell",
+    "NAMES": [
+      "spell",
+      "spells"
+    ],
+    "DESCRIPTION": "Powerful Attacks that cost Soul to cast."},
+
+  { "PROPER_NAME": "Charm",
+    "NAMES": [
+      "charm"
+    ],
+    "DESCRIPTION": "Unique Powers with effects that do not stack."},
+
+  {
+    "PROPER_NAME": "Soul Vessel",
+    "NAMES": [
+      "Soul Vessel",
+      "soul_vessel"
+    ],
+    "DESCRIPTION": "You can only hold Souls up to the maximum capacity of your Soul Vessel."
+  },
+
+  { "PROPER_NAME": "Metallicize",
+    "NAMES": [
+      "metallicize"
+    ],
+    "DESCRIPTION": "At the end of every turn, gain Block."},
+
+  {
+    "PROPER_NAME": "This is displayed in the tooltip.",
+    "NAMES": [
+      "these",
+      "are",
+      "detected",
+      "in",
+      "the",
+      "text"
+    ],
+    "DESCRIPTION": "This is displayed in the tooltip. Note, spaces are not allowed in NAMES. For multi-word keywords, see the next one."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces. In card text, you'll use the underscore versions."
+  }
+]

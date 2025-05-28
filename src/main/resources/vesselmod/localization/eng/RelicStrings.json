@@ -1,0 +1,111 @@
+{
+  "${modID}:BrokenVessel": {
+    "NAME": "Broken Vessel",
+    "FLAVOR": "not the boss, you're THE vessel.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b",
+      " #y${modID}:Soul."
+    ]
+  },
+
+  "${modID}:KingsBrand": {
+    "NAME": "King's Brand",
+    "FLAVOR": "glowing fork",
+    "DESCRIPTIONS": [
+      "You only receive up to #b",
+      " #y${modID}:Infection damage."
+    ]
+  },
+
+  "${modID}:Kingsoul": {
+    "NAME": "Kingsoul",
+    "FLAVOR": "to be added",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #y${modID}:Soul."
+    ]
+  },
+
+  "${modID}:Grubsong": {
+    "NAME": "Grubsong",
+    "FLAVOR": "to be added",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP, gain #b",
+      " #y${modID}:Soul."
+    ]
+  },
+
+  "${modID}:PureVessel": {
+    "NAME": "Pure Vessel",
+    "FLAVOR": "picking this up wont turn you into one, and you wont do double damage.",
+    "DESCRIPTIONS": [
+      "Replaces #yBroken #yVessel. Gain #b",
+      " maximum #y${modID}:Soul capacity. At the start of each combat, gain #b",
+      " #y${modID}:Soul."
+    ]
+  },
+
+  "${modID}:SalubrasBlessing": {
+    "NAME": "Salubra's Blessing",
+    "FLAVOR": "won't need to buy out the shop for this.",
+    "DESCRIPTIONS": [
+      "Whenever you play a Power, gain #b",
+      " #y${modID}:Soul."
+    ]
+  },
+
+  "${modID}:ShamanStone": {
+    "NAME": "Shaman Stone",
+    "FLAVOR": "less essential spell builds here",
+    "DESCRIPTIONS": [
+      "ALL your #y${modID}:Spells deal #b",
+      "% more damage."
+    ]
+  },
+
+  "${modID}:SoulBinding": {
+    "NAME": "Soul Binding",
+    "FLAVOR": "can't run pantheons with this, sorry",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Lose #b",
+      " maximum #y${modID}:Soul capacity."
+    ]
+  },
+
+  "${modID}:SoulEater": {
+    "NAME": "Soul Eater",
+    "FLAVOR": "tasty milk",
+    "DESCRIPTIONS": [
+      "Whenever you deal non-Spell attack damage, gain #b",
+      " additional #y${modID}:Soul."
+    ]
+  },
+
+  "${modID}:SporeShroom": {
+    "NAME": "Spore Shroom",
+    "FLAVOR": "i swear, this is not a fart relic.",
+    "DESCRIPTIONS": [
+      "Whenever you use a #y\"Focus\" card, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+
+  "${modID}:VoidtouchedFocus": {
+    "NAME": "Voidtouched Focus",
+    "FLAVOR": "now with blueberry juice!",
+    "DESCRIPTIONS": [
+      "Void-corrupt all Vengeful Spirit, Desolate Dive and Howling Wraiths. You can only play #b",
+      " #y${modID}:Spell per turn.",
+      "I can only play #r",
+      " Spell per turn."
+    ]
+  },
+
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  }
+}

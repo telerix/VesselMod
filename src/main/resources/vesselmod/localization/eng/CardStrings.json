@@ -1,0 +1,452 @@
+{
+  "${modID}:AbyssShriek": {
+    "NAME": "Abyss Shriek",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage 4 times. NL Apply !M! Vulnerable. NL Apply !M! Weak. "
+  },
+
+  "${modID}:AcidArmor": {
+    "NAME": "Acid Armor",
+    "DESCRIPTION": "Gain !B! Block. NL If the enemy intends to attack, apply !M! Weak."
+  },
+
+  "${modID}:AcidSplash": {
+    "NAME": "Acid Splash",
+    "DESCRIPTION": "Apply !M! Weak. NL If the enemy has Block, remove it and gain 2 ${modID}:Soul."
+  },
+
+  "${modID}:Agility": {
+    "NAME": "Agility",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
+  },
+
+  "${modID}:Backstep": {
+    "NAME": "Backstep",
+    "DESCRIPTION": "Gain !B! Block. NL Put a card from your discard pile on top of your draw pile."
+  },
+
+  "${modID}:Bench": {
+    "NAME": "Bench [DEPRECIATED]",
+    "DESCRIPTION": "Shuffle a random ${modID}:Charm into your draw pile. It costs 0 until played. NL Exhaust."
+  },
+
+  "${modID}:BluntStrike": {
+    "NAME": "Blunt Strike",
+    "DESCRIPTION": "Deal !D! damage. NL This card deals triple damage to enemies with Block or Weak."
+  },
+
+  "${modID}:ChanneledBeam": {
+    "NAME": "Channeled Beam",
+    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Deal !D! damage."
+  },
+
+  "${modID}:ConjureShield": {
+    "NAME": "Conjure Shield",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. Gain !B! Block. NL If you do not have ${modID}:Soul, gain !M! ${modID}:Soul instead."
+  },
+
+  "${modID}:CrossGuard": {
+    "NAME": "Cross Guard",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${modID}:Soul."
+  },
+
+  "${modID}:CorruptedNail": {
+    "NAME": "Corrupted Nail",
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${modID}:Infection."
+  },
+
+  "${modID}:CycloneSlash": {
+    "NAME": "Cyclone Slash",
+    "DESCRIPTION": "Deal !D! damage X times."
+  },
+
+  "${modID}:DashSlash": {
+    "NAME": "Dash Slash",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! cards."
+  },
+
+  "${modID}:DeepFocus": {
+    "NAME": "Deep Focus",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Heal !M! HP. NL Exhaust."
+  },
+
+  "${modID}:Defend_Vessel": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+
+  "${modID}:DescendingDark": {
+    "NAME": "Descending Dark",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies. NL Gain block equal to the number of cards in your exhaust pile."
+  },
+
+  "${modID}:DesolateDive": {
+    "NAME": "Desolate Dive",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies. NL Gain !B! Block."
+  },
+
+  "${modID}:DreamNail": {
+    "NAME": "Dream Nail",
+    "DESCRIPTION": "Apply !M! Weak. NL Gain 3 ${modID}:Soul."
+  },
+
+  "${modID}:DreamNoMore": {
+    "NAME": "Dream No More",
+    "DESCRIPTION": "Whenever you draw a Status or Curse card, make it Ethereal and draw !M! card. NL If it is a *Void, gain [E]."
+  },
+
+  "${modID}:EmanatingGlow": {
+    "NAME": "Emanating Glow",
+    "DESCRIPTION": "At the start of your turn, apply !M! ${modID}:Infection to ALL enemies."
+  },
+
+  "${modID}:Empower": {
+    "NAME": "Empower",
+    "DESCRIPTION": "Costs ALL ${modID}:Soul. NL Gain 2 Strength and 2 Dexterity for every 3 ${modID}:Soul lost. NL Exhaust."
+  },
+
+  "${modID}:Feint": {
+    "NAME": "Feint",
+    "DESCRIPTION": "Whenever you play a card this turn, NL gain !M! Block."
+  },
+
+  "${modID}:Focus": {
+    "NAME": "Focus",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Gain [E] [E]. NL Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Gain [E] [E]. NL Draw !M! cards. NL Exhaust."
+  },
+
+  "${modID}:FollowUpStrike": {
+    "NAME": "Follow-Up Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If the last card you used in this combat is a ${modID}:Spell, gain !M! ${modID}:Soul and draw !M! card."
+  },
+
+  "${modID}:ForgottenLight": {
+    "NAME": "Forgotten Light",
+    "DESCRIPTION": "Apply !M! ${modID}:Infection."
+  },
+
+  "${modID}:FrenziedSlash": {
+    "NAME": "Frenzied Slash",
+    "DESCRIPTION": "Deal !D! damage 3 times. NL Gain !M! Strength. NL At the end of your turn, lose !M! Strength."
+  },
+
+  "${modID}:GreatSlash": {
+    "NAME": "Great Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+
+  "${modID}:HeavyBlow": {
+    "NAME": "Heavy Blow",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 1 Vulnerable."
+  },
+
+  "${modID}:HowlingWraiths": {
+    "NAME": "Howling Wraiths",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage 3 times. NL Apply !M! Vulnerable. NL Apply !M! Weak."
+  },
+
+  "${modID}:ImbuedStrike": {
+    "NAME": "Imbued Strike",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage."
+  },
+
+  "${modID}:InfectedStrike": {
+    "NAME": "Infected Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${modID}:Infection."
+  },
+
+  "${modID}:InfectedWall": {
+    "NAME": "Infected Wall",
+    "DESCRIPTION": "Gain !B! Block. NL Gain ${modID}:Metallicize equal to twice your ${modID}:Infection. NL Exhaust."
+  },
+
+  "${modID}:InfectionOutbreak": {
+    "NAME": "Infection Outbreak",
+    "DESCRIPTION": "Gain 6 ${modID}:Infection. NL Gain [E] [E]. NL Draw 2 cards. NL Apply !M! ${modID}:Infection to ALL enemies. NL Exhaust."
+  },
+
+  "${modID}:LightOfRuin": {
+    "NAME": "Light of Ruin",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage. NL Apply !M! ${modID}:Infection."
+  },
+
+  "${modID}:LightOrb": {
+    "NAME": "Light Orb",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage. NL If Exhausted, permanently increase this card's damage by !M!. NL Exhaust."
+  },
+
+  "${modID}:MantisTraining": {
+    "NAME": "Mantis Training",
+    "DESCRIPTION": "ALL your cards containing \"Strike\" or \"Slash\" deal !M! additional damage."
+  },
+
+  "${modID}:Mapping": {
+    "NAME": "Mapping",
+    "DESCRIPTION": "At the start of your turn, draw !M! additional card.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, draw !M! additional cards."
+  },
+
+  "${modID}:NailmastersGlory": {
+    "NAME": "Nailmaster's Glory [DEPRECIATED]",
+    "DESCRIPTION": "${modID}:Charm. NL Increases attack damage of \"Slash\" cards by 4 and they cost 1 less [E]."
+  },
+
+  "${modID}:NoCostTooGreat": {
+    "NAME": "No Cost Too Great",
+    "DESCRIPTION": "Gain 2 ${modID}:Infection. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Gain 2 ${modID}:Infection. NL Gain [E] [E] [E]."
+  },
+
+  "${modID}:NoMindToThink": {
+    "NAME": "No Mind to Think",
+    "DESCRIPTION": "Whenever you gain ${modID}:Soul, gain !M! Block."
+  },
+
+  "${modID}:NoWillToBreak": {
+    "NAME": "No Will to Break",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a copy of this card into your NL discard pile. NL Exhaust."
+  },
+
+  "${modID}:Quickcast": {
+    "NAME": "Quickcast",
+    "DESCRIPTION": "This combat, your next ${modID}:Spell is played twice. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "This combat, your next ${modID}:Spell is played twice."
+  },
+
+  "${modID}:QuickFocus": {
+    "NAME": "Quick Focus",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Draw !M! cards."
+  },
+
+  "${modID}:NailParry": {
+    "NAME": "Nail Parry",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
+  },
+
+  "${modID}:PlanningAhead": {
+    "NAME": "Planning Ahead [DEPRECIATED]",
+    "DESCRIPTION": "Gain !B! block. NL Scry !M!."
+  },
+
+  "${modID}:PogoStrike": {
+    "NAME": "Pogo Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Discard 1 card."
+  },
+
+  "${modID}:PreEmptiveStrike": {
+    "NAME": "Pre-Emptive Strike",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
+  },
+
+  "${modID}:Purify": {
+    "NAME": "Purify [DEPRECIATED]",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Lower your ${modID}:Infection by !M!. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Costs !${modID}:S! ${modID}:Soul. NL Lower your ${modID}:Infection by !M!. NL Exhaust."
+  },
+
+  "${modID}:RadianceImplosion": {
+    "NAME": "Radiance Implosion",
+    "DESCRIPTION": "Deal damage equal to X times the target's ${modID}:Infection to ALL enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to X+1 times the target's ${modID}:Infection to ALL enemies. NL Exhaust."
+  },
+
+  "${modID}:RadiantBurst": {
+    "NAME": "Radiant Burst",
+    "DESCRIPTION": "ALL enemies gain !M! ${modID}:Infection and 2 Weak. NL Exhaust."
+  },
+
+  "${modID}:Reconstruct": {
+    "NAME": "Reconstruct",
+    "DESCRIPTION": "Add a copy of a card in your exhaust pile into your hand. NL Exhaust."
+  },
+
+  "${modID}:Rejuvenate": {
+    "NAME": "Rejuvenate",
+    "DESCRIPTION": "Gain !M! ${modID}:Soul. NL Draw 3 cards. NL Exhaust."
+  },
+
+  "${modID}:ShadeDash": {
+    "NAME": "Shade Dash",
+    "DESCRIPTION": "Draw !M! cards. NL Gain Block equal to the number of cards in your Exhaust pile."
+  },
+
+  "${modID}:ShadeSoul": {
+    "NAME": "Shade Soul",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies."
+    },
+
+  "${modID}:SharpShadow": {
+    "NAME": "Sharp Shadow",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E]. NL Add a *Void into your discard pile."
+  },
+
+  "${modID}:Spark": {
+    "NAME": "Spark [DEPRECIATED]",
+    "DESCRIPTION": "ALL enemies lose HP equal to their ${modID}:Infection stacks. NL Exhaust."
+  },
+
+  "${modID}:SpectralFocus": {
+    "NAME": "Spectral Focus",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Exhaust !M! cards. NL Gain !M! Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Exhaust !M! cards. NL Gain !M! Strength.",
+    "EXTENDED_DESCRIPTION": [
+      "I don't have cards to #rExhaust."
+    ]
+  },
+
+  "${modID}:SpikeWall": {
+    "NAME": "Spike Wall",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, deal !M! damage back."
+  },
+
+  "${modID}:SpiritBarrage": {
+    "NAME": "Spirit Barrage",
+    "DESCRIPTION": "${modID}:Spell. Costs ALL ${modID}:Soul. NL Deal !D! damage for each ${modID}:Soul lost. NL Exhaust."
+  },
+
+  "${modID}:Swift": {
+    "NAME": "Swift",
+    "DESCRIPTION": "Add Ethereal to 1 card in your hand. NL Draw !M! cards."
+  },
+
+  "${modID}:SoulAura": {
+    "NAME": "Soul Aura",
+    "DESCRIPTION": "Costs 1 less [E] for every ${modID}:Spell played in this combat. NL Gain !B! Block."
+  },
+
+  "${modID}:SoulAbsorption": {
+    "NAME": "Soul Absorption",
+    "DESCRIPTION": "Whenever a card is Exhausted, NL gain !M! ${modID}:Soul."
+  },
+
+  "${modID}:SoulBlade": {
+    "NAME": "Soul Blade",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage. NL Deal !M! additional damage for every ${modID}:Soul you have."
+  },
+
+  "${modID}:SoulCoagulation": {
+    "NAME": "Soul Coagulation",
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Gain [E] [E]."
+  },
+
+  "${modID}:SoulFlukeswarm": {
+    "NAME": "Soul Flukeswarm",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage !M! times."
+  },
+
+  "${modID}:SoulJar": {
+    "NAME": "Soul Jar",
+    "DESCRIPTION": "Retain. NL Gain !M! ${modID}:Soul. NL Exhaust."
+  },
+
+  "${modID}:SoulReaper": {
+    "NAME": "Soul Reaper",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain !M! ${modID}:Soul for each enemy in combat."
+  },
+
+  "${modID}:SoulShield": {
+    "NAME": "Soul Shield",
+    "DESCRIPTION": "Gain !B! Block for every ${modID}:Soul you hold."
+  },
+
+  "${modID}:SpellMastery": {
+    "NAME": "Spell Mastery",
+    "DESCRIPTION": "Whenever you play a ${modID}:Spell, increase the damage of your next ${modID}:Spell by !M! %."
+  },
+
+  "${modID}:SpellTwister": {
+    "NAME": "Spell Twister",
+    "DESCRIPTION": "Whenever you play a ${modID}:Spell, gain !M! ${modID}:Soul."
+  },
+
+  "${modID}:Strike_Vessel": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+  "${modID}:TwinStrike": {
+    "NAME": "Twin Strike",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+
+  "${modID}:VengefulSpirit": {
+    "NAME": "Vengeful Spirit",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage."
+  },
+
+  "${modID}:VesselFragment": {
+    "NAME": "Vessel Fragment",
+    "DESCRIPTION": "Gain !M! maximum ${modID}:Soul capacity for this combat."
+  },
+
+  "${modID}:VoidClaw": {
+    "NAME": "Void Claw",
+    "DESCRIPTION": "Deal !D! damage. NL Add Ethereal to 1 random card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add Ethereal to 1 card."
+  },
+
+  "${modID}:VoidEmbrace": {
+    "NAME": "Void Embrace",
+    "DESCRIPTION": "Whenever an Ethereal card Exhausts, NL draw !M! card."
+  },
+
+  "${modID}:VoidForm": {
+    "NAME": "Void Form",
+    "DESCRIPTION": "ALL your attacks become NL Ethereal and cost 0 ${modID}:Soul NL when drawn. NL At the end of your turn, NL lose 2 ${modID}:Soul."
+  },
+
+  "${modID}:VoidUnity": {
+    "NAME": "Void Unity",
+    "DESCRIPTION": "At the end of your turn, play ALL Ethereal cards in your hand and exhaust them."
+  },
+
+  "${modID}:VoidLash": {
+    "NAME": "Void Lash",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Weak, apply !M! Vulnerable."
+  },
+
+  "${modID}:VoidShackles": {
+    "NAME": "Void Shackles",
+    "DESCRIPTION": "Enemy loses !M! Strength this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Enemy loses !M! Strength this turn. NL Enemy loses 2 Strength. NL Exhaust."
+  },
+
+  "${modID}:VoidShield": {
+    "NAME": "Void Shield",
+    "DESCRIPTION": "Add Ethereal to ALL non-Attack cards in your hand. NL Gain !B! Block for each Ethereal card in your hand."
+  },
+
+  "${modID}:VoidTendrils": {
+    "NAME": "Void Tendrils",
+    "DESCRIPTION": "Deal !D! damage twice to ALL enemies. NL Shuffle a *Void into your discard pile."
+  },
+
+  "${modID}:WaywardCompass": {
+    "NAME": "Wayward Compass [DEPRECIATED]",
+    "DESCRIPTION": "${modID}:Charm. NL At the start of your turn, draw 2 additional cards."
+  },
+
+  "${modID}:WellPrepared": {
+    "NAME": "Well Prepared",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, draw !M! additional card."
+  },
+
+  "${modID}:InnateEtherealModifier": {
+    "EXTENDED_DESCRIPTION": [
+      "Innate. Ethereal. NL "
+    ]
+  },
+
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  }
+}

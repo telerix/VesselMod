@@ -1,0 +1,16 @@
+{
+  "${modID}:SoulTutorial": {
+    "TEXT": [
+      "#ySoul is the primary mechanic of the #yVessel. NL Your current #ySoul count is displayed next to your #yEnergy orb. NL NL At the end of your turn, you retain all your #ySoul. NL #ySoul does not carry over to the next combat.",
+      "You start with #b6 maximum #ySoul #ycapacity at the start of each combat. NL NL You gain #b1 #ySoul when you deal unblocked #ynon-Spell attack damage. NL You can gain multiple #ySoul from multihit or AOE attacks.",
+      "Cards that cost #ySoul will glow white if you have enough #ySoul to use them. NL NL ifDamage dealt using #ySpells don't give #ySoul, but they can still trigger on-hit effects (e.g. Thorns)."
+    ],
+    "LABEL": [
+      "Next",
+      "End Tutorial",
+      "Page ",
+      "/3",
+      "Soul Tutorial"
+    ]
+  }
+}

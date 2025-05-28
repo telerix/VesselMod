@@ -1,0 +1,84 @@
+{
+  "${modID}:MysteriousDevice": {
+    "NAME": "Mysterious Device",
+    "DESCRIPTIONS": [
+      "You stumble upon a delicate room, which seems to be an abandoned Soul research facility. NL Looking around, you see that all the research equipment seem to all connect to a mysterious device in the middle of the room. NL NL A strange figure attached to it stares at you in the darkness. NL When you approach the device, you @feel@ the #pvoid #p@energy@ @emanating@ @from@ the @device@ @growing@ @stronger@ @and@ @stronger...@",
+      "You tried to resist the void energy and checked the device. NL Suddenly, a @shockwave@ @of@ #p@energy@ @burst@ @out@ when you got closer and knocks you down. NL The strange figure on the device fades away into hundreds of #pvoid droplets, and enter your body. NL NL It seems like the #ySoul trapped in the device has found a new #yVessel.",
+      "You think it's too dangerous to get closer to the device."
+    ],
+    "OPTIONS": [
+      "[Inspect] #gReplace #gall ",
+      " #rMax #rHP.",
+      "[Locked] Requires Vengeful Spirit.",
+      "[Leave]",
+      "[Continue]",
+      " #gwith ",
+      ". #rLose #r",
+      "Inspected Device"
+    ]
+  },
+
+  "${modID}:Crystallized": {
+    "NAME": "Crystallized",
+    "DESCRIPTIONS": [
+      "In a #pcrystallized temple, you find a strange figure encased in a massive crystal. NL As you get closer, you hear a voice ~echoing~ in your head... NL ~\"...Free...me...\"~ NL NL The crystal doesn't even dent no matter how hard you hit it with your nail. NL However, upon climbing up onto a pillar nearby, you notice a small #ycrack near the tip of the crystal...",
+      "You launch yourself and dove into the crack with all your might. NL As your body get in contact with the crystal, the crack quickly grows and splits the crystal in half. NL A sharp pain flows through you, but as you look around, there are only crystal fragments shattered all over the temple with no trace of the figure. NL NL ~\"Thank~ ~you...~ ~\"~",
+      "Probably not worth getting hurt breaking it."
+    ],
+    "OPTIONS": [
+      "[Dive and Strike] #gReplace #gall ",
+      " #gwith ",
+      ". #rLose #r",
+      " #rHP.",
+      "[Locked] Requires Desolate Dive.",
+      "[Ignore]",
+      "[Continue]",
+      "Freed Shaman"
+    ]
+  },
+
+  "${modID}:VoidCore": {
+    "NAME": "Void Core",
+    "DESCRIPTIONS": [
+      "You reach a heavily #p~void-shrouded~ chamber with hundreds of strangely shaped stone \"eggs\". NL The #pvoid #penergy seems to all be coming from a pedestal in the middle of the room. NL Standing on the it and looking around, you feel as if the holes in the stone \"eggs\" are all facing you, and the #pvoid is awaiting your call to join you. NL NL This might be a great opportunity to harness the power of the #pvoid.",
+      "You release a howling screech with a spell. NL Suddenly, the #pvoid #pfog in the room quickly condenses into thousands of black Soul droplets. NL Recognizing their response, you quickly focus and and absorb the hovering droplets in the room. NL NL ~\"...Our~ ~voices...~ ~will~ ~cry~ ~out...~ ~again...\"~",
+      "You cast a spell at the pedestal and @shatter@ it, hoping that you could harvest the last drop of #pvoid from the room. NL As you expected, the #pvoid #penergy @erupted@ from the destroyed pedestal and the room @quickly@ @turns@ @pitch@ @black.@ NL As you focus and absorb all the #pvoid #penergy in the room, your Soul vessel becomes overloaded and filled with void. NL NL When the room finally clears up after absorbing the last drop of #pvoid, you are now able to harness its power, but at what cost?",
+      "Feeling intimidated by the eerie environment, you leave the room."
+    ],
+    "OPTIONS": [
+      "[Respond] #gReplace #gall ",
+      " #gwith ",
+      ".",
+      "[Destroy Pedestal] #gObtain #ga #gspecial #grelic. #rYou #rcan #ronly #rplay #r1 #rSpell #rper #rturn.",
+      ", ",
+      " or ",
+      ".",
+      "[Locked] Requires Howling Wraiths.",
+      "[Locked] Requires ",
+      "[Leave]",
+      "[Continue]",
+      "Responded Call",
+      "Destroyed Pedestal"
+    ]
+  },
+
+  "${modID}:EventID": {
+    "NAME": "Event Name",
+    "DESCRIPTIONS": [
+      "This is event text, generally used to describe what's happening.",
+      "#g~This~ #g~text~ #g~is~ #g~green~ #g~and~ #g~wavy.~",
+      "#r@RED@ #r@AND@ #r@VIBRATING@ #r@TEXT.@",
+      "#rRed #gGreen #yYellow #bBlue #pPurple. ~Wavy~ @vibrating.@",
+      "You have to mark every word individually.",
+      "You can also use [#ffffff]white[] hex color codes like this to color text.",
+      "This also works in card text! But not on keywords."
+    ],
+    "OPTIONS": [
+      "[Action Description] What you actually get.",
+      "[Denial] #rLose #r1 #rMax #rHP. Bad stuff is red.",
+      "[Acceptance] #gGain #gApotheosis. Good stuff is green.",
+      "[Leave]",
+      "Select card to remove. (You can also stick extra text like this in here.)"
+    ]
+  }
+}
