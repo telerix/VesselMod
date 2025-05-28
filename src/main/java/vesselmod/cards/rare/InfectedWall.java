@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.MetallicizePower;
+import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.powers.InfectionPower;
@@ -35,8 +35,7 @@ public class InfectedWall extends BaseCard {
 
         if (p.hasPower(InfectionPower.POWER_ID)) {
         int infectionStacks = p.getPower(InfectionPower.POWER_ID).amount;
-        this.addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p, 2 * infectionStacks)));
-
+            this.addToBot(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, infectionStacks), infectionStacks));
         }
     }
 

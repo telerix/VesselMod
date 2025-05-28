@@ -2,12 +2,13 @@ package vesselmod.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
@@ -29,8 +30,8 @@ public class DashSlash extends BaseCard {
 
     public DashSlash() {
         super(cardInfo);
-        setDamage(13, 2);
-        setMagic(1,1);
+        setDamage(11, 4);
+        setMagic(2,0);
         tags.add(CustomTags.SLASH);
         this.isMultiDamage = true;
     }
@@ -40,7 +41,7 @@ public class DashSlash extends BaseCard {
         this.addToBot(new SFXAction("ATTACK_HEAVY"));
         this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-        this.addToBot(new DrawCardAction(this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override

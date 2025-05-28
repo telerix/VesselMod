@@ -37,7 +37,7 @@
 
   "${modID}:ChanneledBeam": {
     "NAME": "Channeled Beam",
-    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Deal !D! damage."
+    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Apply lost ${modID}:Infection to ALL enemies. NL Exhaust."
   },
 
   "${modID}:ConjureShield": {
@@ -62,8 +62,7 @@
 
   "${modID}:DashSlash": {
     "NAME": "Dash Slash",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! cards."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Next turn, draw !M! cards."
   },
 
   "${modID}:DeepFocus": {
@@ -159,7 +158,7 @@
 
   "${modID}:InfectedWall": {
     "NAME": "Infected Wall",
-    "DESCRIPTION": "Gain !B! Block. NL Gain ${modID}:Metallicize equal to twice your ${modID}:Infection. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain Block equal to your current ${modID}:Infection. NL Exhaust."
   },
 
   "${modID}:InfectionOutbreak": {
@@ -195,8 +194,8 @@
 
   "${modID}:NoCostTooGreat": {
     "NAME": "No Cost Too Great",
-    "DESCRIPTION": "Gain 2 ${modID}:Infection. NL Gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Gain 2 ${modID}:Infection. NL Gain [E] [E] [E]."
+    "DESCRIPTION": "Gain 4 ${modID}:Infection. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Gain 4 ${modID}:Infection. NL Gain [E] [E] [E]."
   },
 
   "${modID}:NoMindToThink": {
@@ -255,7 +254,7 @@
 
   "${modID}:RadiantBurst": {
     "NAME": "Radiant Burst",
-    "DESCRIPTION": "ALL enemies gain !M! ${modID}:Infection and 2 Weak. NL Exhaust."
+    "DESCRIPTION": "Gain 2 ${modID}:Infection. NL ALL enemies gain !M! ${modID}:Infection and 2 Weak. NL Exhaust."
   },
 
   "${modID}:Reconstruct": {

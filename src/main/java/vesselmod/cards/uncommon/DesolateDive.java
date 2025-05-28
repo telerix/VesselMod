@@ -36,7 +36,7 @@ public class DesolateDive extends BaseCard {
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);
         DamageModifierManager.addModifier(this, new SpellDamage());
-        setSoulCost(3, 0);
+        setSoulCost(2, 0);
         isMultiDamage = true;
     }
 

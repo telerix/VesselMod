@@ -36,9 +36,9 @@ public class InfectionLoseHpAction extends AbstractGameAction {
                     this.target.tint.changeColor(Color.WHITE.cpy());
                     if (this.target == AbstractDungeon.player && this.amount > 2 && AbstractDungeon.player.hasRelic(KingsBrand.ID)) {
                         AbstractDungeon.player.getRelic(KingsBrand.ID).flash();
-                        this.target.damage(new DamageInfo(this.source, 2, DamageInfo.DamageType.HP_LOSS));
+                        this.target.damage(new DamageInfo(this.source, 2, DamageInfo.DamageType.THORNS));
                     } else {
-                        this.target.damage(new DamageInfo(this.source, this.amount, DamageInfo.DamageType.HP_LOSS));
+                        this.target.damage(new DamageInfo(this.source, this.amount, DamageInfo.DamageType.THORNS));
                     }
                 }
 

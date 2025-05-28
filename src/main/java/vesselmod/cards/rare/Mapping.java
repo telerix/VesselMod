@@ -14,7 +14,7 @@ import static vesselmod.VesselMod.makeID;
 public class Mapping extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "Mapping", //Card ID
-            0, //base cost [-1 = X, -2 = unplayable]
+            1, //base cost [-1 = X, -2 = unplayable]
             CardType.POWER, //[ATTACK/SKILL/POWER/CURSE/STATUS]
             CardTarget.SELF, //[ENEMY/ALL_ENEMY]
             CardRarity.RARE, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]

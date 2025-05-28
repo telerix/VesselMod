@@ -27,13 +27,14 @@ public class RadiantBurst extends BaseCard {
 
     public RadiantBurst() {
         super(cardInfo);
-        setMagic(4, 3);
+        setMagic(6, 3);
         tags.add(CustomTags.INFECT);
         setExhaust(true,true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new ApplyPowerAction(p, p, new InfectionPower(p, p, 2),2));
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
 
