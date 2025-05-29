@@ -12,7 +12,7 @@
     "NAME": "King's Brand",
     "FLAVOR": "glowing fork",
     "DESCRIPTIONS": [
-      "You only receive up to #b",
+      "You only take up to #b",
       " #y${modID}:Infection damage."
     ]
   },

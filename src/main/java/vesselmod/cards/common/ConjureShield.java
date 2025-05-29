@@ -29,6 +29,7 @@ public class ConjureShield extends BaseCard {
         setSoulCost(1,0);
         setMagic(2,0); //soul increase when soulcount = 0
         tags.add(CustomTags.COST_SOUL);
+        tags.add(CustomTags.COST_SOUL_ALT);
     }
 
     @Override

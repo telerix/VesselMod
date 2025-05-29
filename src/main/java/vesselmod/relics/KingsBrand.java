@@ -11,7 +11,7 @@ import static vesselmod.VesselMod.makeID;
 public class KingsBrand extends BaseRelic{
     public static final String NAME = "KingsBrand";
     public static final String ID = makeID(NAME);
-    public static final int EFFECT = 2;
+    public static final int EFFECT = 8;
 
     public KingsBrand() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.RARE, LandingSound.CLINK);
