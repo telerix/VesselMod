@@ -35,15 +35,15 @@
   "${modID}:Infection": {
     "NAME": "Infection",
     "DESCRIPTIONS": [
-      "Lose HP equal to #yInfection stacks whenever #yInfection is applied. At the end of its turn, lose #b1 stack of #yInfection."
+      "Take damage equal to #yInfection stacks whenever #yInfection is applied. At the end of its turn, lose #b1 stack of #yInfection."
     ]
   },
 
   "${modID}:MantisTraining": {
     "NAME": "Mantis Training",
     "DESCRIPTIONS": [
-      "Increases attack damage of \"Strike\" and \"Slash\" cards by #b",
-      "."
+      "\"Strike\" and \"Slash\" cards deal #b",
+      " additional damage."
     ]
   },
 

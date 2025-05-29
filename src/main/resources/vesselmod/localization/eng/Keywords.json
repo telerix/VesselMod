@@ -3,7 +3,7 @@
     "NAMES": [
       "infection"
     ],
-    "DESCRIPTION": "Infected creatures lose HP whenever Infection is applied. NL Each turn, Infection is reduced by 1."},
+    "DESCRIPTION": "Infected creatures take damage whenever Infection is applied. Each turn, Infection is reduced by 1."},
 
   { "PROPER_NAME": "Soul",
     "NAMES": [
