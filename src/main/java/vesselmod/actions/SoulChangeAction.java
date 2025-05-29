@@ -10,14 +10,14 @@ import vesselmod.powers.NoMindToThinkPower;
 public class SoulChangeAction extends AbstractGameAction {
     private final AbstractPlayer player;
     private final int amount;
-    private boolean freeToPlayOnce;
+    private boolean freeSoulCost;
 
-    public SoulChangeAction(AbstractPlayer player, int soulLoss, boolean freeToPlayOnce) { //for soul uses
+    public SoulChangeAction(AbstractPlayer player, int soulLoss, boolean freeSoulCost) { //for soul uses
         this.duration = Settings.ACTION_DUR_XFAST;
         this.actionType = ActionType.SPECIAL;
         this.player = player;
         this.amount = -soulLoss; //auto negs the soul cost
-        this.freeToPlayOnce = freeToPlayOnce;
+        this.freeSoulCost = freeSoulCost;
     }
 
     public SoulChangeAction(AbstractPlayer player, int soulGain) { //for soul gains
@@ -44,7 +44,7 @@ public class SoulChangeAction extends AbstractGameAction {
             }
 
             this.isDone = true;
-        } else if (this.amount < 0 && !this.freeToPlayOnce) {
+        } else if (this.amount < 0 && !this.freeSoulCost) {
             SoulMechanics.soulCount += this.amount;
             if (SoulMechanics.soulCount < 0) {
                 SoulMechanics.soulCount = 0;

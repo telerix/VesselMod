@@ -47,7 +47,7 @@ public class LightOfRuin extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         this.addToTop(new VFXAction(new LightningEffect(m.drawX, m.drawY)));
         this.addToTop(new VFXAction(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.NONE)));
         this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE", 0.1F));
@@ -60,13 +60,5 @@ public class LightOfRuin extends BaseCard {
         return new LightOfRuin();
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 }

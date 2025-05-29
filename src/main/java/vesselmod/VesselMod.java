@@ -144,7 +144,8 @@ public class VesselMod implements
             @Override
             public boolean test(AbstractCard card) {
                 if (card instanceof BaseCard) {
-                    return SoulMechanics.soulCount >= ((BaseCard) card).soulCost && card.hasTag(CustomTags.COST_SOUL);
+                    return (SoulMechanics.soulCount >= ((BaseCard) card).soulCost || ((BaseCard) card).freeSoulCost()) &&
+                            card.hasTag(CustomTags.COST_SOUL);
                 } else return false;
             }
 

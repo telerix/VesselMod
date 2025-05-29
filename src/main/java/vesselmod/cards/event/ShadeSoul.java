@@ -38,7 +38,7 @@ public class ShadeSoul extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
     }
 
@@ -47,13 +47,5 @@ public class ShadeSoul extends BaseCard {
         return new ShadeSoul();
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 }

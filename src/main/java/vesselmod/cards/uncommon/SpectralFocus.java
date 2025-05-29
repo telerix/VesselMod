@@ -39,20 +39,12 @@ public class SpectralFocus extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p,AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         this.addToBot(new ExhaustAction(this.magicNumber, false, false, false));
         this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 
     @Override
     public AbstractCard makeCopy() {

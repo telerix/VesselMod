@@ -2,9 +2,16 @@ package vesselmod.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import vesselmod.VesselMod;
+import vesselmod.misc.CustomTags;
+import vesselmod.misc.SoulMechanics;
+import vesselmod.powers.FreeSoulCostPower;
 import vesselmod.util.CardInfo;
 
 import static vesselmod.VesselMod.makeID;
@@ -320,6 +327,43 @@ public abstract class BaseCard extends CustomCard {
         }
     }
 
+    public boolean freeSoulCost() {
+        return AbstractDungeon.player != null &&
+                AbstractDungeon.currMapNode != null &&
+                AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && //makes sure game doesnt crash out of combat
+                this.hasTag(CustomTags.COST_SOUL) &&
+                AbstractDungeon.player.hasPower(FreeSoulCostPower.POWER_ID);
+    }
+
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        if (this.hasTag(CustomTags.COST_SOUL)) {
+            if (this.soulCost != this.updateSoulCost()) {
+                this.applyPowers();
+                this.isSoulCostModified = true;
+            } else {
+                this.isSoulCostModified = false;
+            }
+
+            if (canUse && SoulMechanics.soulCount < this.updateSoulCost()) {
+                this.cantUseMessage = SoulMechanics.noSoulMessage;
+                return false;
+            } else {
+                return canUse;
+            }
+        } else {
+            return canUse;
+        }
+    }
+
+    protected int updateSoulCost() {
+        if (freeSoulCost()) {
+            return 0;
+        } else {
+            return this.soulCost;
+        }
+    }
+
     /*@Override
     public void setCostForTurn(int amt) {
         if (this.costForTurn >= 0) { //normal behavior
@@ -334,7 +378,7 @@ public abstract class BaseCard extends CustomCard {
         }
         int soulCostBeforeEffect = this.soulCost; //set cards from pots/discovery soul cost to 0 for one play
         if (this.costForTurn <= 0 && this.hasTag(CustomTags.COST_SOUL)) {
-            this.freeToPlayOnce = true;
+            this.freeSoulCost() = true;
             if (soulCostBeforeEffect != this.soulCost) {
                 this.isSoulCostModified = true;
             }

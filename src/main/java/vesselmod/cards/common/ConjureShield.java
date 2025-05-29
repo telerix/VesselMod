@@ -37,7 +37,7 @@ public class ConjureShield extends BaseCard {
             this.addToBot(new SoulChangeAction(p, this.magicNumber));
         }
         else {
-            this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+            this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
             addToBot(new GainBlockAction(p ,p ,this.block));
         }
     }

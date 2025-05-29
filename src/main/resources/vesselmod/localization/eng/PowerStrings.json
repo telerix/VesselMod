@@ -135,9 +135,18 @@
   },
 
   "${modID}:WaywardCompass": {
-    "NAME": "Wayward Compass",
+    "NAME": "Wayward Compass [DEPRECIATED]",
     "DESCRIPTIONS": [
       "At the start of your turn, draw #b2 additional cards."
+    ]
+  },
+
+  "${modID}:FreeSoulCost": {
+    "NAME": "Free Soul Cost",
+    "DESCRIPTIONS": [
+      "The next #ySoul cost is free.",
+      "The next #b",
+      " #ySoul costs are free."
     ]
   },
 

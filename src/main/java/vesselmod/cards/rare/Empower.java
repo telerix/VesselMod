@@ -36,7 +36,7 @@ public class Empower extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
-        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeToPlayOnce));;
+        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));;
         int applyAmount = (int)Math.floor(currentSoul / 3f) * 2;
         if (applyAmount > 0) {
             this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, applyAmount), applyAmount));

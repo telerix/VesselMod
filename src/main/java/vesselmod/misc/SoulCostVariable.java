@@ -32,7 +32,7 @@ public class SoulCostVariable extends DynamicVariable {
     @Override
     public int value(AbstractCard card) {
         if (card instanceof BaseCard) {
-            if (card.freeToPlayOnce) {
+            if (((BaseCard) card).freeSoulCost()) {
                 return 0;
             } else {
                 return ((BaseCard) card).soulCost;

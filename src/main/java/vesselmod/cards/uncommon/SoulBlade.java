@@ -10,7 +10,6 @@ import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.util.CardInfo;
 
 import static vesselmod.VesselMod.makeID;
@@ -37,7 +36,7 @@ public class SoulBlade extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
@@ -54,13 +53,5 @@ public class SoulBlade extends BaseCard {
         return new SoulBlade();
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 }

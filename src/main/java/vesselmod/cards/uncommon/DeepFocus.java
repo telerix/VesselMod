@@ -35,7 +35,7 @@ public class DeepFocus extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p,AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         this.addToBot(new HealAction(p, p, this.magicNumber));
     }
     @Override
@@ -43,13 +43,5 @@ public class DeepFocus extends BaseCard {
         return new DeepFocus();
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 }

@@ -430,7 +430,7 @@
 
   "${modID}:WellPrepared": {
     "NAME": "Well Prepared",
-    "DESCRIPTION": "Gain !B! Block. NL Next turn, draw !M! additional card."
+    "DESCRIPTION": "Gain !B! Block. NL The next ${modID}:Soul cost is free."
   },
 
   "${modID}:InnateEtherealModifier": {

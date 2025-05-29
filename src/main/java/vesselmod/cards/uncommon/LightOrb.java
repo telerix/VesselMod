@@ -12,7 +12,6 @@ import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.modifiers.SpellDamage;
 import vesselmod.util.CardInfo;
 
@@ -35,24 +34,15 @@ public class LightOrb extends BaseCard {
         setMagic(2, 1); //stacking
         setSoulCost(2,0);
         tags.add(CustomTags.SPELL);
+        tags.add(CustomTags.COST_SOUL);
         setExhaust(true,true);
         DamageModifierManager.addModifier(this, new SpellDamage());
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
-    }
-
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return true;
-        }
     }
 
     @Override

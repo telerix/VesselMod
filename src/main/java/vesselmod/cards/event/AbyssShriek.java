@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.modifiers.SpellDamage;
 import vesselmod.util.CardInfo;
 
@@ -42,7 +41,7 @@ public class AbyssShriek extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         for(int i = 0; i < 4; ++i) {
             this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
         }
@@ -55,13 +54,5 @@ public class AbyssShriek extends BaseCard {
         return new AbyssShriek();
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 }

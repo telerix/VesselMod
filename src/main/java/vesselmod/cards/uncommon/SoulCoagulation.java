@@ -8,7 +8,6 @@ import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.util.CardInfo;
 
 import static vesselmod.VesselMod.makeID;
@@ -32,19 +31,10 @@ public class SoulCoagulation extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         addToBot(new GainEnergyAction(this.magicNumber));
     }
-
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 
     @Override
     public AbstractCard makeCopy(){

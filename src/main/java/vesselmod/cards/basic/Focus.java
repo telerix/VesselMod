@@ -35,7 +35,7 @@ public class Focus extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p,AbstractMonster m) {
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
         this.addToBot(new GainEnergyAction(2));
         this.addToBot(new DrawCardAction(p, this.magicNumber));
     }
@@ -44,13 +44,5 @@ public class Focus extends BaseCard {
         return new Focus();
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (canUse && SoulMechanics.soulCount < this.soulCost) {
-            this.cantUseMessage = SoulMechanics.noSoulMessage;
-            return false;
-        } else {
-            return canUse;
-        }
-    }
+    
 }

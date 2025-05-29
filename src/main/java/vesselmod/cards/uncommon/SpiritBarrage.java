@@ -40,7 +40,7 @@ public class SpiritBarrage extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
-        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeToPlayOnce));
+        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));
         for (int i = 0; i < currentSoul; i++) {
             this.addToTop(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT, true));
         }
