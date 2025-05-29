@@ -40,7 +40,7 @@ public class ChanneledBeam extends BaseCard {
         if (playerInfection > 0) {
             for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
                 if (!monster.isDead && !monster.isDying) {
-                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, playerInfection), playerInfection));
+                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, playerInfection), playerInfection, true));
                 }
             }
         }

@@ -42,7 +42,7 @@ public class InfectionOutbreak extends BaseCard {
 
             for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
                 if (!monster.isDead && !monster.isDying) {
-                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, this.magicNumber), this.magicNumber));
+                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, this.magicNumber), this.magicNumber, true));
                 }
             }
         }

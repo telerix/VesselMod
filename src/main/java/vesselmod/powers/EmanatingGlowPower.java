@@ -29,7 +29,7 @@ public class EmanatingGlowPower extends BasePower implements CloneablePowerInter
             while(var1.hasNext()) {
                 AbstractMonster m = (AbstractMonster)var1.next();
                 if (!m.isDead && !m.isDying) {
-                    this.addToBot(new ApplyPowerAction(m, this.owner, new InfectionPower(m, this.owner, this.amount), this.amount));
+                    this.addToBot(new ApplyPowerAction(m, this.owner, new InfectionPower(m, this.owner, this.amount), this.amount, true));
                 }
             }
         }

@@ -40,8 +40,8 @@ public class RadiantBurst extends BaseCard {
 
             for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
                 if (!monster.isDead && !monster.isDying) {
-                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, this.magicNumber), this.magicNumber));
-                    this.addToBot(new ApplyPowerAction(monster, p, new WeakPower(monster, 2, false), 2));
+                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, this.magicNumber), this.magicNumber, true));
+                    this.addToBot(new ApplyPowerAction(monster, p, new WeakPower(monster, 2, false), 2, true));
                 }
             }
         }
