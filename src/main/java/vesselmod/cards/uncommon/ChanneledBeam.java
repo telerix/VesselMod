@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
+import vesselmod.misc.CustomTags;
 import vesselmod.powers.InfectionPower;
 import vesselmod.util.CardInfo;
 
@@ -28,6 +29,7 @@ public class ChanneledBeam extends BaseCard {
         super(cardInfo);
         setCostUpgrade(0);
         setExhaust(true,true);
+        tags.add(CustomTags.INFECT);
     }
 
     @Override

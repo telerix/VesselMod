@@ -254,12 +254,20 @@
   "${modID}:RadianceImplosion": {
     "NAME": "Radiance Implosion",
     "DESCRIPTION": "Deal damage equal to X times the target's ${modID}:Infection to ALL enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to X+1 times the target's ${modID}:Infection to ALL enemies. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Deal damage equal to X+1 times the target's ${modID}:Infection to ALL enemies. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
   },
 
   "${modID}:RadiantBurst": {
     "NAME": "Radiant Burst",
     "DESCRIPTION": "Gain 2 ${modID}:Infection. NL ALL enemies gain !M! ${modID}:Infection and 2 Weak. NL Exhaust."
+  },
+
+  "${modID}:RadiantWard": {
+    "NAME": "Radiant Ward",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !M! ${modID}:Infection."
   },
 
   "${modID}:Reconstruct": {

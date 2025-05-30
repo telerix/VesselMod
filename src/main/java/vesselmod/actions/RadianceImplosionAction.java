@@ -39,7 +39,7 @@ public class RadianceImplosionAction extends AbstractGameAction {
             }
 
             if (player.hasRelic(ChemicalX.ID)) {
-                effect += 2;
+                effect += ChemicalX.BOOST;
                 player.getRelic(ChemicalX.ID).flash();
             }
 

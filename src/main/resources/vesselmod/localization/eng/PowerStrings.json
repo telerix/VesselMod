@@ -47,6 +47,13 @@
     ]
   },
 
+  "${modID}:NextTurnInfect": {
+    "NAME": "NextTurnInfect",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yInfection next turn."
+    ]
+  },
   "${modID}:NoMindToThink": {
     "NAME": "No Mind To Think",
     "DESCRIPTIONS": [
