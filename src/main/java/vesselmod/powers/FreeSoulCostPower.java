@@ -38,6 +38,7 @@ public class FreeSoulCostPower extends BasePower implements CloneablePowerInterf
                 if (this.amount == 0) {
                     this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
                 }
+                ((BaseCard) card).isSoulCostModified = false;
             }
         }
 

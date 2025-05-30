@@ -1,7 +1,7 @@
 {
   "${modID}:BrokenVessel": {
     "NAME": "Broken Vessel",
-    "FLAVOR": "not the boss, you're THE vessel.",
+    "FLAVOR": "not the boss, YOU are the vessel.",
     "DESCRIPTIONS": [
       "At the start of each combat, gain #b",
       " #y${modID}:Soul."
@@ -19,7 +19,7 @@
 
   "${modID}:Kingsoul": {
     "NAME": "Kingsoul",
-    "FLAVOR": "to be added",
+    "FLAVOR": "infinite soul! just very slow.",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
       " #y${modID}:Soul."
@@ -28,7 +28,7 @@
 
   "${modID}:Grubsong": {
     "NAME": "Grubsong",
-    "FLAVOR": "to be added",
+    "FLAVOR": "sorry, no grubs in this mod.",
     "DESCRIPTIONS": [
       "Whenever you lose HP, gain #b",
       " #y${modID}:Soul."
@@ -47,7 +47,7 @@
 
   "${modID}:SalubrasBlessing": {
     "NAME": "Salubra's Blessing",
-    "FLAVOR": "won't need to buy out the shop for this.",
+    "FLAVOR": "no smooches included. have some soul instead.",
     "DESCRIPTIONS": [
       "Whenever you play a Power, gain #b",
       " #y${modID}:Soul."
@@ -56,10 +56,19 @@
 
   "${modID}:ShamanStone": {
     "NAME": "Shaman Stone",
-    "FLAVOR": "less essential spell builds here",
+    "FLAVOR": "now available for 70 gold less!",
     "DESCRIPTIONS": [
       "ALL your #y${modID}:Spells deal #b",
       "% more damage."
+    ]
+  },
+
+  "${modID}:SpellTwister": {
+    "NAME": "Spell Twister",
+    "FLAVOR": "refunding is just like discounting, right...?",
+    "DESCRIPTIONS": [
+      "Whenever you play a #y${modID}:Spell, gain #b",
+      " #y${modID}:Soul."
     ]
   },
 
@@ -94,7 +103,7 @@
     "NAME": "Voidtouched Focus",
     "FLAVOR": "now with blueberry juice!",
     "DESCRIPTIONS": [
-      "Void-corrupt all Vengeful Spirit, Desolate Dive and Howling Wraiths. You can only play #b",
+      "Void-corrupt all #yVengeful #ySpirit, #yDesolate #yDive and #yHowling #yWraiths. You can only play #b",
       " #y${modID}:Spell per turn.",
       "I can only play #r",
       " Spell per turn."

@@ -15,7 +15,7 @@ public class ShamanStone extends BaseRelic{
     public static final String ID = makeID(NAME);
     public static final int EFFECT = 50;
     public ShamanStone() {
-        super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.RARE, LandingSound.CLINK);
+        super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.SHOP, LandingSound.CLINK);
         UnlockTracker.markRelicAsSeen(this.relicId);
     }
 

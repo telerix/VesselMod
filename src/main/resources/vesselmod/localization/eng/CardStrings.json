@@ -82,7 +82,7 @@
 
   "${modID}:DescendingDark": {
     "NAME": "Descending Dark",
-    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies. NL Gain block equal to the number of cards in your exhaust pile."
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies. NL Gain Block equal to the number of cards in your exhaust pile."
   },
 
   "${modID}:DesolateDive": {

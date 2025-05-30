@@ -48,7 +48,7 @@
   },
 
   "${modID}:NextTurnInfect": {
-    "NAME": "NextTurnInfect",
+    "NAME": "Next Turn Infect",
     "DESCRIPTIONS": [
       "Gain #b",
       " #yInfection next turn."
