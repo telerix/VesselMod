@@ -30,6 +30,11 @@
     "DESCRIPTION": "Shuffle a random ${modID}:Charm into your draw pile. It costs 0 until played. NL Exhaust."
   },
 
+  "${modID}:BlightedSlash": {
+    "NAME": "Blighted Slash",
+    "DESCRIPTION": "Deal !D! damage. NL If you or the enemy has ${modID}:Infection, deal !D! damage again."
+  },
+
   "${modID}:BluntStrike": {
     "NAME": "Blunt Strike",
     "DESCRIPTION": "Deal !D! damage. NL This card deals triple damage to enemies with Block or Weak."
@@ -137,7 +142,7 @@
   },
 
   "${modID}:HeavyBlow": {
-    "NAME": "Heavy Blow",
+    "NAME": "Heavy Blow [DEPRECIATED]",
     "DESCRIPTION": "Deal !D! damage. NL Apply 1 Vulnerable."
   },
 
@@ -326,6 +331,11 @@
     "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage. NL Deal !M! additional damage for every ${modID}:Soul you have."
   },
 
+  "${modID}:SoulBoomerang": {
+    "NAME": "Soul Boomerang",
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage twice. NL Shuffle this card into your draw pile."
+  },
+
   "${modID}:SoulCoagulation": {
     "NAME": "Soul Coagulation",
     "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. NL Gain [E] [E]."
@@ -353,11 +363,11 @@
 
   "${modID}:SpellMastery": {
     "NAME": "Spell Mastery",
-    "DESCRIPTION": "Whenever you play a ${modID}:Spell, increase the damage of your next ${modID}:Spell by !M! %."
+    "DESCRIPTION": "Whenever you play a ${modID}:Spell, increase the damage of your next ${modID}:Spell by !M!%."
   },
 
   "${modID}:SpellTwister": {
-    "NAME": "Spell Twister",
+    "NAME": "Spell Twister [DEPRECIATED]",
     "DESCRIPTION": "Whenever you play a ${modID}:Spell, gain !M! ${modID}:Soul."
   },
 

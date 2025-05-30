@@ -24,7 +24,7 @@ public class WellPrepared extends BaseCard {
 
     public WellPrepared() {
         super(cardInfo);
-        setBlock(7, 3);
+        setBlock(5, 3);
         setMagic(1,0);
     }
 

@@ -315,6 +315,7 @@ public class VesselMod implements
         new AutoAdd(modID) //Loads files from this mod
                 .packageFilter(BaseCard.class) //In the same package as this class
                 .setDefaultSeen(true) //And marks them as seen in the compendium
+                .notPackageFilter("vesselmod.cards.depreciated")
                 .cards(); //Adds the cards
     }
 

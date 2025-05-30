@@ -1,4 +1,4 @@
-package vesselmod.cards.uncommon;
+package vesselmod.cards.depreciated;
 
 import basemod.cardmods.InnateMod;
 import basemod.helpers.CardModifierManager;
