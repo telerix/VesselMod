@@ -256,7 +256,8 @@
     "DESCRIPTION": "Deal damage equal to X times the target's ${modID}:Infection to ALL enemies. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to X+1 times the target's ${modID}:Infection to ALL enemies. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deals !D! damage.)"
+      "Deal !D! damage, equal to X",
+      " times the target's ${modID}:Infection to ALL enemies. NL Exhaust."
     ]
   },
 

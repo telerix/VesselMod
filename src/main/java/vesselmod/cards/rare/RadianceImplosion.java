@@ -38,19 +38,32 @@ public class RadianceImplosion extends BaseCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         int infectOnTarget = 0;
+        String jank = "";
         if (mo.hasPower(InfectionPower.POWER_ID)) {
             infectOnTarget = mo.getPower(InfectionPower.POWER_ID).amount;
         }
         if (infectOnTarget > 0) {
             int xAmt = EnergyPanel.getCurrentEnergy();
+            if (this.upgraded) {
+                ++xAmt;
+                jank = "+1";
+            }
             if (AbstractDungeon.player.hasRelic(ChemicalX.ID)) {
                 xAmt += ChemicalX.BOOST;
+                AbstractDungeon.player.getRelic(ChemicalX.ID).flash();
             }
             this.baseDamage = xAmt * infectOnTarget;
             super.calculateCardDamage(mo);
-            this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0];
+            this.rawDescription = this.cardStrings.EXTENDED_DESCRIPTION[0] + jank + this.cardStrings.EXTENDED_DESCRIPTION[1];
             this.initializeDescription();
         }
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = this.cardStrings.DESCRIPTION;
+        this.initializeDescription();
     }
 
     @Override
