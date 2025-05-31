@@ -29,9 +29,8 @@ public class SoulBoomerang extends BaseCard {
 
     public SoulBoomerang() {
         super(cardInfo);
-        setDamage(4, 0);
+        setDamage(4, 2);
         setSoulCost(2,0);
-        setMagic(2,1);
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);
         DamageModifierManager.addModifier(this, new SpellDamage());
