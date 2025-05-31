@@ -59,8 +59,8 @@ public class SoulCostVariable extends DynamicVariable {
 
     @Override
     public Color getIncreasedValueColor() {
-        return Settings.RED_TEXT_COLOR;
-    }
+        return Settings.GREEN_TEXT_COLOR;
+    } //should be red, but single card smith uses this color if soul cost decreases. bandage fix
 
     @Override
     public Color getDecreasedValueColor() {
