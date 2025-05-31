@@ -4,15 +4,24 @@ Slay the Spire modded character of the Knight (Vessel) from Hollow Knight.
 
 All custom art, SFX and other assets belong to Team Cherry, the developers of Hollow Knight.
 
+Character Design inspired by The Bug Knight mod by VenIM.
+
+Translations credit:
+- Chinese (Simplified): @Timale
+
 ---
 ## Changelogs / WIPs
 
 ### WIP/Planned Items
 - Small rework on Radiant Implosion, Empower and Soul Barrage
-- General damage scaling and consistent block increase
-- Possible Soul cost reduction of cards
+- General damage scaling (Multiapply Infection cards)
+- Higher block increase for soul-cost block cards
 - More sources of energy generation
+- Possibly more common Ethereal synergy cards
 - Add custom SFX for cards
+
+### Version 0.4.2
+- Added Simplified Chinese language strings (Credit: @Timale)
 
 ### Version 0.4.1
 - Fixed Soul Boomerang upgrade
