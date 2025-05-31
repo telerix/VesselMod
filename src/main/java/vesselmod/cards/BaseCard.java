@@ -341,9 +341,7 @@ public abstract class BaseCard extends CustomCard {
             if (this.soulCost != this.updateSoulCost()) {
                 this.applyPowers();
                 this.isSoulCostModified = true;
-            } else {
-                this.isSoulCostModified = false;
-            }
+            } else this.isSoulCostModified = (this.soulCost != this.baseSoulCost);
 
             if (canUse && SoulMechanics.soulCount < this.updateSoulCost() && !this.hasTag(CustomTags.COST_SOUL_ALT)) {
                 this.cantUseMessage = SoulMechanics.noSoulMessage;
