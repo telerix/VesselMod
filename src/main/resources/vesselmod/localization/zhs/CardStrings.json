@@ -1,0 +1,470 @@
+{
+  "vesselmod:AbyssShriek": {
+    "NAME": "深渊尖啸",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害4次。 NL 给予 !M! 层 易伤 。 NL 给予 !M! 层 虚弱 。 "
+  },
+
+  "vesselmod:AcidArmor": {
+    "NAME": "酸液装甲",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果敌人的意图是攻击，给予 !M! 层 虚弱 。"
+  },
+
+  "vesselmod:AcidSplash": {
+    "NAME": "酸液飞溅",
+    "DESCRIPTION": "给予 !M! 层 虚弱 。 NL 如果敌人有 格挡 ，移除其所有 格挡 并获得2点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:Agility": {
+    "NAME": "灵活躲闪",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。"
+  },
+
+  "vesselmod:Backstep": {
+    "NAME": "后撤",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将弃牌堆中的一张牌放到抽牌堆的顶部。"
+  },
+
+  "vesselmod:Bench": {
+    "NAME": "长椅 [弃用]",
+    "DESCRIPTION": "将一张随机 vesselmod:护符 洗入抽牌堆中。下次打出耗能为0。 NL 消耗 。"
+  },
+
+  "vesselmod:BlightedSlash": {
+    "NAME": "枯萎劈砍",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人有 vesselmod:感染 状态，则再造成 !D! 点伤害。"
+  },
+
+  "vesselmod:BluntStrike": {
+    "NAME": "钝器打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 此牌对有 格挡 或 虚弱 的敌人造成3倍伤害。"
+  },
+
+  "vesselmod:ChanneledBeam": {
+    "NAME": "充能射线",
+    "DESCRIPTION": "移除你的所有 vesselmod:感染 。 NL 给予所有敌人所移除层数的 vesselmod:感染 。 NL 消耗 。"
+  },
+
+  "vesselmod:ConjureShield": {
+    "NAME": "魔术护盾",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 获得 !B! 点 格挡 。 NL 如果你没有 vesselmod:灵魂 ，改为获得 !M! 点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:CrossGuard": {
+    "NAME": "交叉保护",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:CorruptedNail": {
+    "NAME": "腐化骨钉",
+    "DESCRIPTION": "每有一次攻击造成未被格挡的伤害，就给予 !M! 层 vesselmod:感染 。"
+  },
+
+  "vesselmod:CycloneSlash": {
+    "NAME": "旋风劈砍",
+    "DESCRIPTION": "造成 !D! 点伤害 X 次。"
+  },
+
+  "vesselmod:DashSlash": {
+    "NAME": "冲刺劈砍",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 在下一回合多抽 !M! 张牌。"
+  },
+
+  "vesselmod:DeepFocus": {
+    "NAME": "深度凝聚",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 回复 !M! 生命。 NL 消耗 。"
+  },
+
+  "vesselmod:Defend_Vessel": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+
+  "vesselmod:DescendingDark": {
+    "NAME": "黑暗降临",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 对所有敌人造成 !D! 点伤害。 NL 获得消耗牌堆中卡牌数量的 格挡 。"
+  },
+
+  "vesselmod:DesolateDive": {
+    "NAME": "荒芜俯冲",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 对所有敌人造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
+  },
+
+  "vesselmod:DreamNail": {
+    "NAME": "梦之钉",
+    "DESCRIPTION": "给予 !M! 层 虚弱 。 NL 获得3点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:DreamNoMore": {
+    "NAME": "不再有梦",
+    "DESCRIPTION": "当你抽到一张 状态牌 或 诅咒 牌时，使其获得 虚无 并 抽 !M! 张牌。 NL 如果抽到的是 *虚空 ，获得 [E] 。"
+  },
+
+  "vesselmod:EmanatingGlow": {
+    "NAME": "散发光芒",
+    "DESCRIPTION": "你的回合开始时，给予所有敌人 !M! 层 vesselmod:感染 。"
+  },
+
+  "vesselmod:Empower": {
+    "NAME": "魂授",
+    "DESCRIPTION": "花费所有 vesselmod:灵魂 。 NL 每失去3点 vesselmod:灵魂 ，获得2点 力量 和 敏捷 。 NL 消耗 。"
+  },
+
+  "vesselmod:Feint": {
+    "NAME": "假动作",
+    "DESCRIPTION": "打出此牌后，你在这个回合内每打出一张牌，获得 !M! 点 格挡 。"
+  },
+
+  "vesselmod:Focus": {
+    "NAME": "凝聚",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 获得 [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 获得 [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。"
+  },
+
+  "vesselmod:FollowUpStrike": {
+    "NAME": "追加打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗打出的上一张牌是 vesselmod:法术 ，获得 !M! 点 vesselmod:灵魂 并抽 !M! 张牌。"
+  },
+
+  "vesselmod:ForgottenLight": {
+    "NAME": "被遗忘的光",
+    "DESCRIPTION": "给予 !M! 层 vesselmod:感染 。"
+  },
+
+  "vesselmod:FrenziedSlash": {
+    "NAME": "狂暴劈砍",
+    "DESCRIPTION": "造成 !D! 点伤害 3 次。 NL 获得 !M! 点 力量 。 NL 你的回合结束时，失去 !M! 点 力量 。"
+  },
+
+  "vesselmod:GreatSlash": {
+    "NAME": "强力劈砍",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。"
+  },
+
+  "vesselmod:HeavyBlow": {
+    "NAME": "沉重之击 [DEPRECIATED]",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予1层 易伤 。"
+  },
+
+  "vesselmod:HowlingWraiths": {
+    "NAME": "嚎叫幽灵",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害 3 次。 NL 给予 !M! 层 易伤 。 NL 给予 !M! 层 虚弱 。"
+  },
+
+  "vesselmod:ImbuedStrike": {
+    "NAME": "注能打击",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害。"
+  },
+
+  "vesselmod:InfectedStrike": {
+    "NAME": "传染打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 vesselmod:感染 。"
+  },
+
+  "vesselmod:InfectedWall": {
+    "NAME": "感染之墙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得你的 vesselmod:感染 层数两倍的 vesselmod:金属化 。 NL 消耗 。"
+  },
+
+  "vesselmod:InfectionOutbreak": {
+    "NAME": "感染爆发",
+    "DESCRIPTION": "获得6层 vesselmod:感染 。 NL 获得 [E] [E] 。 NL 抽2张牌。 NL 给予所有敌人 !M! 层 vesselmod:感染 。 NL 消耗 。"
+  },
+
+  "vesselmod:LightOfRuin": {
+    "NAME": "废墟之光",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害。 NL 给予 !M! 层 vesselmod:感染 。"
+  },
+
+  "vesselmod:LightOrb": {
+    "NAME": "光球",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害。 NL 被 消耗 时，此牌伤害永久增加 !M! 点。 NL 消耗 。"
+  },
+
+  "vesselmod:MantisTraining": {
+    "NAME": "螳螂特训",
+    "DESCRIPTION": "所有名字中带有\"打击\"或\"劈砍\"的卡牌额外造成 !M! 点伤害。"
+  },
+
+  "vesselmod:Mapping": {
+    "NAME": "整理地图",
+    "DESCRIPTION": "你的回合开始时，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "你的回合开始时，额外抽 !M! 张牌。"
+  },
+
+  "vesselmod:NailmastersGlory": {
+    "NAME": "骨钉大师的荣耀 [弃用]",
+    "DESCRIPTION": "vesselmod:护符。 NL 名字中带有\"劈砍\"的牌伤害增加4点，耗能减少1。"
+  },
+
+  "vesselmod:NoCostTooGreat": {
+    "NAME": "不惜代价",
+    "DESCRIPTION": "获得4层 vesselmod:感染 。 NL 获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "获得4层 vesselmod:感染 。 NL 获得 [E] [E] [E] 。"
+  },
+
+  "vesselmod:NoMindToThink": {
+    "NAME": "没有可以思考的心智",
+    "DESCRIPTION": "每当你获得 vesselmod:灵魂 时，获得 !M! 点 格挡 。"
+  },
+
+  "vesselmod:NoWillToBreak": {
+    "NAME": "没有可以屈从的意志",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将一张此牌的复制洗入你的弃牌堆。 NL 消耗 。"
+  },
+
+  "vesselmod:Quickcast": {
+    "NAME": "快速发射",
+    "DESCRIPTION": "本场战斗你的下一张 vesselmod:法术 会打出两次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "本场战斗你的下一张 vesselmod:法术 会打出两次。"
+  },
+
+  "vesselmod:QuickFocus": {
+    "NAME": "快速凝聚",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 抽 !M! 张牌。"
+  },
+
+  "vesselmod:NailParry": {
+    "NAME": "拼刀",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人的意图是攻击，获得 !B! 点 格挡 。"
+  },
+
+  "vesselmod:PlanningAhead": {
+    "NAME": "提前计划 [弃用]",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 预见 !M! 。"
+  },
+
+  "vesselmod:PogoStrike": {
+    "NAME": "下劈打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽一张牌。 NL 丢弃一张牌。"
+  },
+
+  "vesselmod:PreEmptiveStrike": {
+    "NAME": "先制打击",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 消耗 。"
+  },
+
+  "vesselmod:Purify": {
+    "NAME": "净化 [弃用]",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 降低 !M! 层 vesselmod:感染 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 降低 !M! 层 vesselmod:感染 。 NL 消耗 。"
+  },
+
+  "vesselmod:RadianceImplosion": {
+    "NAME": "辐光爆裂",
+    "DESCRIPTION": "对所有敌人造成所选目标 vesselmod:感染 层数X倍的伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成所选目标 vesselmod:感染 层数X+1倍的伤害。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "对所有敌人造成 !D! 点伤害，等同于所选目标 vesselmod:感染 层数X",
+      " 倍的伤害。 NL 消耗 。"
+    ]
+  },
+
+  "vesselmod:RadiantBurst": {
+    "NAME": "辐射迸发",
+    "DESCRIPTION": "获得2层 vesselmod:感染 。 NL 给予所有敌人 !M! 层 vesselmod:感染 和2层 虚弱 。 NL 消耗 。"
+  },
+
+  "vesselmod:RadiantWard": {
+    "NAME": "辐射防守",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在下个回合，获得 !M! 层 vesselmod:感染 。"
+  },
+
+  "vesselmod:Reconstruct": {
+    "NAME": "重构",
+    "DESCRIPTION": "将 消耗 牌堆中一张牌的复制放入你的手牌。 NL 消耗 。"
+  },
+
+  "vesselmod:Rejuvenate": {
+    "NAME": "复苏",
+    "DESCRIPTION": "获得 !M! 点 vesselmod:灵魂 。 NL 抽3张牌。 NL 消耗 。"
+  },
+
+  "vesselmod:ShadeDash": {
+    "NAME": "暗影冲刺",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 获得 消耗 牌堆中卡牌数量的 格挡 。"
+  },
+
+  "vesselmod:ShadeSoul": {
+    "NAME": "暗影之魂",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 对所有敌人造成 !D! 点伤害。"
+    },
+
+  "vesselmod:SharpShadow": {
+    "NAME": "锋利之影",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 将一张 *虚空 放入你的弃牌堆中。"
+  },
+
+  "vesselmod:Spark": {
+    "NAME": "火花 [弃用]",
+    "DESCRIPTION": "所有敌人失去等同于其 vesselmod:感染 层数的生命。 NL 消耗 。"
+  },
+
+  "vesselmod:SpectralFocus": {
+    "NAME": "幽灵凝聚",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 消耗 !M! 张手牌。 NL 获得 !M! 点 力量 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 消耗 !M! 张手牌。 NL 获得 !M! 点 力量 。",
+    "EXTENDED_DESCRIPTION": [
+      "我没有手牌可以 #r消耗 。"
+    ]
+  },
+
+  "vesselmod:SpikeWall": {
+    "NAME": "尖刺墙",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你在这个回合每受到一次攻击，就对攻击者造成 !M! 点伤害。"
+  },
+
+  "vesselmod:SpiritBarrage": {
+    "NAME": "灵魂齐射",
+    "DESCRIPTION": "vesselmod:法术 。花费所有 vesselmod:灵魂 。 NL 每由此失去一点灵魂，造成 !D! 点伤害。 NL 消耗 。"
+  },
+
+  "vesselmod:Swift": {
+    "NAME": "速降",
+    "DESCRIPTION": "使一张手牌获得 虚无 。 NL 抽 !M! 张牌。"
+  },
+
+  "vesselmod:SoulAura": {
+    "NAME": "灵魂光环",
+    "DESCRIPTION": "你在本场战斗每打出一张 vesselmod:法术 ，耗能就减少1点。 NL 获得 !B! 点 格挡 。"
+  },
+
+  "vesselmod:SoulAbsorption": {
+    "NAME": "灵魂同化",
+    "DESCRIPTION": "每当有一张牌被 消耗 时，获得 !M! 点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:SoulBlade": {
+    "NAME": "灵魂利刃",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害。 NL 你每拥有一点 vesselmod:灵魂 ，造成伤害增加 !M! 。"
+  },
+
+  "vesselmod:SoulBoomerang": {
+    "NAME": "灵魂回旋镖",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害两次。 NL 将这张牌洗入你的抽牌堆。"
+  },
+
+  "vesselmod:SoulCoagulation": {
+    "NAME": "灵魂凝结",
+    "DESCRIPTION": "花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 获得 [E] [E] 。"
+  },
+
+  "vesselmod:SoulFlukeswarm": {
+    "NAME": "灵魂吸虫",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害 !M! 次。"
+  },
+
+  "vesselmod:SoulJar": {
+    "NAME": "灵魂罐",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 点 vesselmod:灵魂 。 NL 消耗 。"
+  },
+
+  "vesselmod:SoulReaper": {
+    "NAME": "灵魂收割",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 当前每有一名敌人，获得 !M! 点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:SoulShield": {
+    "NAME": "灵魂护盾",
+    "DESCRIPTION": "你每拥有一点 vesselmod:灵魂 ，获得 !B! 点 格挡 。"
+  },
+
+  "vesselmod:SpellMastery": {
+    "NAME": "法术精通",
+    "DESCRIPTION": "每当你打出一张 vesselmod:法术 ，你的 vesselmod:法术 之后造成的伤害就增加 !M! %。"
+  },
+
+  "vesselmod:SpellTwister": {
+    "NAME": "法术扭曲者 [DEPRECIATED]",
+    "DESCRIPTION": "你每打出一张 vesselmod:法术 ，获得 !M! 点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:Strike_Vessel": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+
+  "vesselmod:TwinStrike": {
+    "NAME": "双重打击",
+    "DESCRIPTION": "造成 !D! 点伤害两次。"
+  },
+
+  "vesselmod:VengefulSpirit": {
+    "NAME": "复仇之魂",
+    "DESCRIPTION": "vesselmod:法术 。花费 !vesselmod:S! 点 vesselmod:灵魂 。 NL 造成 !D! 点伤害。"
+  },
+
+  "vesselmod:VesselFragment": {
+    "NAME": "容器碎片",
+    "DESCRIPTION": "本场战斗中获得 !M! 点 vesselmod:灵魂 上限。"
+  },
+
+  "vesselmod:VoidClaw": {
+    "NAME": "虚空爪击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 随机1张手牌获得 虚无 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 选择1张手牌获得 虚无 。"
+  },
+
+  "vesselmod:VoidEmbrace": {
+    "NAME": "虚空之拥",
+    "DESCRIPTION": "每当有一张 虚无 的牌被 消耗 时，抽 !M! 张牌。"
+  },
+
+  "vesselmod:VoidForm": {
+    "NAME": "虚空形态",
+    "DESCRIPTION": "所有攻击牌在被抽到时获得 虚无 且 vesselmod:灵魂 花费变为0。 NL 在你的回合结束时， NL 失去2点 vesselmod:灵魂 。"
+  },
+
+  "vesselmod:VoidUnity": {
+    "NAME": "虚空团结",
+    "DESCRIPTION": "你的回合结束时，打出手牌中所有 虚无 的牌，然后 消耗 这些牌。"
+  },
+
+  "vesselmod:VoidLash": {
+    "NAME": "虚空鞭打",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人有 虚弱 ，给予 !M! 层 易伤 。"
+  },
+
+  "vesselmod:VoidShackles": {
+    "NAME": "虚空镣铐",
+    "DESCRIPTION": "让一名敌人在本回合内失去 !M! 点 力量 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "让一名敌人在本回合内失去 !M! 点 力量 。 NL 敌人再失去2点 力量 。 NL 消耗 。"
+  },
+
+  "vesselmod:VoidShield": {
+    "NAME": "虚空护盾",
+    "DESCRIPTION": "使手牌中所有非攻击牌获得 虚无 。 NL 手牌中每有一张 虚无 的牌，就获得 !B! 点 格挡 。"
+  },
+
+  "vesselmod:VoidTendrils": {
+    "NAME": "虚空卷须",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害两次。 NL 将一张 *虚空 洗入你的弃牌堆中。"
+  },
+
+  "vesselmod:WaywardCompass": {
+    "NAME": "任性的指南针 [弃用]",
+    "DESCRIPTION": "vesselmod:护符。 NL 你的回合开始时，额外抽2张牌。"
+  },
+
+  "vesselmod:WellPrepared": {
+    "NAME": "充分准备",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下一张花费灵魂的卡牌可以免费打出。"
+  },
+
+  "vesselmod:InnateEtherealModifier": {
+    "EXTENDED_DESCRIPTION": [
+      "固有 。 虚无 。 NL "
+    ]
+  },
+
+  "vesselmod:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description。",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here。",
+      "If you need to use it for stuff。",
+      "Blizzard is 一 good example for this。"
+    ]
+  }
+}

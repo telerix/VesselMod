@@ -1,0 +1,40 @@
+{
+  "vesselmod:ReconstructAction": {
+    "TEXT": [
+      "重构"
+    ]
+  },
+
+  "vesselmod:CardInHandToEtherealAction": {
+    "TEXT": [
+      "获得虚无"
+    ]
+  },
+
+  "vesselmod:SkipSoulTutorial": {
+    "TEXT": [
+      "跳过灵魂教程"
+    ]
+  },
+
+  "vesselmod:SoulMechanics": {
+    "TEXT": [
+      "#r灵魂 数量不足。"
+    ]
+  },
+
+  "vesselmod:Example": {
+    "TEXT": [
+      "This is",
+      "an array of Strings."
+    ],
+    "EXTRA_TEXT": [
+      "This is another",
+      "array of Strings."
+    ],
+    "TEXT_DICT": {
+      "This": "Contains pairs of Strings, used to get values based on keys.",
+      "This is a key": "This is a value."
+    }
+  }
+}

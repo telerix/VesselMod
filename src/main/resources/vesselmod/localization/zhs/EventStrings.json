@@ -1,0 +1,84 @@
+{
+  "vesselmod:MysteriousDevice": {
+    "NAME": "神秘仪器",
+    "DESCRIPTIONS": [
+      "你偶然发现了一个精致的房间，这似乎是一个废弃的灵魂研究设施。 NL 环顾四周，你发现所有的研究设备似乎都连接到房间中央的一个神秘仪器上。 NL NL 一个奇怪的身影正在仪器的黑暗中盯着你。 NL 当你靠近仪器时，你 @感觉@ @仪器@ @散发@ 的 #p虚空 #p@能量@ 正在逐渐 @增长@ ，并且 @越来越强@ ， @越来越强...@",
+      "你试图抵抗着虚空能量检查了仪器。 NL 突然，一股充满 #p@能量@ 的 @冲击@ 在你靠近时 @爆发@ 了出来并将你击倒在地。 NL 仪器中的奇怪身影逐渐消失变成数百个 #p虚空 液滴，然后进入了你的身体。 NL NL 似乎被困在仪器中的 #y灵魂 找到了一个新的 #y容器 。",
+      "你认为靠近这个仪器太危险了。"
+    ],
+    "OPTIONS": [
+      "[检查] #g替换 #g所有 ",
+      " #r最大生命 。",
+      "[锁定] 需要复仇之魂。",
+      "[离开]",
+      "[继续]",
+      " #g变为 ",
+      "。 #r失去 #r",
+      "检查过仪器"
+    ]
+  },
+
+  "vesselmod:Crystallized": {
+    "NAME": "结晶物",
+    "DESCRIPTIONS": [
+      "在一座 #p结晶化 的庙宇中，你发现了一个被巨大水晶包裹的奇怪身影。 NL 当你走近时，你听到一个声音在你的脑海里回响... NL ~\"...把我...放出来...\"~ NL NL 无论你怎么用骨钉用力地攻击，水晶连个凹痕都没有产生。 NL 但是当你爬上附近的一个柱子时，你注意到水晶尖端附近有一条小裂缝...",
+      "你尽你所能动身一跃并冲向那条裂缝。 NL 当你的身体接触到水晶时，裂缝迅速扩展并将水晶一分为二。 NL 你全身传来一阵剧痛，但当你起身环顾四周时，只有水晶碎片散落在寺庙各处，没有了身影的痕迹。 NL NL ~\"感谢~ ~你...~ ~\"~",
+      "也许不值得为了打破它而受伤。"
+    ],
+    "OPTIONS": [
+      "[俯冲并击打] #g替换 #g所有 ",
+      " #g变为 ",
+      "， #r失去 #r",
+      " #r生命 。",
+      "[锁定] 需要荒芜俯冲。",
+      "[无视]",
+      "[继续]",
+      "解放萨满"
+    ]
+  },
+
+  "vesselmod:VoidCore": {
+    "NAME": "虚空核心",
+    "DESCRIPTIONS": [
+      "你到达了一个被重重 ~虚空~ 所 ~笼罩~ 的房间，里面有数百个形状奇特的石头“蛋”。 NL 这里的 #p虚空能量 似乎都是房间中间的一个祭坛发出来的。 NL 站在上面环顾四周，你感觉石头上的洞“蛋”都在面朝着你，好像是 #p虚空 正在等待你加入。 NL NL 这可能是一个能利用 #p虚空 力量的好机会。",
+      "你用法术发出了一声嚎叫。 NL 突然，房间里的 #p虚空迷雾 迅速凝结成数千个黑色的灵魂液滴。 NL 意识到这是他们回应之后，你立刻开始凝聚，开始吸收房间里盘旋的液滴。 NL NL ~\"...我们的~ ~声音...~ ~会~ ~再次~ ~呐喊...\"~",
+      "你在祭坛上释放了一个法术将它 @摧毁@ ，希望能从房间里吸收哪怕最后一滴 #p虚空 。 NL 正如你所料， #p虚空能量 从被摧毁的祭坛上 @喷发@ 了出来，房间内 @很快变得一片漆黑@ 。 NL 在你凝聚并吸收房间里所有的 #p虚空能量 后，你的灵魂容器被虚空填满到几乎要溢出。 NL NL 当房间中的虚空终于被你清空之后，你已经完全掌握了虚空的力量，但代价是什么？",
+      "你被这里诡异的环境吓到了，离开了房间。"
+    ],
+    "OPTIONS": [
+      "[回应] #g替换 #g所有 ",
+      " #g变为 ",
+      "。",
+      "[摧毁祭坛] #g获得一个特殊的遗物 。 #r每回合最多打出一张法术 。",
+      "，",
+      "或者",
+      "。",
+      "[锁定] 需要嚎叫幽灵。",
+      "[锁定] 需要",
+      "[离开]",
+      "[继续]",
+      "回应了呼唤",
+      "摧毁了祭坛"
+    ]
+  },
+
+  "vesselmod:EventID": {
+    "NAME": "Event Name",
+    "DESCRIPTIONS": [
+      "This is event text, generally used to describe what's happening.",
+      "#g~This~ #g~text~ #g~is~ #g~green~ #g~and~ #g~wavy.~",
+      "#r@RED@ #r@AND@ #r@VIBRATING@ #r@TEXT.@",
+      "#rRed #gGreen #yYellow #bBlue #pPurple. ~Wavy~ @vibrating.@",
+      "You have to mark every word individually.",
+      "You can also use [#ffffff]white[] hex color codes like this to color text.",
+      "This also works in card text! But not on keywords."
+    ],
+    "OPTIONS": [
+      "[Action Description] What you actually get.",
+      "[Denial] #rLose #r1 #rMax #rHP. Bad stuff is red.",
+      "[Acceptance] #gGain #gApotheosis. Good stuff is green.",
+      "[Leave]",
+      "Select card to remove. (You can also stick extra text like this in here.)"
+    ]
+  }
+}

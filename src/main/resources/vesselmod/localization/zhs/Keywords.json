@@ -1,0 +1,63 @@
+[
+  { "PROPER_NAME": "感染",
+    "NAMES": [
+      "感染"
+    ],
+    "DESCRIPTION": "被感染的生物在被给予感染时会受到伤害。 NL 每回合感染层数会减少 #b1 。"},
+
+  { "PROPER_NAME": "灵魂",
+    "NAMES": [
+      "灵魂"
+    ],
+    "DESCRIPTION": "当敌人受到非法术攻击伤害时，获得 #b1 点灵魂。"},
+
+  { "PROPER_NAME": "法术",
+    "NAMES": [
+      "法术"
+    ],
+    "DESCRIPTION": "需要花费 #y灵魂 为代价的强力攻击牌。"},
+
+  { "PROPER_NAME": "护符",
+    "NAMES": [
+      "护符"
+    ],
+    "DESCRIPTION": "不可叠加的特殊能力牌。"},
+
+  {
+    "PROPER_NAME": "灵魂容器",
+    "NAMES": [
+      "灵魂容器",
+      "soul_vessel",
+      "Soul Vessel"
+    ],
+    "DESCRIPTION": "你最多只能拥有你灵魂容器上限的 #y灵魂 。"
+  },
+
+  { "PROPER_NAME": "金属化",
+    "NAMES": [
+      "金属化"
+    ],
+    "DESCRIPTION": "在你的回合结束时获得 #y格挡 。"},
+
+  {
+    "PROPER_NAME": "This is displayed in the tooltip.",
+    "NAMES": [
+      "these",
+      "are",
+      "detected",
+      "in",
+      "the",
+      "text"
+    ],
+    "DESCRIPTION": "This is displayed in the tooltip. Note, spaces are not allowed in NAMES. For multi-word keywords, see the next one."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces. In card text, you'll use the underscore versions."
+  }
+]
