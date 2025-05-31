@@ -29,7 +29,7 @@ public class VoidShield extends BaseCard {
     @Override
     public void use(AbstractPlayer p,AbstractMonster m) {
         for (AbstractCard card : p.hand.group) {
-            if (card.type != CardType.ATTACK && !card.isEthereal) {
+            if (card.type != CardType.ATTACK && !card.isEthereal && !card.selfRetain && !card.retain) {
                 this.addToBot(new CardBecomesEtherealAction(card));
                 card.superFlash();
             }

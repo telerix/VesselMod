@@ -17,14 +17,13 @@ public class CardBecomesEtherealAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (!this.card.isEthereal && !this.card.retain) {
+        if (!this.card.isEthereal && !this.card.retain && !card.selfRetain) {
             if (!this.card.isInnate) {
                 CardModifierManager.addModifier(this.card, new EtherealMod());
             } else if (CardModifierManager.hasModifier(this.card, InnateMod.ID)) {
                 CardModifierManager.removeModifiersById(this.card, InnateMod.ID, true);
                 CardModifierManager.addModifier(this.card, new InnateEtherealMod());
-            }
-            else {
+            } else { //failsafe
                 CardModifierManager.addModifier(this.card, new EtherealMod());
             }
             if (this.card.type.equals(AbstractCard.CardType.CURSE) || this.card.type.equals(AbstractCard.CardType.STATUS)) { //make autoplay burns exhaust

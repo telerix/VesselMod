@@ -31,7 +31,7 @@ public class CardInHandToEtherealAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (this.p.hand.size() == 0) {
+        if (this.p.hand.isEmpty()) {
             this.isDone = true;
             return;
         }
