@@ -30,6 +30,7 @@ public class Empower extends BaseCard {
         setExhaust(true, true);
         setSoulCost(soulCount, 0);
         tags.add(CustomTags.COST_SOUL);
+        setMagic(2,0); //buff per X soul
         setCostUpgrade(2);
     }
 
@@ -37,7 +38,7 @@ public class Empower extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
         this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));;
-        int applyAmount = (int)Math.floor(currentSoul / 3f) * 2;
+        int applyAmount = (int)Math.floor(currentSoul / 2f) * 2; //replace 2f to use magicNumber later
         if (applyAmount > 0) {
             this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, applyAmount), applyAmount));
             this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, applyAmount), applyAmount));

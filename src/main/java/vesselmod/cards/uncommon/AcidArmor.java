@@ -26,7 +26,7 @@ public class AcidArmor extends BaseCard {
 
     public AcidArmor() {
         super(cardInfo);
-        setBlock(12, 4);
+        setBlock(13, 4);
         setMagic(2,1);
     }
 

@@ -107,7 +107,7 @@
 
   "vesselmod:Empower": {
     "NAME": "魂授",
-    "DESCRIPTION": "花费所有 vesselmod:灵魂 。 NL 每失去3点 vesselmod:灵魂 ，获得2点 力量 和 敏捷 。 NL 消耗 。"
+    "DESCRIPTION": "花费所有 vesselmod:灵魂 。 NL 每失去2点 vesselmod:灵魂 ，获得2点 力量 和 敏捷 。 NL 消耗 。"
   },
 
   "vesselmod:Feint": {

@@ -107,7 +107,7 @@
 
   "${modID}:Empower": {
     "NAME": "Empower",
-    "DESCRIPTION": "Costs ALL ${modID}:Soul. NL Gain 2 Strength and 2 Dexterity for every 3 ${modID}:Soul lost. NL Exhaust."
+    "DESCRIPTION": "Costs ALL ${modID}:Soul. NL Gain 2 Strength and 2 Dexterity for every 2 ${modID}:Soul lost. NL Exhaust."
   },
 
   "${modID}:Feint": {

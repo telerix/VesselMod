@@ -24,7 +24,7 @@ public class NoMindToThink extends BaseCard {
 
     public NoMindToThink() {
         super(cardInfo);
-        setMagic(2, 1);
+        setMagic(3, 1);
     }
 
     @Override
