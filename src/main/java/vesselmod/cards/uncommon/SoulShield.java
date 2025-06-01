@@ -23,7 +23,7 @@ public class SoulShield extends BaseCard {
 
     public SoulShield() {
         super(cardInfo);
-        setBlock(3, 1);
+        setBlock(4, 1);
     }
 
     @Override
