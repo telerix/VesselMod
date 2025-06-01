@@ -1,5 +1,5 @@
 {
-  "vesselmod:PotionID": {
+  "${modID}:PotionID": {
     "NAME": "Some Kind of Potion",
     "DESCRIPTIONS": [
       "Little",

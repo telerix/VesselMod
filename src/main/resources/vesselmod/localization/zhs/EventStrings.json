@@ -1,5 +1,5 @@
 {
-  "vesselmod:MysteriousDevice": {
+  "${modID}:MysteriousDevice": {
     "NAME": "神秘仪器",
     "DESCRIPTIONS": [
       "你偶然发现了一个精致的房间，这似乎是一个废弃的灵魂研究设施。 NL 环顾四周，你发现所有的研究设备似乎都连接到房间中央的一个神秘仪器上。 NL NL 一个奇怪的身影正在仪器的黑暗中盯着你。 NL 当你靠近仪器时，你 @感觉@ @仪器@ @散发@ 的 #p虚空 #p@能量@ 正在逐渐 @增长@ ，并且 @越来越强@ ， @越来越强...@",
@@ -18,7 +18,7 @@
     ]
   },
 
-  "vesselmod:Crystallized": {
+  "${modID}:Crystallized": {
     "NAME": "结晶物",
     "DESCRIPTIONS": [
       "在一座 #p结晶化 的庙宇中，你发现了一个被巨大水晶包裹的奇怪身影。 NL 当你走近时，你听到一个声音在你的脑海里回响... NL ~\"...把我...放出来...\"~ NL NL 无论你怎么用骨钉用力地攻击，水晶连个凹痕都没有产生。 NL 但是当你爬上附近的一个柱子时，你注意到水晶尖端附近有一条小裂缝...",
@@ -37,7 +37,7 @@
     ]
   },
 
-  "vesselmod:VoidCore": {
+  "${modID}:VoidCore": {
     "NAME": "虚空核心",
     "DESCRIPTIONS": [
       "你到达了一个被重重 ~虚空~ 所 ~笼罩~ 的房间，里面有数百个形状奇特的石头“蛋”。 NL 这里的 #p虚空能量 似乎都是房间中间的一个祭坛发出来的。 NL 站在上面环顾四周，你感觉石头上的洞“蛋”都在面朝着你，好像是 #p虚空 正在等待你加入。 NL NL 这可能是一个能利用 #p虚空 力量的好机会。",
@@ -62,7 +62,7 @@
     ]
   },
 
-  "vesselmod:EventID": {
+  "${modID}:EventID": {
     "NAME": "Event Name",
     "DESCRIPTIONS": [
       "This is event text, generally used to describe what's happening.",

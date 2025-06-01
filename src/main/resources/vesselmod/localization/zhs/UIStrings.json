@@ -1,29 +1,29 @@
 {
-  "vesselmod:ReconstructAction": {
+  "${modID}:ReconstructAction": {
     "TEXT": [
       "重构"
     ]
   },
 
-  "vesselmod:CardInHandToEtherealAction": {
+  "${modID}:CardInHandToEtherealAction": {
     "TEXT": [
       "获得虚无"
     ]
   },
 
-  "vesselmod:SkipSoulTutorial": {
+  "${modID}:SkipSoulTutorial": {
     "TEXT": [
       "跳过灵魂教程"
     ]
   },
 
-  "vesselmod:SoulMechanics": {
+  "${modID}:SoulMechanics": {
     "TEXT": [
       "#r灵魂 数量不足。"
     ]
   },
 
-  "vesselmod:Example": {
+  "${modID}:Example": {
     "TEXT": [
       "This is",
       "an array of Strings."

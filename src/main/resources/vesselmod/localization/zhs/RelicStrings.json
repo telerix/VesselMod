@@ -1,95 +1,95 @@
 {
-  "vesselmod:BrokenVessel": {
+  "${modID}:BrokenVessel": {
     "NAME": "残破容器",
     "FLAVOR": "不是指某个boss，你就是这个容器。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:KingsBrand": {
+  "${modID}:KingsBrand": {
     "NAME": "王之印记",
     "FLAVOR": "发光叉子",
     "DESCRIPTIONS": [
       "你最多受到 #b",
-      " 点来自 #yvesselmod:感染 的伤害。"
+      " 点来自 #y${modID}:感染 的伤害。"
     ]
   },
 
-  "vesselmod:Kingsoul": {
+  "${modID}:Kingsoul": {
     "NAME": "国王之魂",
     "FLAVOR": "无限的灵魂！芝士有点慢而已。",
     "DESCRIPTIONS": [
       "你的回合开始时，获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:Grubsong": {
+  "${modID}:Grubsong": {
     "NAME": "幼虫之歌",
     "FLAVOR": "抱歉，这个mod里没有幼虫。",
     "DESCRIPTIONS": [
       "每当你失去生命时，获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:PureVessel": {
+  "${modID}:PureVessel": {
     "NAME": "纯粹容器",
     "FLAVOR": "捡起这个不会让你变成真正的纯粹容器，你也不会造成双倍伤害。",
     "DESCRIPTIONS": [
       "替换 #y破碎 #y容器。获得 #b",
-      " 点 #yvesselmod:灵魂 上限。每场战斗开始时，获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      " 点 #y${modID}:灵魂 上限。每场战斗开始时，获得 #b",
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:SalubrasBlessing": {
+  "${modID}:SalubrasBlessing": {
     "NAME": "萨鲁巴的祝福",
     "FLAVOR": "不会被亲吻，但还是会给一些灵魂。",
     "DESCRIPTIONS": [
       "你每打出一张能力牌，获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:ShamanStone": {
+  "${modID}:ShamanStone": {
     "NAME": "萨满之石",
     "FLAVOR": "现已降价70金币！",
     "DESCRIPTIONS": [
-      "你的所有 #yvesselmod:法术 造成伤害增加 #b",
+      "你的所有 #y${modID}:法术 造成伤害增加 #b",
       "% 。"
     ]
   },
-  "vesselmod:SpellTwister": {
+  "${modID}:SpellTwister": {
     "NAME": "法术扭曲者",
     "FLAVOR": "用后返还一部分和减少消耗数是差不多的，对吧...?",
     "DESCRIPTIONS": [
-      "你每打出一张 #yvesselmod:法术 ，获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      "你每打出一张 #y${modID}:法术 ，获得 #b",
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:SoulBinding": {
+  "${modID}:SoulBinding": {
     "NAME": "灵魂束缚",
     "FLAVOR": "抱歉，不能带着这个打万神殿",
     "DESCRIPTIONS": [
       "在每回合开始时获得 [E] 。失去 #b",
-      " 点 #yvesselmod:灵魂 上限。"
+      " 点 #y${modID}:灵魂 上限。"
     ]
   },
 
-  "vesselmod:SoulEater": {
+  "${modID}:SoulEater": {
     "NAME": "噬魂者",
     "FLAVOR": "美味的牛奶",
     "DESCRIPTIONS": [
-      "每当你造成非 #yvesselmod:法术 攻击伤害时，额外获得 #b",
-      " 点 #yvesselmod:灵魂 。"
+      "每当你造成非 #y${modID}:法术 攻击伤害时，额外获得 #b",
+      " 点 #y${modID}:灵魂 。"
     ]
   },
 
-  "vesselmod:SporeShroom": {
+  "${modID}:SporeShroom": {
     "NAME": "蘑菇孢子",
     "FLAVOR": "我发誓，这不是个会放屁的遗物。",
     "DESCRIPTIONS": [
@@ -98,18 +98,18 @@
     ]
   },
 
-  "vesselmod:VoidtouchedFocus": {
+  "${modID}:VoidtouchedFocus": {
     "NAME": "沾染虚空的凝聚",
     "FLAVOR": "现在来点蓝莓汁！",
     "DESCRIPTIONS": [
       "虚空化所有 #y复仇之魂 、 #y荒芜俯冲 和 #y嚎叫幽灵 。你每回合最多打出 #b",
-      " 张 #yvesselmod:法术 。",
+      " 张 #y${modID}:法术 。",
       "我每回合最多打出 #r",
       " 张法术。"
     ]
   },
 
-  "vesselmod:RelicID": {
+  "${modID}:RelicID": {
     "NAME": "Good Relic",
     "FLAVOR": "Flavor text displayed in detailed relic view.",
     "DESCRIPTIONS": [
