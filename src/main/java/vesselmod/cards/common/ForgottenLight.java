@@ -24,13 +24,14 @@ public class ForgottenLight extends BaseCard {
 
     public ForgottenLight() {
         super(cardInfo);
-        setMagic(5,2);
+        setMagic(2,1);
         tags.add(CustomTags.INFECT);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m, p, new InfectionPower(m, p, magicNumber), magicNumber));
+        this.addToBot(new ApplyPowerAction(m, p, new InfectionPower(m, p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(m, p, new InfectionPower(m, p, this.magicNumber), this.magicNumber));
     }
     @Override
     public AbstractCard makeCopy() {

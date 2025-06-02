@@ -107,7 +107,7 @@
 
   "${modID}:Empower": {
     "NAME": "魂授",
-    "DESCRIPTION": "花费所有 ${modID}:灵魂 。 NL 每失去2点 ${modID}:灵魂 ，获得2点 力量 和 敏捷 。 NL 消耗 。"
+    "DESCRIPTION": "花费所有 ${modID}:灵魂 。 NL 每失去 !M! 点 ${modID}:灵魂 ，获得2点 力量 和 敏捷 。 NL 消耗 。"
   },
 
   "${modID}:Feint": {
@@ -128,7 +128,7 @@
 
   "${modID}:ForgottenLight": {
     "NAME": "被遗忘的光",
-    "DESCRIPTION": "给予 !M! 层 ${modID}:感染 。"
+    "DESCRIPTION": "给予 !M! 层 ${modID}:感染 2次。"
   },
 
   "${modID}:FrenziedSlash": {

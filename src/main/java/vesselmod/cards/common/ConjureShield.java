@@ -25,7 +25,7 @@ public class ConjureShield extends BaseCard {
 
     public ConjureShield() {
         super(cardInfo);
-        setBlock(7,3);
+        setBlock(6,3);
         setSoulCost(1,0);
         setMagic(2,0); //soul increase when soulcount = 0
         tags.add(CustomTags.COST_SOUL);
@@ -39,7 +39,7 @@ public class ConjureShield extends BaseCard {
         }
         else {
             this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
-            addToBot(new GainBlockAction(p ,p ,this.block));
+            this.addToBot(new GainBlockAction(p ,p ,this.block));
         }
     }
 
