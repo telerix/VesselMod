@@ -1,11 +1,15 @@
 package vesselmod.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import vesselmod.cards.uncommon.EnergizingTorrent;
 import vesselmod.misc.SoulMechanics;
 import vesselmod.powers.NoMindToThinkPower;
+import vesselmod.powers.SoulDrainPower;
 
 public class SoulChangeAction extends AbstractGameAction {
     private final AbstractPlayer player;
@@ -44,10 +48,24 @@ public class SoulChangeAction extends AbstractGameAction {
             }
 
             this.isDone = true;
-        } else if (this.amount < 0 && !this.freeSoulCost) {
+        } else if (this.amount < 0 && !this.freeSoulCost) { //soul use
             SoulMechanics.soulCount += this.amount;
             if (SoulMechanics.soulCount < 0) {
                 SoulMechanics.soulCount = 0;
+            }
+
+            boolean isTurnEnding = false;
+            if (player.getPower(SoulDrainPower.POWER_ID) != null) {
+                if (SoulDrainPower.turnEnd) { //exclude soul reduction effects from soul drain (very jank)
+                    isTurnEnding = true;
+                }
+            }
+            if (!isTurnEnding) {
+                for (AbstractCard card : AbstractDungeon.player.hand.group) {
+                    if (card.cardID.equals(EnergizingTorrent.ID)) {
+                        ((EnergizingTorrent) card).useSoul();
+                    }
+                }
             }
 
             this.isDone = true;

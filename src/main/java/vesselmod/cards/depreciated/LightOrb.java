@@ -1,4 +1,4 @@
-package vesselmod.cards.uncommon;
+package vesselmod.cards.depreciated;
 
 import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

@@ -12,6 +12,7 @@ public class SoulDrainPower extends BasePower implements CloneablePowerInterface
     public static final String POWER_ID = makeID("SoulDrain");
     private static final PowerType TYPE = PowerType.DEBUFF;
     private static final boolean TURN_BASED = false;
+    public static boolean turnEnd;
 
     public SoulDrainPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
@@ -20,10 +21,16 @@ public class SoulDrainPower extends BasePower implements CloneablePowerInterface
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer) {
+            turnEnd = true;
             this.flash();
             this.addToBot(new SoulChangeAction(AbstractDungeon.player, this.amount, false));
         }
     }//effect
+
+    @Override
+    public void atStartOfTurn() {
+        turnEnd = false;
+    }
 
     public void updateDescription(){
         this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];

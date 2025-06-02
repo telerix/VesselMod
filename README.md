@@ -21,12 +21,14 @@ Translations credit:
 - Add custom SFX for cards
 
 ### Version 0.5.0 (Current)
-- You can now gain Soul even on blocked attack damage
+- You can now gain Soul on fully blocked attack damage
 - Acid Armor: 12(16) -> 13(17) Block
 - Conjure Shield: 6(8) -> 6(9) Block
 - No Mind To Think: 2(3) -> 3(4) Block
 - Forgotten Light: 5(7) Infection -> 2(3) Infection 2 times
-- Corrupted Nail: Upgrade +1 Infection -> Remove Ethereal
+- Corrupted Nail: Ethereal 1(2) Infection -> )Ethereal( 1(1) Infection
+- Light Orb: Removed
+- Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 2(3) Energy
 
 
 - Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn

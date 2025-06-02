@@ -42,7 +42,7 @@
 
   "${modID}:ChanneledBeam": {
     "NAME": "Channeled Beam",
-    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Apply lost ${modID}:Infection to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Apply 1 ${modID}:Infection !M! times to ALL enemies."
   },
 
   "${modID}:ConjureShield": {
@@ -108,6 +108,15 @@
   "${modID}:Empower": {
     "NAME": "Empower",
     "DESCRIPTION": "Costs ALL ${modID}:Soul. NL Gain 2 Strength and 2 Dexterity for every !M! ${modID}:Soul lost. NL Exhaust."
+  },
+
+  "${modID}:EnergizingTorrent": {
+    "NAME": "Energizing Torrent",
+    "DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E] [E].",
+    "EXTENDED_DESCRIPTION": [
+      "I can't play this card."
+    ]
   },
 
   "${modID}:Feint": {
@@ -177,7 +186,7 @@
   },
 
   "${modID}:LightOrb": {
-    "NAME": "Light Orb",
+    "NAME": "Light Orb [DEPRECIATED]",
     "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage. NL If Exhausted, permanently increase this card's damage by !M!. NL Exhaust."
   },
 
