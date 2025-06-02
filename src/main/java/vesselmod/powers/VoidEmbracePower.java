@@ -13,6 +13,7 @@ public class VoidEmbracePower extends BasePower implements CloneablePowerInterfa
     public static final String POWER_ID = makeID("VoidEmbrace");
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
+    private static boolean DrawAtEndOfTurn = false;
 
     public VoidEmbracePower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
@@ -23,6 +24,25 @@ public class VoidEmbracePower extends BasePower implements CloneablePowerInterfa
         if (card.isEthereal && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
             this.addToBot(new DrawCardAction(this.owner, this.amount));
+        }
+    }
+
+    @Override
+    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
+        DrawAtEndOfTurn = true;
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if (isPlayer) {
+            DrawAtEndOfTurn = false;
+        }
+    }
+
+    @Override
+    public void onCardDraw(AbstractCard card) { //retain all ethereal cards drawn from exhausting autoplay status/curses
+        if (DrawAtEndOfTurn) {
+            card.retain = true;
         }
     }
 

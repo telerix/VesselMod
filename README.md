@@ -20,6 +20,15 @@ Translations credit:
 - Possibly more common Ethereal synergy cards
 - Add custom SFX for cards
 
+### Version 0.5.0 (Current)
+- You can now gain Soul even on blocked attack damage
+- balance
+- balance
+
+
+- Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
+
+
 ### Version 0.4.2
 - Added Simplified Chinese language strings (Credit: @Timale)
 
