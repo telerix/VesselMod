@@ -23,13 +23,13 @@ public class SoulShield extends BaseCard {
 
     public SoulShield() {
         super(cardInfo);
-        setBlock(4, 1);
+        setBlock(3, 1);
     }
 
     @Override
     public void use(AbstractPlayer p,AbstractMonster m) {
         for(int i = 0; i < soulCount; ++i) {
-            this.addToBot(new GainBlockAction(p, p, block));
+            this.addToBot(new GainBlockAction(p, p, this.block));
         }
     }
     @Override

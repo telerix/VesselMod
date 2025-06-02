@@ -22,11 +22,15 @@ Translations credit:
 
 ### Version 0.5.0 (Current)
 - You can now gain Soul even on blocked attack damage
-- balance
-- balance
+- Acid Armor: 12(16) -> 13(17) Block
+- Conjure Shield: 6(8) -> 6(9) Block
+- No Mind To Think: 2(3) -> 3(4) Block
+- Forgotten Light: 5(7) Infection -> 2(3) Infection 2 times
+- Corrupted Nail: Upgrade +1 Infection -> Remove Ethereal
 
 
 - Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
+- Fixed Quickcast power description not updating after each use
 
 
 ### Version 0.4.2
