@@ -55,6 +55,7 @@ public class QuickcastPower extends BasePower implements CloneablePowerInterface
             tmp.purgeOnUse = true;
             AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(tmp, m, card.energyOnUse, true, true), true);
             --this.amount;
+            this.updateDescription();
 
             if (this.amount == 0) {
                 this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, QuickcastPower.POWER_ID));
