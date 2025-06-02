@@ -26,8 +26,16 @@ public class CorruptedNail extends BaseCard {
 
     public CorruptedNail() {
         super(cardInfo);
-        setMagic(1, 1);
+        setMagic(1, 0);
         CardModifierManager.addModifier(this, new EtherealMod());
+    }
+
+    @Override
+    public void upgrade() {
+        if (!upgraded) {
+            this.upgradeName();
+            CardModifierManager.removeModifiersById(this, EtherealMod.ID, true);
+        }
     }
 
     @Override
