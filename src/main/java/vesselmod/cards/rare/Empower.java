@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.relics.ChemicalX;
 import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
@@ -37,8 +38,13 @@ public class Empower extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
-        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));;
-        int applyAmount = (int)Math.floor((float)currentSoul / this.magicNumber) * 2; //replace 2f to use magicNumber later
+        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));
+
+        if (p.hasRelic(ChemicalX.ID)) {
+            currentSoul += ChemicalX.BOOST;
+        }
+
+        int applyAmount = (int)Math.floor((float)currentSoul / this.magicNumber) * 2;
         if (applyAmount > 0) {
             this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, applyAmount), applyAmount));
             this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, applyAmount), applyAmount));

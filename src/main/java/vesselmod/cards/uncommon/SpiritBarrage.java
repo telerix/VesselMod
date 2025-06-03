@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.relics.ChemicalX;
 import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
@@ -40,9 +41,16 @@ public class SpiritBarrage extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
-        this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));
+        if (this.soulCost != 0) {
+            this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));
+        }
+
+        if (p.hasRelic(ChemicalX.ID)) {
+            currentSoul += ChemicalX.BOOST;
+        }
+
         for (int i = 0; i < currentSoul; i++) {
-            this.addToTop(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT, true));
+            this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT, true));
         }
     }
 

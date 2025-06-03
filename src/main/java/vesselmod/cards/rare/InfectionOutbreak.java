@@ -34,7 +34,7 @@ public class InfectionOutbreak extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new InfectionPower(p, p, 6), 6));
+        this.addToBot(new ApplyPowerAction(p, p, new InfectionPower(p, p, 8), 8));
         this.addToBot(new GainEnergyAction(2));
         this.addToBot(new DrawCardAction(p,3));
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {

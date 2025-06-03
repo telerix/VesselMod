@@ -12,11 +12,11 @@ Translations credit:
 ---
 ## Changelogs / WIPs
 
-### WIP/Planned Items
-- Small rework on Radiant Implosion, Empower and Soul Barrage
-- General damage scaling (Multiapply Infection cards)
-- Higher block increase for soul-cost block cards
-- More sources of energy generation
+### WIPs
+- Small rework on Radiance Implosion, Empower and Soul Barrage [ver 0.5.0]
+- General damage scaling (Multiapply Infection cards) [ver 0.5.0]
+- Higher block increase for soul-cost block cards [ver 0.5.0]
+- More sources of energy generation [ver 0.5.0]
 - Possibly more common Ethereal synergy cards
 - Add custom SFX for cards
 
@@ -26,7 +26,10 @@ Translations credit:
 - Conjure Shield: 6(8) -> 6(9) Block
 - No Mind To Think: 2(3) -> 3(4) Block
 - Forgotten Light: 5(7) Infection -> 2(3) Infection 2 times
-- Corrupted Nail: Ethereal 1(2) Infection -> )Ethereal( 1(1) Infection
+- Radiance Implosion: Rework to catalyst clone - 1 energy. Deals AOE damage equal to 2(3) times the target's Infection
+- Empower, Spirit Barrage: Now uses "X" for Soul cost, with their effects amplified by Chemical X
+- Corrupted Nail: Ethereal, 1(2) Infection -> )Ethereal(, 1 Infection
+- Infection Outbreak: 6 -> 8 self Infection
 - Light Orb: Removed
 - Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 2(3) Energy
 
