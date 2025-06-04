@@ -29,6 +29,7 @@ public class Grubsong extends BaseRelic{
     public Grubsong() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.UNCOMMON, LandingSound.CLINK);
         UnlockTracker.markRelicAsSeen(this.relicId);
+        resetStats();
     }
 
     public void wasHPLost(int damageAmount) {
@@ -51,14 +52,14 @@ public class Grubsong extends BaseRelic{
     }
 
     public String getStatsDescription() {
-        return SOUL_GAIN + stats.get(SOUL_GAIN);
+        return SOUL_GAIN + stats.getOrDefault(SOUL_GAIN, 0);
     }
 
     public String getExtendedStatsDescription(int totalCombats, int totalTurns) {
         // You would just return getStatsDescription() if you don't want to display per-combat and per-turn stats
         StringBuilder builder = new StringBuilder();
         builder.append(getStatsDescription());
-        float stat = (float)stats.get(SOUL_GAIN);
+        float stat = (float)stats.getOrDefault(SOUL_GAIN, 0);
         // Relic Stats truncates these extended stats to 3 decimal places, so we do the same
         DecimalFormat perTurnFormat = new DecimalFormat("#.###");
         builder.append(PER_TURN_STRING);
@@ -76,7 +77,7 @@ public class Grubsong extends BaseRelic{
         // An array makes more sense if you want to store more than one stat
         Gson gson = new Gson();
         ArrayList<Integer> statsToSave = new ArrayList<>();
-        statsToSave.add(stats.get(SOUL_GAIN));
+        statsToSave.add(stats.getOrDefault(SOUL_GAIN, 0));
         return gson.toJsonTree(statsToSave);
     }
 

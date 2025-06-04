@@ -31,6 +31,7 @@ public class KingsBrand extends BaseRelic{
     public KingsBrand() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.RARE, LandingSound.CLINK);
         UnlockTracker.markRelicAsSeen(this.relicId);
+        resetStats();
     }
     //effect is set in InfectionLoseHpAction
 
@@ -44,7 +45,7 @@ public class KingsBrand extends BaseRelic{
                 p.hasPower(InfectionPower.POWER_ID)) {
             this.addToBot(new RelicAboveCreatureAction(p, this));
             int dmgMitigated = p.getPower(InfectionPower.POWER_ID).amount - EFFECT;
-            stats.put(DMG_MIT, stats.get(DMG_MIT) + dmgMitigated);
+            stats.put(DMG_MIT, stats.getOrDefault(DMG_MIT, 0) + dmgMitigated);
         }
     }
 
@@ -60,14 +61,14 @@ public class KingsBrand extends BaseRelic{
     }
 
     public String getStatsDescription() {
-        return DMG_MIT + stats.get(DMG_MIT);
+        return DMG_MIT + stats.getOrDefault(DMG_MIT, 0);
     }
 
     public String getExtendedStatsDescription(int totalCombats, int totalTurns) {
         // You would just return getStatsDescription() if you don't want to display per-combat and per-turn stats
         StringBuilder builder = new StringBuilder();
         builder.append(getStatsDescription());
-        float stat = (float)stats.get(DMG_MIT);
+        float stat = (float)stats.getOrDefault(DMG_MIT, 0);
         // Relic Stats truncates these extended stats to 3 decimal places, so we do the same
         DecimalFormat perTurnFormat = new DecimalFormat("#.###");
         builder.append(PER_COMBAT_STRING);
@@ -83,7 +84,7 @@ public class KingsBrand extends BaseRelic{
         // An array makes more sense if you want to store more than one stat
         Gson gson = new Gson();
         ArrayList<Integer> statsToSave = new ArrayList<>();
-        statsToSave.add(stats.get(DMG_MIT));
+        statsToSave.add(stats.getOrDefault(DMG_MIT, 0));
         return gson.toJsonTree(statsToSave);
     }
 

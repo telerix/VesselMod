@@ -32,13 +32,14 @@ public class SpellTwister extends BaseRelic{
     public SpellTwister() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.RARE, LandingSound.MAGICAL);
         UnlockTracker.markRelicAsSeen(this.relicId);
+        resetStats();
     }
 
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         if (card.hasTag(CustomTags.SPELL)) {
             this.flash();
             this.addToBot(new SoulChangeAction(AbstractDungeon.player, soulGain));
-            stats.put(SOUL_GAIN, stats.get(SOUL_GAIN) + soulGain);
+            stats.put(SOUL_GAIN, stats.getOrDefault(SOUL_GAIN, 0) + soulGain);
         }
     }
 
@@ -54,7 +55,7 @@ public class SpellTwister extends BaseRelic{
     }
 
     public String getStatsDescription() {
-        return SOUL_GAIN + stats.get(SOUL_GAIN);
+        return SOUL_GAIN + stats.getOrDefault(SOUL_GAIN, 0);
     }
 
     public String getExtendedStatsDescription(int totalCombats, int totalTurns) {
@@ -79,7 +80,7 @@ public class SpellTwister extends BaseRelic{
         // An array makes more sense if you want to store more than one stat
         Gson gson = new Gson();
         ArrayList<Integer> statsToSave = new ArrayList<>();
-        statsToSave.add(stats.get(SOUL_GAIN));
+        statsToSave.add(stats.getOrDefault(SOUL_GAIN, 0));
         return gson.toJsonTree(statsToSave);
     }
 

@@ -32,8 +32,10 @@ public class SporeShroom extends BaseRelic{
     public SporeShroom() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.COMMON, LandingSound.FLAT);
         UnlockTracker.markRelicAsSeen(this.relicId);
+        resetStats();
     }
 
+    @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         if (card.hasTag(CustomTags.FOCUS)) {
             this.flash();
@@ -41,7 +43,7 @@ public class SporeShroom extends BaseRelic{
 
             for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
                 if (!monster.isDeadOrEscaped()) {
-                    stats.put(DMG, stats.get(DMG) + EFFECT);
+                    stats.put(DMG, stats.getOrDefault(DMG, 0) + EFFECT);
                 }
             }
 
@@ -50,22 +52,25 @@ public class SporeShroom extends BaseRelic{
     }
 
     public AbstractRelic makeCopy() {
-        return new SporeShroom();
+        SporeShroom tmp = new SporeShroom();
+        tmp.stats = this.stats;
+        return tmp;
     }
 
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0] + EFFECT + DESCRIPTIONS[1];
     }
+
     public String getStatsDescription() {
-        return DMG + stats.get(DMG);
+        return DMG + stats.getOrDefault(DMG, 0);
     }
 
     public String getExtendedStatsDescription(int totalCombats, int totalTurns) {
         // You would just return getStatsDescription() if you don't want to display per-combat and per-turn stats
         StringBuilder builder = new StringBuilder();
         builder.append(getStatsDescription());
-        float stat = (float)stats.get(DMG);
+        float stat = (float)stats.getOrDefault(DMG, 0);
         // Relic Stats truncates these extended stats to 3 decimal places, so we do the same
         DecimalFormat perTurnFormat = new DecimalFormat("#.###");
         builder.append(PER_COMBAT_STRING);
@@ -81,7 +86,7 @@ public class SporeShroom extends BaseRelic{
         // An array makes more sense if you want to store more than one stat
         Gson gson = new Gson();
         ArrayList<Integer> statsToSave = new ArrayList<>();
-        statsToSave.add(stats.get(DMG));
+        statsToSave.add(stats.getOrDefault(DMG, 0));
         return gson.toJsonTree(statsToSave);
     }
 

@@ -27,12 +27,13 @@ public class Kingsoul extends BaseRelic{
     public Kingsoul() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.RARE, LandingSound.CLINK);
         UnlockTracker.markRelicAsSeen(this.relicId);
+        resetStats();
     }
 
     public void atTurnStart() {
         this.flash();
         this.addToBot(new SoulChangeAction(AbstractDungeon.player, soulGain));
-        stats.put(SOUL_GAIN, stats.get(SOUL_GAIN) + soulGain);
+        stats.put(SOUL_GAIN, stats.getOrDefault(SOUL_GAIN, 0) + soulGain);
     }
 
     public AbstractRelic makeCopy() {
@@ -47,7 +48,7 @@ public class Kingsoul extends BaseRelic{
     }
 
     public String getStatsDescription() {
-        return SOUL_GAIN + stats.get(SOUL_GAIN);
+        return SOUL_GAIN + stats.getOrDefault(SOUL_GAIN, 0);
     }
 
     public String getExtendedStatsDescription(int totalCombats, int totalTurns) {
@@ -70,7 +71,7 @@ public class Kingsoul extends BaseRelic{
         // An array makes more sense if you want to store more than one stat
         Gson gson = new Gson();
         ArrayList<Integer> statsToSave = new ArrayList<>();
-        statsToSave.add(stats.get(SOUL_GAIN));
+        statsToSave.add(stats.getOrDefault(SOUL_GAIN, 0));
         return gson.toJsonTree(statsToSave);
     }
 

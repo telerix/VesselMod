@@ -30,6 +30,7 @@ public class SoulEater extends BaseRelic{
     public SoulEater() {
         super(ID, NAME, Vessel.Enums.CARD_COLOR, RelicTier.BOSS, LandingSound.CLINK);
         UnlockTracker.markRelicAsSeen(this.relicId);
+        resetStats();
     }
     //effect in SoulMechanics
 
@@ -41,7 +42,7 @@ public class SoulEater extends BaseRelic{
                 AbstractDungeon.currMapNode != null &&
                 AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) { //makes sure game doesnt null pointer exception out of combat
             this.addToBot(new RelicAboveCreatureAction(p, this)); //will activate if added during combat thru console commands,but shouldnt affect anything unless player cheats it in
-            stats.put(SOUL_GAIN, stats.get(SOUL_GAIN) + soulGain);
+            stats.put(SOUL_GAIN, stats.getOrDefault(SOUL_GAIN, 0) + soulGain);
         }
     }
 
@@ -57,7 +58,7 @@ public class SoulEater extends BaseRelic{
     }
 
     public String getStatsDescription() {
-        return SOUL_GAIN + stats.get(SOUL_GAIN);
+        return SOUL_GAIN + stats.getOrDefault(SOUL_GAIN, 0);
     }
 
     public String getExtendedStatsDescription(int totalCombats, int totalTurns) {
@@ -82,7 +83,7 @@ public class SoulEater extends BaseRelic{
         // An array makes more sense if you want to store more than one stat
         Gson gson = new Gson();
         ArrayList<Integer> statsToSave = new ArrayList<>();
-        statsToSave.add(stats.get(SOUL_GAIN));
+        statsToSave.add(stats.getOrDefault(SOUL_GAIN, 0));
         return gson.toJsonTree(statsToSave);
     }
 
