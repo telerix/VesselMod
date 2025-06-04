@@ -42,7 +42,7 @@
 
   "${modID}:ChanneledBeam": {
     "NAME": "充能射线",
-    "DESCRIPTION": "移除你的所有 ${modID}:感染 。 NL 给予所有敌人所移除层数的 ${modID}:感染 。[TO-DO: Apply 1 ${modID}:Infection !M! times to ALL enemies.] NL 消耗 。"
+    "DESCRIPTION": "移除你的所有 ${modID}:感染 。 NL 给予所有敌人所移除层数的 ${modID}:感染 。[TO-DO: Apply !M! ${modID}:Infection to ALL enemies 3 times.] NL 消耗 。"
   },
 
   "${modID}:ConjureShield": {
@@ -107,13 +107,13 @@
 
   "${modID}:Empower": {
     "NAME": "魂授",
-    "DESCRIPTION": "花费 X 点 ${modID}:灵魂 。 NL 每失去 !M! 点 ${modID}:灵魂 ，获得2点 力量 和 敏捷 。 NL 消耗 。"
+    "DESCRIPTION": "花费 X 点 ${modID}:灵魂 。 NL 每失去 !M! 点 ${modID}:灵魂 ，获得2点 力量 和1点 敏捷 。 NL 消耗 。"
   },
 
   "${modID}:EnergizingTorrent": {
     "NAME": "Energizing Torrent [TO-DO]",
-    "DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E] [E].",
+    "DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]

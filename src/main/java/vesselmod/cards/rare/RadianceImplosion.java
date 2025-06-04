@@ -51,7 +51,7 @@ public class RadianceImplosion extends BaseCard {
             infectOnTarget = mo.getPower(InfectionPower.POWER_ID).amount;
         }
         if (infectOnTarget > 0) {
-            this.baseDamage = this.damage * infectOnTarget;
+            this.baseDamage = this.magicNumber * infectOnTarget;
             super.calculateCardDamage(mo);
             this.rawDescription = this.cardStrings.EXTENDED_DESCRIPTION[0];
             this.initializeDescription();

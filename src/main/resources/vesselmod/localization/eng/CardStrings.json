@@ -42,7 +42,7 @@
 
   "${modID}:ChanneledBeam": {
     "NAME": "Channeled Beam",
-    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Apply 1 ${modID}:Infection !M! times to ALL enemies."
+    "DESCRIPTION": "Remove all your ${modID}:Infection. NL Apply !M! ${modID}:Infection to ALL enemies 3 times."
   },
 
   "${modID}:ConjureShield": {
@@ -107,13 +107,13 @@
 
   "${modID}:Empower": {
     "NAME": "Empower",
-    "DESCRIPTION": "Costs X ${modID}:Soul. NL Gain 2 Strength and 2 Dexterity for every !M! ${modID}:Soul lost. NL Exhaust."
+    "DESCRIPTION": "Costs X ${modID}:Soul. NL Gain 2 Strength and 1 Dexterity for every !M! ${modID}:Soul lost. NL Exhaust."
   },
 
   "${modID}:EnergizingTorrent": {
     "NAME": "Energizing Torrent",
-    "DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E] [E].",
+    "DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When you use ${modID}:Soul, discard this card and gain [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
@@ -264,8 +264,7 @@
     "NAME": "Radiance Implosion",
     "DESCRIPTION": "Deal damage equal to !M! times the target's ${modID}:Infection to ALL enemies. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage, equal to !M!",
-      " times the target's ${modID}:Infection to ALL enemies. NL Exhaust."
+      "Deal !D! damage, equal to !M! times the target's ${modID}:Infection to ALL enemies. NL Exhaust."
     ]
   },
 

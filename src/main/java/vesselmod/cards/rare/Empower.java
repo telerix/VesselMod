@@ -47,7 +47,7 @@ public class Empower extends BaseCard {
         int applyAmount = (int)Math.floor((float)currentSoul / this.magicNumber) * 2;
         if (applyAmount > 0) {
             this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, applyAmount), applyAmount));
-            this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, applyAmount), applyAmount));
+            this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, applyAmount/2), applyAmount/2));
         }
     }
 

@@ -24,14 +24,18 @@ Translations credit:
 - You can now gain Soul on fully blocked attack damage
 - Acid Armor: 12(16) -> 13(17) Block
 - Conjure Shield: 6(8) -> 6(9) Block
+- Soul Shield 3(4) -> 4(5) Block
+- Well Prepared 5(8) -> 6(9) Block
 - No Mind To Think: 2(3) -> 3(4) Block
-- Forgotten Light: 5(7) Infection -> 2(3) Infection 2 times
+- Forgotten Light: 5(7) Infection -> 2(3) Infection twice
 - Radiance Implosion: Rework to catalyst clone - 1 energy. Deals AOE damage equal to 2(3) times the target's Infection
 - Empower, Spirit Barrage: Now uses "X" for Soul cost, with their effects amplified by Chemical X
+- Empower: 2 Str + {2 -> 1 Dex} per {3 -> 2 Soul}
 - Corrupted Nail: Ethereal, 1(2) Infection -> )Ethereal(, 1 Infection
 - Infection Outbreak: 6 -> 8 self Infection
+- Channeled Beam: Apply lost Infection to all enemies -> apply 1(2) Infection 3 times
 - Light Orb: Removed
-- Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 2(3) Energy
+- Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 1(2) Energy
 
 
 - Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
@@ -54,7 +58,7 @@ Thank you very much for considering providing translations to the mod! If you wo
 
 - Add me (tlix) on Discord and send me a DM. You can easily find me in the official StS Discord server, under the dedicated post in #modding-forum. 
   - The Discord server invite link: https://discord.com/invite/slaythespire
-- Fork the latest branch of the repository **(not main)**, copy the folder at `resources/vesselmod/localization.eng` and rename the copy to `resources/vesselmod/localization.<your_language>`. Alternatively, ask me for the `localization.eng` folder if you don't use GitHub.
+- Fork the latest branch of the repository **(not main)**, copy the folder at `resources/vesselmod/localization/eng` and rename the copy to `resources/vesselmod/localization/<your_language>`. Alternatively, ask me for the `eng` folder if you don't use GitHub.
 - The `.json` files in the folder contains all the strings for the entire mod. In each of the files, ONLY change the items under `"NAME"`, `"DESCRIPTION"`, and any similar fields.
   - Prefix all the custom keywords used in card strings with `${modID}:`, e.g. `${modID}:<Infection_in_your_language>`. For base game keywords (e.g. Ethereal, Exhaust), I'm pretty sure you can leave them alone.
   - Some entries may not be obvious to fill in due to how the text is pieced together in-game. You can check the in-game English text to see where the numbers go, but do ask me if you are unsure about it.

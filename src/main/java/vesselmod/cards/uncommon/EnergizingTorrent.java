@@ -23,7 +23,7 @@ public class EnergizingTorrent extends BaseCard {
 
     public EnergizingTorrent() {
         super(cardInfo);
-        setMagic(2,1);
+        setMagic(1,1);
     }
 
     public void useSoul() {

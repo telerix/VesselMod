@@ -27,7 +27,7 @@ public class ChanneledBeam extends BaseCard {
 
     public ChanneledBeam() {
         super(cardInfo);
-        setMagic(3,1); //#times infection is applied
+        setMagic(1,1); //#times infection is applied
         tags.add(CustomTags.INFECT);
     }
 
@@ -36,10 +36,11 @@ public class ChanneledBeam extends BaseCard {
         if (p.hasPower(InfectionPower.POWER_ID)) {
             this.addToBot(new RemoveSpecificPowerAction(p, p, InfectionPower.POWER_ID));
         }
+        int applyCount = 3;
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
             if (!monster.isDead && !monster.isDying) {
-                for (int i = 0; i < this.magicNumber; i++) {
-                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, 1), 1, true));
+                for (int i = 0; i < applyCount; i++) {
+                    this.addToBot(new ApplyPowerAction(monster, p, new InfectionPower(monster, p, this.magicNumber), this.magicNumber, true));
                 }
             }
         }
