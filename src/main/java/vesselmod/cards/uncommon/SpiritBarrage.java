@@ -41,9 +41,7 @@ public class SpiritBarrage extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
-        if (this.soulCost != 0) {
-            this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));
-        }
+        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
 
         if (p.hasRelic(ChemicalX.ID)) {
             currentSoul += ChemicalX.BOOST;

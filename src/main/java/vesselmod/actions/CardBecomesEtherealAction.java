@@ -29,7 +29,7 @@ public class CardBecomesEtherealAction extends AbstractGameAction {
             if (this.card.type.equals(AbstractCard.CardType.CURSE) || this.card.type.equals(AbstractCard.CardType.STATUS)) { //make autoplay burns exhaust
                 this.card.exhaust = true;
             }
-
+            this.card.flash();
             this.card.isEthereal = true; //failsafe
         }
         this.isDone = true;

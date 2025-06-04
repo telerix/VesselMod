@@ -40,6 +40,7 @@ Translations credit:
 
 - Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
 - Fixed Quickcast power description not updating after each use
+- Cards now glow briefly when Ethereal is added to them
 
 
 ### Version 0.4.2
