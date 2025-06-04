@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.VoidCard;
@@ -27,6 +28,7 @@ public class SharpShadow extends BaseCard {
             Vessel.Enums.CARD_COLOR);
 
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("ShadeDash");
 
     public SharpShadow() {
         super(cardInfo);
@@ -37,6 +39,7 @@ public class SharpShadow extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new SFXAction(SFX_ID));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new GainEnergyAction(1));
         this.addToBot(new MakeTempCardInDiscardAction(new VoidCard(), 1));

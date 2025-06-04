@@ -3,6 +3,7 @@ package vesselmod.cards.common;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,7 +24,7 @@ public class NailParry extends BaseCard {
             CardRarity.COMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
-
+    private static final String SFX_ID = makeID("Parry");
 
     public NailParry() {
         super(cardInfo);
@@ -46,6 +47,7 @@ public class NailParry extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         if (m != null && m.getIntentBaseDmg() >= 0) {
+            this.addToBot(new SFXAction(SFX_ID));
             this.addToBot(new GainBlockAction(p,p,block));
         }
     }

@@ -2,10 +2,14 @@ package vesselmod.cards.rare;
 
 import basemod.cardmods.EtherealMod;
 import basemod.helpers.CardModifierManager;
+import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.powers.CorruptedNailPower;
@@ -40,7 +44,9 @@ public class CorruptedNail extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new CorruptedNailPower(p, magicNumber)));
+        this.addToBot(new SFXAction("ATTACK_FIRE"));
+        this.addToBot(new VFXAction(p, new BorderLongFlashEffect(Color.YELLOW), 0.0F, true));
+        this.addToBot(new ApplyPowerAction(p, p, new CorruptedNailPower(p, magicNumber)));
     }
 
     @Override

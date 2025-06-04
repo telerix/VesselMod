@@ -4,6 +4,7 @@ import basemod.cardmods.EtherealMod;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -23,6 +24,7 @@ public class ShadeDash extends BaseCard {
             CardRarity.UNCOMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("ShadeDash");
 
     public ShadeDash() {
         super(cardInfo);
@@ -32,8 +34,9 @@ public class ShadeDash extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p,AbstractMonster m) {
+        this.addToBot(new SFXAction(SFX_ID));
         this.addToBot(new DrawCardAction(p, this.magicNumber));
-        if (AbstractDungeon.player.exhaustPile.size() > 0) {
+        if (!AbstractDungeon.player.exhaustPile.isEmpty()) {
             this.addToBot(new GainBlockAction(p, p, AbstractDungeon.player.exhaustPile.size()));
         }
     }

@@ -1,6 +1,7 @@
 package vesselmod.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -21,6 +22,7 @@ public class Swift extends BaseCard {
             CardRarity.UNCOMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("Wings");
 
     public Swift() {
         super(cardInfo);
@@ -29,6 +31,7 @@ public class Swift extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new SFXAction(SFX_ID));
         this.addToBot(new CardInHandToEtherealAction(1, false));
         this.addToBot(new DrawCardAction(p, this.magicNumber));
     }

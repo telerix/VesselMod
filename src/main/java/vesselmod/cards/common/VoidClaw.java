@@ -1,11 +1,14 @@
 package vesselmod.cards.common;
 
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
 import vesselmod.actions.CardInHandToEtherealAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
@@ -31,7 +34,10 @@ public class VoidClaw extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        if (m != null) {
+            this.addToBot(new VFXAction(new ClawEffect(m.hb.cX, m.hb.cY, Color.BLACK, Color.WHITE), 0.1F));
+        }
+        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
         this.addToBot(new CardInHandToEtherealAction(1, !upgraded));
     }
 

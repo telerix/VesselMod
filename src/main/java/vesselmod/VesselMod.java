@@ -1,9 +1,6 @@
 package vesselmod;
 
-import basemod.AutoAdd;
-import basemod.BaseMod;
-import basemod.ModLabeledToggleButton;
-import basemod.ModPanel;
+import basemod.*;
 import basemod.eventUtil.AddEventParams;
 import basemod.eventUtil.EventUtils;
 import basemod.helpers.CardBorderGlowManager;
@@ -42,6 +39,7 @@ import vesselmod.misc.SoulTutorial;
 import vesselmod.relics.BaseRelic;
 import vesselmod.util.GeneralUtils;
 import vesselmod.util.KeywordInfo;
+import vesselmod.util.SFX;
 import vesselmod.util.TextureLoader;
 
 import java.io.IOException;
@@ -62,7 +60,8 @@ public class VesselMod implements
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        AddAudioSubscriber{
     public static ModInfo info;
     public static String modID;
 
@@ -367,4 +366,25 @@ public class VesselMod implements
         soulLimit = 0;
         soulRetain = 0;
     } //backup
+
+    @Override
+    public void receiveAddAudio() {
+        addAudio(SFX.Fireball);
+        addAudio(SFX.Parry);
+
+        addAudio(SFX.Cyclone);
+        addAudio(SFX.DDive);
+        addAudio(SFX.DreamNail);
+        addAudio(SFX.GreatSlash);
+        addAudio(SFX.Wings);
+
+        addAudio(SFX.Wraiths);
+
+        addAudio(SFX.DDark);
+        addAudio(SFX.Shriek);
+    }
+
+    protected void addAudio(Pair<String, String> audio) {
+        BaseMod.addAudio(audio.getKey(), audio.getValue());
+    }
 }

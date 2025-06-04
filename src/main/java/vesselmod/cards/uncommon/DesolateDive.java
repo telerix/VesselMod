@@ -4,6 +4,7 @@ import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,6 +29,7 @@ public class DesolateDive extends BaseCard {
             CardRarity.UNCOMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("DDive");
 
     public DesolateDive() {
         super(cardInfo);
@@ -43,6 +45,7 @@ public class DesolateDive extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
+        this.addToBot(new SFXAction(SFX_ID));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         this.addToBot(new GainBlockAction(p, this.block));
     }

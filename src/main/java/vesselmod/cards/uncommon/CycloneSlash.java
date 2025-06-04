@@ -1,6 +1,7 @@
 package vesselmod.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.unique.SkewerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -21,6 +22,7 @@ public class CycloneSlash extends BaseCard {
             Vessel.Enums.CARD_COLOR);
 
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("Cyclone");
 
     public CycloneSlash() {
         super(cardInfo);
@@ -30,7 +32,8 @@ public class CycloneSlash extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SkewerAction(p, m, damage, damageTypeForTurn, freeToPlayOnce, energyOnUse));
+        this.addToBot(new SFXAction(SFX_ID));
+        this.addToBot(new SkewerAction(p, m, damage, damageTypeForTurn, freeToPlayOnce, energyOnUse));
     }
     @Override
     public AbstractCard makeCopy() {

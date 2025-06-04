@@ -21,6 +21,7 @@ Translations credit:
 - Add custom SFX for cards
 
 ### Version 0.5.0 (Current)
+**Balance Changes**
 - You can now gain Soul on fully blocked attack damage
 - Acid Armor: 12(16) -> 13(17) Block
 - Conjure Shield: 6(8) -> 6(9) Block
@@ -37,10 +38,11 @@ Translations credit:
 - Light Orb: Removed
 - Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 1(2) Energy
 
-
+**Misc. Changes**
 - Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
 - Fixed Quickcast power description not updating after each use
 - Cards now glow briefly when Ethereal is added to them
+- SFX added for multiple cards
 
 
 ### Version 0.4.2

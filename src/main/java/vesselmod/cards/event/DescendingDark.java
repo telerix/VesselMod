@@ -4,6 +4,7 @@ import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,7 +13,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.modifiers.SpellDamage;
 import vesselmod.util.CardInfo;
 
@@ -28,6 +28,7 @@ public class DescendingDark extends BaseCard {
             CardRarity.SPECIAL, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             CardColor.COLORLESS);
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("DDark");
 
     public DescendingDark() {
         super(cardInfo);
@@ -42,6 +43,7 @@ public class DescendingDark extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
+        this.addToBot(new SFXAction(SFX_ID));
         int exhaustpile = AbstractDungeon.player.exhaustPile.size();
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         this.addToBot(new GainBlockAction(p, exhaustpile));

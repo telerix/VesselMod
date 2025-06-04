@@ -26,7 +26,10 @@ public class DashSlash extends BaseCard {
             CardRarity.UNCOMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
 
+
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_DASH = makeID("Dash");
+    private static final String SFX_SLASH = makeID("GreatSlash");
 
     public DashSlash() {
         super(cardInfo);
@@ -38,7 +41,8 @@ public class DashSlash extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SFXAction("ATTACK_HEAVY"));
+        this.addToBot(new SFXAction(SFX_DASH));
+        this.addToBot(new SFXAction(SFX_SLASH));
         this.addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         this.addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.magicNumber), this.magicNumber));
