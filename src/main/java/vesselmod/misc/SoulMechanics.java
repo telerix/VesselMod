@@ -42,7 +42,7 @@ public class SoulMechanics extends Vessel{
     public static void soulOnAttack(DamageInfo info, int attackDamage) {
         if (player.chosenClass == Enums.VESSEL && attackDamage > 0 && info.type == DamageInfo.DamageType.NORMAL && DamageModifierManager.getDamageMods(info).stream().noneMatch((mod)->mod instanceof SpellDamage)) {
             if (AbstractDungeon.player.hasRelic(SoulEater.ID)) {
-                player.getRelic(SoulEater.ID).flash();
+                player.getRelic(SoulEater.ID).flash(); //also triggers relic stats
                 AbstractDungeon.actionManager.addToTop(new SoulChangeAction(AbstractDungeon.player, 1 + SoulEater.soulGain));
             } else {
                 AbstractDungeon.actionManager.addToTop(new SoulChangeAction(AbstractDungeon.player, 1));

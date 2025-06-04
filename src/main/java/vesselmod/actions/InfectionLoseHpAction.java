@@ -2,7 +2,6 @@ package vesselmod.actions;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -36,8 +35,7 @@ public class InfectionLoseHpAction extends AbstractGameAction {
                     this.target.tint.color = Color.CHARTREUSE.cpy();
                     this.target.tint.changeColor(Color.WHITE.cpy());
                     if (this.target == AbstractDungeon.player && this.amount > KingsBrand.EFFECT && AbstractDungeon.player.hasRelic(KingsBrand.ID)) {
-                        AbstractDungeon.player.getRelic(KingsBrand.ID).flash();
-                        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, AbstractDungeon.player.getRelic(KingsBrand.ID)));
+                        AbstractDungeon.player.getRelic(KingsBrand.ID).flash(); //also triggers relic stats
                         this.target.damage(new DamageInfo(this.source, KingsBrand.EFFECT, DamageInfo.DamageType.THORNS));
                     } else {
                         this.target.damage(new DamageInfo(this.source, this.amount, DamageInfo.DamageType.THORNS));

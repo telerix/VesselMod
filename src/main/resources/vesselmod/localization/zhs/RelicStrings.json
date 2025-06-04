@@ -13,7 +13,9 @@
     "FLAVOR": "发光叉子",
     "DESCRIPTIONS": [
       "你最多受到 #b",
-      " 点来自 #y${modID}:感染 的伤害。"
+      " 点来自 #y${modID}:感染 的伤害。",
+      "Damage mitigated: ",
+      " NL Per combat: "
     ]
   },
 
@@ -22,7 +24,9 @@
     "FLAVOR": "无限的灵魂！芝士有点慢而已。",
     "DESCRIPTIONS": [
       "你的回合开始时，获得 #b",
-      " 点 #y${modID}:灵魂 。"
+      " 点 #y${modID}:灵魂 。",
+      "Soul gained: ",
+      " NL Per combat: "
     ]
   },
 
@@ -31,7 +35,10 @@
     "FLAVOR": "抱歉，这个mod里没有幼虫。",
     "DESCRIPTIONS": [
       "每当你失去生命时，获得 #b",
-      " 点 #y${modID}:灵魂 。"
+      " 点 #y${modID}:灵魂 。",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -50,7 +57,10 @@
     "FLAVOR": "不会被亲吻，但还是会给一些灵魂。",
     "DESCRIPTIONS": [
       "你每打出一张能力牌，获得 #b",
-      " 点 #y${modID}:灵魂 。"
+      " 点 #y${modID}:灵魂 。",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -67,7 +77,10 @@
     "FLAVOR": "用后返还一部分和减少消耗数是差不多的，对吧...?",
     "DESCRIPTIONS": [
       "你每打出一张 #y${modID}:法术 ，获得 #b",
-      " 点 #y${modID}:灵魂 。"
+      " 点 #y${modID}:灵魂 。",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -85,7 +98,10 @@
     "FLAVOR": "美味的牛奶",
     "DESCRIPTIONS": [
       "每当你造成非 #y${modID}:法术 攻击伤害时，额外获得 #b",
-      " 点 #y${modID}:灵魂 。"
+      " 点 #y${modID}:灵魂 。",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -94,7 +110,9 @@
     "FLAVOR": "我发誓，这不是个会放屁的遗物。",
     "DESCRIPTIONS": [
       "每当你使用一张名字中带有 #y\"凝聚\" 的牌时，对所有敌人造成 #b",
-      " 点伤害。"
+      " 点伤害。",
+      "Damage dealt: ",
+      " NL Per combat: "
     ]
   },
 

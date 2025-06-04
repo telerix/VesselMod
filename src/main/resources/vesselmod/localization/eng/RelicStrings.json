@@ -13,7 +13,9 @@
     "FLAVOR": "glowing fork",
     "DESCRIPTIONS": [
       "You only take up to #b",
-      " #y${modID}:Infection damage."
+      " #y${modID}:Infection damage.",
+      "Damage mitigated: ",
+      " NL Per combat: "
     ]
   },
 
@@ -22,7 +24,9 @@
     "FLAVOR": "infinite soul! just very slow.",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
-      " #y${modID}:Soul."
+      " #y${modID}:Soul.",
+      "Soul gained: ",
+      " NL Per combat: "
     ]
   },
 
@@ -31,7 +35,10 @@
     "FLAVOR": "sorry, no grubs in this mod.",
     "DESCRIPTIONS": [
       "Whenever you lose HP, gain #b",
-      " #y${modID}:Soul."
+      " #y${modID}:Soul.",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -50,7 +57,10 @@
     "FLAVOR": "no smooches included. have some soul instead.",
     "DESCRIPTIONS": [
       "Whenever you play a Power, gain #b",
-      " #y${modID}:Soul."
+      " #y${modID}:Soul.",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -68,7 +78,10 @@
     "FLAVOR": "refunding is just like discounting, right...?",
     "DESCRIPTIONS": [
       "Whenever you play a #y${modID}:Spell, gain #b",
-      " #y${modID}:Soul."
+      " #y${modID}:Soul.",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -86,7 +99,10 @@
     "FLAVOR": "tasty milk",
     "DESCRIPTIONS": [
       "Whenever you deal non-Spell attack damage, gain #b",
-      " additional #y${modID}:Soul."
+      " additional #y${modID}:Soul.",
+      "Soul gained: ",
+      " NL Per turn: ",
+      " NL Per combat: "
     ]
   },
 
@@ -95,7 +111,9 @@
     "FLAVOR": "i swear, this is not a fart relic.",
     "DESCRIPTIONS": [
       "Whenever you use a #y\"Focus\" card, deal #b",
-      " damage to ALL enemies."
+      " damage to ALL enemies.",
+      "Damage dealt: ",
+      " NL Per combat: "
     ]
   },
 
