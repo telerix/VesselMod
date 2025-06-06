@@ -2,6 +2,7 @@ package vesselmod.cards.rare;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -41,6 +42,7 @@ public class RadianceImplosion extends BaseCard {
             player.getRelic(ChemicalX.ID).flash();
         }
         if (effect > 0 && m.hasPower(InfectionPower.POWER_ID)) {
+            this.addToBot(new SFXAction(SFX_ID));
             this.addToBot(new DamageAllEnemiesAction(player, effect * m.getPower(InfectionPower.POWER_ID).amount, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         }
     }

@@ -39,10 +39,11 @@ Translations credit:
 - Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 2(3) Energy
 
 **Misc. Changes**
-- Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
+- Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns/Pains at the end of the turn
 - Fixed Quickcast power description not updating after each use
-- Cards now glow briefly when Ethereal is added to them
+- Cards now flash briefly when Ethereal is added to them
 - SFX added for multiple cards
+- Blunt Strike now glows yellow if a target eligible for triple damage is present
 
 
 ### Version 0.4.2
