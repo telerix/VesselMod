@@ -36,7 +36,7 @@ Translations credit:
 - Infection Outbreak: 6 -> 8 self Infection
 - Channeled Beam: Apply lost Infection to all enemies -> apply 1(2) Infection 3 times
 - Light Orb: Removed
-- Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 1(2) Energy
+- Energizing Torrent (New uncommon skill): Unplayable. When you use Soul, discard this card and gain 2(3) Energy
 
 **Misc. Changes**
 - Fixed drawn Ethereal cards exhausting immediately from Void Embrace + Ethereal Burns at the end of the turn
