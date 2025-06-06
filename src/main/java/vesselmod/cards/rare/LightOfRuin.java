@@ -16,7 +16,6 @@ import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.modifiers.SpellDamage;
 import vesselmod.powers.InfectionPower;
 import vesselmod.util.CardInfo;
@@ -33,6 +32,7 @@ public class LightOfRuin extends BaseCard {
             CardRarity.RARE, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("RadLaser");
 
     public LightOfRuin() {
         super(cardInfo);
@@ -51,6 +51,7 @@ public class LightOfRuin extends BaseCard {
         this.addToTop(new VFXAction(new LightningEffect(m.drawX, m.drawY)));
         this.addToTop(new VFXAction(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.NONE)));
         this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE", 0.1F));
+        this.addToTop(new SFXAction(SFX_ID));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
         this.addToBot(new ApplyPowerAction(m, p, new InfectionPower(m, p, this.magicNumber), this.magicNumber));
     }

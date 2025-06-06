@@ -1,4 +1,4 @@
-package vesselmod.actions;
+package vesselmod.actions.depreciated;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

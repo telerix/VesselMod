@@ -45,8 +45,8 @@ public class DesolateDive extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
-        this.addToBot(new SFXAction(SFX_ID));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
+        this.addToBot(new SFXAction(SFX_ID));
         this.addToBot(new GainBlockAction(p, this.block));
     }
 

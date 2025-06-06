@@ -373,11 +373,15 @@ public class VesselMod implements
         addAudio(SFX.Parry);
 
         addAudio(SFX.Cyclone);
+        addAudio(SFX.Dash);
         addAudio(SFX.DDive);
         addAudio(SFX.DreamNail);
         addAudio(SFX.GreatSlash);
         addAudio(SFX.Wings);
 
+        addAudio(SFX.RadianceExplode);
+        addAudio(SFX.RadianceLaser);
+        addAudio(SFX.Stun);
         addAudio(SFX.Wraiths);
 
         addAudio(SFX.DDark);

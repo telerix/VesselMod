@@ -1,10 +1,14 @@
 package vesselmod.powers;
 
 import basemod.interfaces.CloneablePowerInterface;
+import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import vesselmod.actions.VoidUnityAction;
 
 import static vesselmod.VesselMod.makeID;
@@ -23,10 +27,12 @@ public class VoidUnityPower extends BasePower implements CloneablePowerInterface
     public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
         DrawAtEndOfTurn = true;
         if (isPlayer && AbstractDungeon.player.hand.group.stream().anyMatch(card -> (card.isEthereal && card.cost != -2))) {
+            this.addToBot(new VFXAction(AbstractDungeon.player, new BorderLongFlashEffect(Color.DARK_GRAY), 0.0F, true));
             for (AbstractCard card : AbstractDungeon.player.hand.group) {
                 if (card.isEthereal && card.cost != -2) {
                     this.flash();
                     this.addToBot(new VoidUnityAction(card));
+                    this.addToBot(new WaitAction(0.1f));
                 }
             }
         }

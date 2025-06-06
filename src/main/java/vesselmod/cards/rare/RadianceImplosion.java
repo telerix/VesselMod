@@ -24,6 +24,7 @@ public class RadianceImplosion extends BaseCard {
             CardRarity.RARE, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("RadBoom");
 
     public RadianceImplosion() {
         super(cardInfo);

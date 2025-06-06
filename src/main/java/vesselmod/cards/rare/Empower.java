@@ -42,6 +42,7 @@ public class Empower extends BaseCard {
 
         if (p.hasRelic(ChemicalX.ID)) {
             currentSoul += ChemicalX.BOOST;
+            p.getRelic(ChemicalX.ID).flash();
         }
 
         int applyAmount = (int)Math.floor((float)currentSoul / this.magicNumber) * 2;

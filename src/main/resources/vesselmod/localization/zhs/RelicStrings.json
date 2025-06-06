@@ -14,8 +14,8 @@
     "DESCRIPTIONS": [
       "你最多受到 #b",
       " 点来自 #y${modID}:感染 的伤害。",
-      "Damage mitigated: ",
-      " NL Per combat: "
+      "阻止伤害量：",
+      " NL 每场战斗："
     ]
   },
 
@@ -25,8 +25,8 @@
     "DESCRIPTIONS": [
       "你的回合开始时，获得 #b",
       " 点 #y${modID}:灵魂 。",
-      "Soul gained: ",
-      " NL Per combat: "
+      "获得灵魂量：",
+      " NL 每场战斗："
     ]
   },
 
@@ -36,9 +36,9 @@
     "DESCRIPTIONS": [
       "每当你失去生命时，获得 #b",
       " 点 #y${modID}:灵魂 。",
-      "Soul gained: ",
-      " NL Per turn: ",
-      " NL Per combat: "
+      "获得灵魂量：",
+      " NL 每回合：",
+      " NL 每场战斗："
     ]
   },
 
@@ -58,9 +58,9 @@
     "DESCRIPTIONS": [
       "你每打出一张能力牌，获得 #b",
       " 点 #y${modID}:灵魂 。",
-      "Soul gained: ",
-      " NL Per turn: ",
-      " NL Per combat: "
+      "获得灵魂量：",
+      " NL 每回合：",
+      " NL 每场战斗："
     ]
   },
 
@@ -78,9 +78,9 @@
     "DESCRIPTIONS": [
       "你每打出一张 #y${modID}:法术 ，获得 #b",
       " 点 #y${modID}:灵魂 。",
-      "Soul gained: ",
-      " NL Per turn: ",
-      " NL Per combat: "
+      "获得灵魂量：",
+      " NL 每回合：",
+      " NL 每场战斗："
     ]
   },
 
@@ -99,9 +99,9 @@
     "DESCRIPTIONS": [
       "每当你造成非 #y${modID}:法术 攻击伤害时，额外获得 #b",
       " 点 #y${modID}:灵魂 。",
-      "Soul gained: ",
-      " NL Per turn: ",
-      " NL Per combat: "
+      "获得灵魂量：",
+      " NL 每回合：",
+      " NL 每场战斗："
     ]
   },
 
@@ -111,8 +111,8 @@
     "DESCRIPTIONS": [
       "每当你使用一张名字中带有 #y\"凝聚\" 的牌时，对所有敌人造成 #b",
       " 点伤害。",
-      "Damage dealt: ",
-      " NL Per combat: "
+      "造成伤害量：",
+      " NL 每场战斗："
     ]
   },
 

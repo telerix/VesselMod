@@ -2,6 +2,7 @@ package vesselmod.cards.rare;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,6 +24,7 @@ public class BluntStrike extends BaseCard {
             Vessel.Enums.CARD_COLOR);
 
     public static final String ID = makeID(cardInfo.baseId);
+    private static final String SFX_ID = makeID("Stun");
 
     public BluntStrike() {
         super(cardInfo);
@@ -44,6 +46,9 @@ public class BluntStrike extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        if (m.currentBlock > 0 || m.hasPower(WeakPower.POWER_ID)) {
+            this.addToBot(new SFXAction(SFX_ID));
+        }
     }
 
     @Override

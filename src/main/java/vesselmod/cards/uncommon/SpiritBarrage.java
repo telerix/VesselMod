@@ -45,6 +45,7 @@ public class SpiritBarrage extends BaseCard {
 
         if (p.hasRelic(ChemicalX.ID)) {
             currentSoul += ChemicalX.BOOST;
+            p.getRelic(ChemicalX.ID).flash();
         }
 
         for (int i = 0; i < currentSoul; i++) {
