@@ -18,7 +18,7 @@
     <name>The Vessel</name>
     <version>0.5.0</version>
     <description>
-        Modded character based on the Knight/Vessel from Hollow Knight by Team Cherry.\n All custom assets belong to Team Cherry, the developers of Hollow Knight.\n This character mod is also inspired by The Bug Knight mod by Venim.\n\n If you haven't played Hollow Knight yet, do it now before Silksong comes out. You won't regret it.\n \n Currently supported languages: English, Simplified Chinese</description>
+        Modded character based on the Knight/Vessel from Hollow Knight by Team Cherry.\n All custom assets belong to Team Cherry, the developers of Hollow Knight.\n This character mod is also inspired by The Bug Knight mod by Venim.\n\n If you haven't played Hollow Knight yet, do it now before Silksong comes out. You won't regret it.\n \n Currently supported languages: English, Simplified Chinese (TL: Timale)</description>
 
     <groupId>${modID}</groupId>
     <artifactId>${modID}</artifactId>
