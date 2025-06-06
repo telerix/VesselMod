@@ -44,6 +44,7 @@ Translations credit:
 - Cards now flash briefly when Ethereal is added to them
 - SFX added for multiple cards
 - Blunt Strike now glows yellow if a target eligible for triple damage is present
+- Now supports Relic Stats mod for several relics
 
 
 ### Version 0.4.2
