@@ -45,11 +45,11 @@ public abstract class BaseCard extends CustomCard {
     protected boolean upgRetain;
 
     public boolean isSoulCostModified;
-    public boolean upgradeSoulCost;
+    protected boolean upgradeSoulCost;
     public boolean upgradedSoulCost;
     public int soulCost;
     public int baseSoulCost;
-    public int soulCostUpgrade;
+    protected int soulCostUpgrade;
 
     public BaseCard(CardInfo cardInfo) {
         this(cardInfo.baseId, cardInfo.baseCost, cardInfo.cardType, cardInfo.cardTarget, cardInfo.cardRarity, cardInfo.cardColor);
@@ -138,7 +138,7 @@ public abstract class BaseCard extends CustomCard {
     protected final void setExhaust(boolean exhaust) { this.setExhaust(exhaust, exhaust); }
     protected final void setEthereal(boolean ethereal) { this.setEthereal(ethereal, ethereal); }
     protected final void setInnate(boolean innate) {this.setInnate(innate, innate); }
-    public final void setSoulCost(int soulCost) {
+    protected final void setSoulCost(int soulCost) {
         this.setSoulCost(soulCost, 0);
     }
 

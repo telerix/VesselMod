@@ -13,14 +13,14 @@ Translations credit:
 ## Changelogs / WIPs
 
 ### WIPs
-- Small rework on Radiance Implosion, Empower and Soul Barrage [ver 0.5.0]
-- General damage scaling (Multiapply Infection cards) [ver 0.5.0]
-- Higher block increase for soul-cost block cards [ver 0.5.0]
-- More sources of energy generation [ver 0.5.0]
+-
 - Possibly more common Ethereal synergy cards
 - Add custom SFX for cards
 
-### Version 0.5.0 (Current)
+### Version 0.5.1 (Current)
+- Fixed Spirit Barrage not costing Soul on use
+
+### Version 0.5.0 
 **Balance Changes**
 - You can now gain Soul on fully blocked attack damage
 - Acid Armor: 12(16) -> 13(17) Block

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import vesselmod.actions.SoulChangeAction;
@@ -13,6 +14,7 @@ import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
 import vesselmod.modifiers.SpellDamage;
+import vesselmod.powers.VoidFormPower;
 import vesselmod.util.CardInfo;
 
 import static vesselmod.VesselMod.makeID;
@@ -27,6 +29,7 @@ public class SpiritBarrage extends BaseCard {
             CardRarity.UNCOMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
             Vessel.Enums.CARD_COLOR);
     public static final String ID = makeID(cardInfo.baseId);
+    private boolean inVoidForm = false; //setting this to false s.t. it doesnt do funny stuff when added to hand directly
 
     public SpiritBarrage() {
         super(cardInfo);
@@ -38,10 +41,25 @@ public class SpiritBarrage extends BaseCard {
         DamageModifierManager.addModifier(this, new SpellDamage());
     }
 
+    public void triggerWhenDrawn() {
+        this.inVoidForm = AbstractDungeon.player.hasPower(VoidFormPower.POWER_ID);
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        if (this.inVoidForm) {
+            this.soulCost = 0;
+        } else {
+            this.soulCost = soulCount;
+        }
+    }
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int currentSoul = soulCount;
-        this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
+        if (this.soulCost > 0) {
+            this.addToBot(new SoulChangeAction(p, currentSoul, this.freeSoulCost()));
+        }
 
         if (p.hasRelic(ChemicalX.ID)) {
             currentSoul += ChemicalX.BOOST;
