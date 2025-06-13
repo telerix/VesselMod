@@ -16,6 +16,9 @@ Translations credit:
 - Add heartkiller artwork
 - Possibly more common Ethereal synergy cards
 - Add custom SFX for cards
+- Possible buff on soul-costing cards (use 1.5-2 Soul = 1 energy)
+- Possibly higher infection stacks applying on enemies to make up for lack of passive dmg (compared to poison)
+  - Alternatively remove turn end decay (not preferable due to breaking self-infect cards)
 
 ### Version 0.5.1 (Current)
 - Fixed Spirit Barrage not costing Soul on use
