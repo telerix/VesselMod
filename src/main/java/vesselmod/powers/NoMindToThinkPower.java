@@ -19,7 +19,7 @@ public class NoMindToThinkPower extends BasePower implements CloneablePowerInter
 
     public void noMindToThinkEffect() { //triggered in SoulChangeAction
         this.flash();
-        this.addToBot(new GainBlockAction(this.owner, amount, Settings.FAST_MODE));
+        this.addToTop(new GainBlockAction(this.owner, amount, Settings.FAST_MODE));
     }
 
     public void updateDescription(){

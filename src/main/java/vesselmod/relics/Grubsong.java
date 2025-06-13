@@ -35,7 +35,7 @@ public class Grubsong extends BaseRelic{
     public void wasHPLost(int damageAmount) {
         if (damageAmount > 0) {
             this.flash();
-            this.addToBot(new SoulChangeAction(AbstractDungeon.player, soulGain));
+            this.addToTop(new SoulChangeAction(AbstractDungeon.player, soulGain));
             stats.put(SOUL_GAIN, stats.get(SOUL_GAIN) + soulGain);
         }
     }

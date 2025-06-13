@@ -13,12 +13,14 @@ Translations credit:
 ## Changelogs / WIPs
 
 ### WIPs
--
+- Add heartkiller artwork
 - Possibly more common Ethereal synergy cards
 - Add custom SFX for cards
 
 ### Version 0.5.1 (Current)
 - Fixed Spirit Barrage not costing Soul on use
+- Grubsong Soul gain and No Mind To Think Block gain are now added on top of the action queue
+  - You can now block multihits more effectively, as the Block from NMTT triggers before the next enemy hit.
 
 ### Version 0.5.0 
 **Balance Changes**
