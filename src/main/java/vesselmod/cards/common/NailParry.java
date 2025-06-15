@@ -28,8 +28,8 @@ public class NailParry extends BaseCard {
 
     public NailParry() {
         super(cardInfo);
-        setDamage(7, 2);
-        setBlock(4, 2);
+        setDamage(8, 2);
+        setBlock(5, 2);
     }
 
     public void triggerOnGlowCheck() {

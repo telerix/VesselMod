@@ -34,7 +34,7 @@ public class DesolateDive extends BaseCard {
     public DesolateDive() {
         super(cardInfo);
         setDamage(8, 2);
-        setBlock(5,1);
+        setBlock(6,1);
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);
         DamageModifierManager.addModifier(this, new SpellDamage());

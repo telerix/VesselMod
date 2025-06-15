@@ -2,6 +2,7 @@ package vesselmod.events;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -29,6 +30,7 @@ public class Crystallized extends AbstractImageEvent {
     private final List<String> descendingDark;
     private final int hpLoss;
     private CurScreen screen;
+    private static final String SFX_ID = makeID("DDive");
 
 
     public Crystallized() {
@@ -78,14 +80,15 @@ public class Crystallized extends AbstractImageEvent {
         }
     }
 
-    protected void getDescendingDark(){
+    private void getDescendingDark(){
         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.hpLoss));
         AbstractDungeon.effectList.add(new FlashAtkImgEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractGameAction.AttackEffect.SMASH));
+        AbstractDungeon.actionManager.addToTop(new SFXAction(SFX_ID));
         this.replaceDesolateDive();
         logMetricObtainCardsLoseMapHP(Crystallized.title, OPTIONS[7], this.descendingDark, this.hpLoss);
         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
     }
-    protected void ignore() {
+    private void ignore() {
         logMetricIgnored(Crystallized.title);
         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
     }

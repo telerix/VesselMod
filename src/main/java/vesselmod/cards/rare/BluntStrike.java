@@ -29,7 +29,7 @@ public class BluntStrike extends BaseCard {
 
     public BluntStrike() {
         super(cardInfo);
-        setDamage(8, 4);
+        setDamage(10, 4);
         tags.add(CardTags.STRIKE);
     }
 

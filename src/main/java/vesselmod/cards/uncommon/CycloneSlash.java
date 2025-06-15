@@ -1,11 +1,15 @@
 package vesselmod.cards.uncommon;
 
-import com.megacrit.cardcrawl.actions.unique.SkewerAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.ChemicalX;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
@@ -29,15 +33,38 @@ public class CycloneSlash extends BaseCard {
         super(cardInfo);
         setDamage(7, 3);
         tags.add(CustomTags.SLASH);
+        setMagic(1,0); //soul gain per hit
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (energyOnUse > 0 && !p.hasRelic(ChemicalX.ID)) {
-            this.addToBot(new SFXAction(SFX_ID));
-        }
-        this.addToBot(new SkewerAction(p, m, damage, damageTypeForTurn, freeToPlayOnce, energyOnUse));
+        this.addToBot(new AbstractGameAction() {
+            @Override
+            public void update() {
+                int effect = EnergyPanel.totalCount;
+                if (energyOnUse != -1) {
+                    effect = energyOnUse;
+                }
+                if (p.hasRelic(ChemicalX.ID)) {
+                    effect += 2;
+                }
+
+                if (effect > 0) {
+                    this.addToBot(new SFXAction(SFX_ID));
+                    for(int i = 0; i < effect; ++i) {
+                        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
+                    }
+                    this.addToBot(new SoulChangeAction(p, effect));
+
+                    if (!freeToPlayOnce) {
+                        p.energy.use(EnergyPanel.totalCount);
+                    }
+                }
+                this.isDone = true;
+            }
+        });
     }
+
     @Override
     public AbstractCard makeCopy() {
         return new CycloneSlash();

@@ -28,10 +28,10 @@ public class SoulBlade extends BaseCard {
 
     public SoulBlade() {
         super(cardInfo);
-        setDamage(7, 0);
+        setDamage(3, 0);
         tags.add(CustomTags.COST_SOUL);
         setSoulCost(3, 0);
-        setMagic(2, 1);
+        setMagic(4, 1);
     }
 
     @Override

@@ -24,7 +24,7 @@ public class ForgottenLight extends BaseCard {
 
     public ForgottenLight() {
         super(cardInfo);
-        setMagic(2,1);
+        setMagic(3,1);
         tags.add(CustomTags.INFECT);
     }
 

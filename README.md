@@ -20,7 +20,25 @@ Translations credit:
 - Possibly higher infection stacks applying on enemies to make up for lack of passive dmg (compared to poison)
   - Alternatively remove turn end decay (not preferable due to breaking self-infect cards)
 
-### Version 0.5.1 (Current)
+### Version 0.6.0 (Current)
+**Balance Changes**
+- Forgotten Light: 2(3) -> 3(4) Infection twice
+- Nail Parry: 7(9) Damage 4(6) Block -> 8(10) Damage 5(7) Block
+- Soul Flukeswarm: 2 -> 1 Soul cost
+- Channeled Beam: 1(2) -> 2(3) Infection to all enemies 3 times
+- Cyclone Slash: Also gives X Soul.
+- Desolate Dive: 5(6) -> 6(7) Block
+- Descending Dark: 10(13) -> 12(15) damage to all enemies
+- Soul Blade: 7 + 2(3)xSoul -> 3 + 4(5)xSoul damage
+- Blunt Strike: 8(12) -> 10(14) damage
+- Howling Wraiths: 6(8) -> 8(10) damage 3 times
+- Abyss Shriek: 4(6) -> 6(8) damage 4 times
+
+**Misc. Changes**
+- Added SFX for event options
+- 
+
+### Version 0.5.1
 - Fixed Spirit Barrage not costing Soul on use
 - Grubsong Soul gain and No Mind To Think Block gain are now added on top of the action queue
   - You can now block multihits more effectively, as the Block from NMTT triggers before the next enemy hit.

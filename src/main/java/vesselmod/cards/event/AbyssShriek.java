@@ -33,7 +33,7 @@ public class AbyssShriek extends BaseCard {
 
     public AbyssShriek() {
         super(cardInfo);
-        setDamage(4, 2);
+        setDamage(6, 2);
         setMagic(3,0);
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);

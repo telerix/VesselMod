@@ -27,7 +27,7 @@ public class ChanneledBeam extends BaseCard {
 
     public ChanneledBeam() {
         super(cardInfo);
-        setMagic(1,1); //#times infection is applied
+        setMagic(2,1); //#times infection is applied
         tags.add(CustomTags.INFECT);
     }
 

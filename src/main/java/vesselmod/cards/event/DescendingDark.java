@@ -32,7 +32,7 @@ public class DescendingDark extends BaseCard {
 
     public DescendingDark() {
         super(cardInfo);
-        setDamage(10, 3);
+        setDamage(12, 3);
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);
         DamageModifierManager.addModifier(this, new SpellDamage());

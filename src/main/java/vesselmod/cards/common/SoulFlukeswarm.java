@@ -11,7 +11,6 @@ import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
-import vesselmod.misc.SoulMechanics;
 import vesselmod.modifiers.SpellDamage;
 import vesselmod.util.CardInfo;
 
@@ -35,7 +34,7 @@ public class SoulFlukeswarm extends BaseCard {
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);
         DamageModifierManager.addModifier(this, new SpellDamage());
-        setSoulCost(2, 0);
+        setSoulCost(1, 0);
     }
 
     @Override

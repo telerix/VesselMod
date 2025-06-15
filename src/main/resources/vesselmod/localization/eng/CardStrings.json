@@ -62,7 +62,7 @@
 
   "${modID}:CycloneSlash": {
     "NAME": "Cyclone Slash",
-    "DESCRIPTION": "Deal !D! damage X times."
+    "DESCRIPTION": "Deal !D! damage X times. NL Gain X ${modID}:Soul."
   },
 
   "${modID}:DashSlash": {

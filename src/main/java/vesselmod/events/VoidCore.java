@@ -1,5 +1,6 @@
 package vesselmod.events;
 
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -30,6 +31,8 @@ public class VoidCore extends AbstractImageEvent {
     private static final String title = eventStrings.NAME;
     private final List<String> newVoidCards;
     private CurScreen screen;
+    private static final String SFX_WRAITHS = makeID("Wraiths");
+    private static final String SFX_SHRIEK = makeID("Shriek");
 
 
     public VoidCore() {
@@ -61,6 +64,7 @@ public class VoidCore extends AbstractImageEvent {
             case INTRO:
                 switch (buttonPressed) {
                     case 0:
+                        AbstractDungeon.actionManager.addToTop(new SFXAction(SFX_WRAITHS));
                         getAbyssShriek();
                         this.imageEventText.updateDialogOption(0, OPTIONS[10]);
                         this.imageEventText.clearRemainingOptions();
@@ -68,6 +72,7 @@ public class VoidCore extends AbstractImageEvent {
                         return;
 
                     case 1:
+                        AbstractDungeon.actionManager.addToTop(new SFXAction(SFX_SHRIEK));
                         voidCorruptSpells();
                         this.imageEventText.updateDialogOption(0, OPTIONS[10]);
                         this.imageEventText.clearRemainingOptions();
@@ -89,19 +94,19 @@ public class VoidCore extends AbstractImageEvent {
         }
     }
 
-    protected void getAbyssShriek(){
+    private void getAbyssShriek(){
         this.replaceHowlingWraiths();
         logMetricObtainCards(title, OPTIONS[11], this.newVoidCards);
         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
     }
 
-    protected void voidCorruptSpells(){
+    private void voidCorruptSpells(){
         this.voidCorruptAllSpells();
         logMetricObtainCards(title, OPTIONS[12], this.newVoidCards);
         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
     }
 
-    protected void ignore() {
+    private void ignore() {
         logMetricIgnored(title);
         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
     }
