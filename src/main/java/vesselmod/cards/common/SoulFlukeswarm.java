@@ -29,8 +29,8 @@ public class SoulFlukeswarm extends BaseCard {
 
     public SoulFlukeswarm() {
         super(cardInfo);
-        setDamage(3, 0);
-        setMagic(4,1);
+        setDamage(4, 0);
+        setMagic(3,1);
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);
         DamageModifierManager.addModifier(this, new SpellDamage());

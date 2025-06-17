@@ -172,12 +172,12 @@
 
   "${modID}:InfectedWall": {
     "NAME": "Infected Wall",
-    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain Block equal to your current ${modID}:Infection. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL If you have ${modID}:Infection, gain !B! Block next turn. NL Exhaust."
   },
 
   "${modID}:InfectionOutbreak": {
     "NAME": "Infection Outbreak",
-    "DESCRIPTION": "Gain 8 ${modID}:Infection. NL Gain [E] [E]. NL Draw 2 cards. NL Apply !M! ${modID}:Infection to ALL enemies. NL Exhaust."
+    "DESCRIPTION": "Gain 6 ${modID}:Infection. NL Gain [E] [E]. NL Draw 2 cards. NL Apply !M! ${modID}:Infection to ALL enemies. NL Exhaust."
   },
 
   "${modID}:LightOfRuin": {

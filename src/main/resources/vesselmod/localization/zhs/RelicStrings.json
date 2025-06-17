@@ -30,6 +30,18 @@
     ]
   },
 
+  "${modID}:GlowingWomb": {
+    "NAME": "Glowing Womb",
+    "FLAVOR": "radioactive(?) orange juice",
+    "DESCRIPTIONS": [
+      "You are always considered to have #y${modID}:Infection. Whenever you apply #y${modID}:Infection to an enemy, apply #b",
+      " additional #y${modID}:Infection.",
+      "Extra Infection applied: ",
+      " NL 每回合：",
+      " NL 每场战斗："
+    ]
+  },
+
   "${modID}:Grubsong": {
     "NAME": "幼虫之歌",
     "FLAVOR": "抱歉，这个mod里没有幼虫。",

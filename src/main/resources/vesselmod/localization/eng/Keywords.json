@@ -1,7 +1,8 @@
 [
   { "PROPER_NAME": "Infection",
     "NAMES": [
-      "infection"
+      "infection",
+      "infected"
     ],
     "DESCRIPTION": "Infected creatures take damage whenever Infection is applied. Each turn, Infection is reduced by 1."},
 

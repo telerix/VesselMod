@@ -12,6 +12,7 @@ import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
 import vesselmod.powers.InfectionPower;
+import vesselmod.relics.GlowingWomb;
 import vesselmod.util.CardInfo;
 
 import static vesselmod.VesselMod.makeID;
@@ -35,7 +36,7 @@ public class BlightedSlash extends BaseCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.player.hasPower(InfectionPower.POWER_ID)) {
+        if (AbstractDungeon.player.hasPower(InfectionPower.POWER_ID) || AbstractDungeon.player.hasRelic(GlowingWomb.ID)) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
 
         } else {

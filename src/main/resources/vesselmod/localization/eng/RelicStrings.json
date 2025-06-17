@@ -30,6 +30,18 @@
     ]
   },
 
+  "${modID}:GlowingWomb": {
+    "NAME": "Glowing Womb",
+    "FLAVOR": "radioactive(?) orange juice",
+    "DESCRIPTIONS": [
+      "You are always considered to have #y${modID}:Infection. Whenever you apply #y${modID}:Infection to an enemy, apply #b",
+      " additional #y${modID}:Infection.",
+      "Extra Infection applied: ",
+      " NL Per turn: ",
+      " NL Per combat: "
+    ]
+  },
+
   "${modID}:Grubsong": {
     "NAME": "Grubsong",
     "FLAVOR": "sorry, no grubs in this mod.",

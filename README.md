@@ -22,21 +22,25 @@ Translations credit:
 
 ### Version 0.6.0 (Current)
 **Balance Changes**
+- Vengeful Spirit: 3 -> 2 Soul cost **Note: Shade Soul's Soul cost (3) remains unchanged
 - Forgotten Light: 2(3) -> 3(4) Infection twice
 - Nail Parry: 7(9) Damage 4(6) Block -> 8(10) Damage 5(7) Block
-- Soul Flukeswarm: 2 -> 1 Soul cost
+- Soul Flukeswarm: 2 -> 1 Soul cost, 3 Damage 4(5) times -> 4 Damage 3(4) times
 - Channeled Beam: 1(2) -> 2(3) Infection to all enemies 3 times
-- Cyclone Slash: Also gives X Soul.
+- Cyclone Slash: Also gives X Soul
 - Desolate Dive: 5(6) -> 6(7) Block
 - Descending Dark: 10(13) -> 12(15) damage to all enemies
-- Soul Blade: 7 + 2(3)xSoul -> 3 + 4(5)xSoul damage
+- Soul Blade: 7 + 2(3)xSoul -> 2 + 4(5)xSoul damage
 - Blunt Strike: 8(12) -> 10(14) damage
 - Howling Wraiths: 6(8) -> 8(10) damage 3 times
 - Abyss Shriek: 4(6) -> 6(8) damage 4 times
+- Infected Wall: 24(34) -> 20(28) Block; gain Block equal to current Infection next turn -> gain 20(28) Block next turn if you have Infection
+- Infection Outbreak: 8 -> 6 Self Infect
+- Glowing Womb (New uncommon relic): You are always considered to have Infection. Whenever you apply Infection to an enemy, apply 1 additional Infection.
 
 **Misc. Changes**
 - Added SFX for event options
-- 
+- Fixed Soul Blade showing damage at 0 Soul in your hand
 
 ### Version 0.5.1
 - Fixed Spirit Barrage not costing Soul on use

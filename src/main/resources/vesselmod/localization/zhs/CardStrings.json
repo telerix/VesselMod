@@ -62,7 +62,7 @@
 
   "${modID}:CycloneSlash": {
     "NAME": "旋风劈砍",
-    "DESCRIPTION": "造成 !D! 点伤害X次。"
+    "DESCRIPTION": "造成 !D! 点伤害X次。 NL 获得X点 ${modID}:灵魂 。"
   },
 
   "${modID}:DashSlash": {
@@ -172,12 +172,12 @@
 
   "${modID}:InfectedWall": {
     "NAME": "感染之墙",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下个回合，获得等同于你的 ${modID}:感染 层数的 格挡 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL [TO-DO:下个回合，获得等同于你的 ${modID}:感染 层数的 格挡 => If you have ${modID}:Infection, gain !B! Block next turn.] 。 NL 消耗 。"
   },
 
   "${modID}:InfectionOutbreak": {
     "NAME": "感染爆发",
-    "DESCRIPTION": "获得8层 ${modID}:感染 。 NL 获得 [E] [E] 。 NL 抽2张牌。 NL 给予所有敌人 !M! 层 ${modID}:感染 。 NL 消耗 。"
+    "DESCRIPTION": "获得6层 ${modID}:感染 。 NL 获得 [E] [E] 。 NL 抽2张牌。 NL 给予所有敌人 !M! 层 ${modID}:感染 。 NL 消耗 。"
   },
 
   "${modID}:LightOfRuin": {

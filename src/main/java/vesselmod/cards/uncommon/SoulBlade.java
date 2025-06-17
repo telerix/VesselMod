@@ -28,7 +28,7 @@ public class SoulBlade extends BaseCard {
 
     public SoulBlade() {
         super(cardInfo);
-        setDamage(3, 0);
+        setDamage(2, 0);
         tags.add(CustomTags.COST_SOUL);
         setSoulCost(3, 0);
         setMagic(4, 1);
@@ -44,6 +44,14 @@ public class SoulBlade extends BaseCard {
         int realBaseDamage = this.baseDamage;
         this.baseDamage += this.magicNumber * soulCount;
         super.calculateCardDamage(mo);
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = this.damage != this.baseDamage;
+    }
+
+    public void applyPowers() {
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += this.magicNumber * soulCount;
+        super.applyPowers();
         this.baseDamage = realBaseDamage;
         this.isDamageModified = this.damage != this.baseDamage;
     }
