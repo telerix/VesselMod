@@ -24,8 +24,13 @@ Translations credit:
 **Balance Changes**
 - Vengeful Spirit: 3 -> 2 Soul cost **Note: Shade Soul's Soul cost (3) remains unchanged
 - Forgotten Light: 2(3) -> 3(4) Infection twice
+- Infected Strike: 3(4) -> 4(5) Infection.
 - Nail Parry: 7(9) Damage 4(6) Block -> 8(10) Damage 5(7) Block
+- Pogo Strike, Spike Wall: Removed.
 - Soul Flukeswarm: 2 -> 1 Soul cost, 3 Damage 4(5) times -> 4 Damage 3(4) times
+- Void Lash (Rework): Apply Vulnerable if enemy has Weak -> Deals 1(2) damage for each Exhausted or Ethereal card (No base damage increase on upgrade)
+- Battle Cry (New common skill): Ironclad's Warcry clone.
+- Nail Pogo (New common skill): Ironclad's Havoc clone. Note: Cards played this way cost 0 Soul.
 - Channeled Beam: 1(2) -> 2(3) Infection to all enemies 3 times
 - Cyclone Slash: Also gives X Soul
 - Desolate Dive: 5(6) -> 6(7) Block
@@ -41,6 +46,8 @@ Translations credit:
 **Misc. Changes**
 - Added SFX for event options
 - Fixed Soul Blade showing damage at 0 Soul in your hand
+- Cards that gets auto-played from Havoc/Mayhem-like effects no longer costs Soul
+- Cards from potions or Discovery no longer costs Soul for the current turn until played
 
 ### Version 0.5.1
 - Fixed Spirit Barrage not costing Soul on use

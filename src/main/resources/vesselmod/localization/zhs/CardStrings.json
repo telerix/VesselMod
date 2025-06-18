@@ -25,6 +25,11 @@
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将弃牌堆中的一张牌放到抽牌堆的顶部。"
   },
 
+  "${modID}:BattleCry": {
+    "NAME": "Battle Cry[TO-DO]",
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Put a card from your hand onto the top of your draw pile. NL Exhaust."
+  },
+
   "${modID}:Bench": {
     "NAME": "长椅 [弃用]",
     "DESCRIPTION": "将一张随机 ${modID}:护符 洗入抽牌堆中。下次打出耗能为0。 NL 消耗 。"
@@ -239,6 +244,11 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人的意图是攻击，获得 !B! 点 格挡 。"
   },
 
+  "${modID}:NailPogo": {
+    "NAME": "Nail Pogo[TO-DO]",
+    "DESCRIPTION": "Play the top card of your draw pile and Exhaust it. NL Exhaust."
+  },
+
   "${modID}:PlanningAhead": {
     "NAME": "提前计划 [弃用]",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 预见 !M! 。"
@@ -430,7 +440,7 @@
 
   "${modID}:VoidLash": {
     "NAME": "虚空鞭打",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人有 虚弱 ，给予 !M! 层 易伤 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL [TO-DO: 如果敌人有 虚弱 ，给予 !M! 层 易伤 。 -> Deals !M! additional damage for each Exhausted or Ethereal card.]"
   },
 
   "${modID}:VoidShackles": {

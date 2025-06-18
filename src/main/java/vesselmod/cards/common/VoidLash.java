@@ -1,17 +1,17 @@
 package vesselmod.cards.common;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.util.CardInfo;
+
+import java.util.ArrayList;
 
 import static vesselmod.VesselMod.makeID;
 
@@ -28,16 +28,45 @@ public class VoidLash extends BaseCard {
 
     public VoidLash() {
         super(cardInfo);
-        setDamage(9, 3);
-        setMagic(2,0);
+        setDamage(9, 0);
+        setMagic(1,1);
+    }
+
+    private int additionalDamage() {
+        AbstractPlayer p = AbstractDungeon.player;
+        int cardCount = 0;
+        if (!p.exhaustPile.isEmpty()) cardCount += p.exhaustPile.size();
+        ArrayList<AbstractCard> activeCards = new ArrayList<>();
+        activeCards.addAll(p.hand.group);
+        activeCards.addAll(p.drawPile.group);
+        activeCards.addAll(p.discardPile.group);
+        for (AbstractCard card : activeCards) {
+            if (card.isEthereal) ++cardCount;
+        }
+        return cardCount * this.magicNumber;
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += additionalDamage();
+        super.calculateCardDamage(mo);
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = this.damage != this.baseDamage;
+    }
+
+    @Override
+    public void applyPowers() {
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage += additionalDamage();
+        super.applyPowers();
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = this.damage != this.baseDamage;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (m.hasPower(WeakPower.POWER_ID)) {
-            addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), magicNumber));
-        }
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), this.vfxAttackHeaviness()));
     }
 
     @Override
@@ -45,4 +74,8 @@ public class VoidLash extends BaseCard {
         return new VoidLash();
     }
 
+    private AbstractGameAction.AttackEffect vfxAttackHeaviness() {
+        if (this.additionalDamage() > 6) return AbstractGameAction.AttackEffect.BLUNT_HEAVY;
+        else return AbstractGameAction.AttackEffect.BLUNT_LIGHT;
+    }
 }

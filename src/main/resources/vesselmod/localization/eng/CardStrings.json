@@ -25,6 +25,11 @@
     "DESCRIPTION": "Gain !B! Block. NL Put a card from your discard pile on top of your draw pile."
   },
 
+  "${modID}:BattleCry": {
+    "NAME": "Battle Cry",
+    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Put a card from your hand onto the top of your draw pile. NL Exhaust."
+  },
+
   "${modID}:Bench": {
     "NAME": "Bench [DEPRECIATED]",
     "DESCRIPTION": "Shuffle a random ${modID}:Charm into your draw pile. It costs 0 until played. NL Exhaust."
@@ -82,7 +87,7 @@
 
   "${modID}:DescendingDark": {
     "NAME": "Descending Dark",
-    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies. NL Gain Block equal to the number of cards in your exhaust pile."
+    "DESCRIPTION": "${modID}:Spell. Costs !${modID}:S! ${modID}:Soul. NL Deal !D! damage to ALL enemies. NL Gain Block equal to the number of cards in your Exhaust pile."
   },
 
   "${modID}:DesolateDive": {
@@ -237,6 +242,11 @@
   "${modID}:NailParry": {
     "NAME": "Nail Parry",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, gain !B! Block."
+  },
+
+  "${modID}:NailPogo": {
+    "NAME": "Nail Pogo",
+    "DESCRIPTION": "Play the top card of your draw pile and Exhaust it. NL Exhaust."
   },
 
   "${modID}:PlanningAhead": {
@@ -425,12 +435,12 @@
 
   "${modID}:VoidUnity": {
     "NAME": "Void Unity",
-    "DESCRIPTION": "At the end of your turn, play ALL Ethereal cards in your hand and exhaust them."
+    "DESCRIPTION": "At the end of your turn, play ALL Ethereal cards in your hand and Exhaust them."
   },
 
   "${modID}:VoidLash": {
     "NAME": "Void Lash",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Weak, apply !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each Exhausted or Ethereal card."
   },
 
   "${modID}:VoidShackles": {

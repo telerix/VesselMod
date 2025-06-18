@@ -9,7 +9,7 @@
     "NAMES": [
       "灵魂"
     ],
-    "DESCRIPTION": "当敌人受到非法术攻击伤害时，获得 #b1 点灵魂。"},
+    "DESCRIPTION": "[TO-DO: (new) Auto-played cards do not cost Soul.]当敌人受到非法术攻击伤害时，获得 #b1 点灵魂。"},
 
   { "PROPER_NAME": "法术",
     "NAMES": [

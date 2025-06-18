@@ -1,4 +1,4 @@
-package vesselmod.cards.common;
+package vesselmod.cards.depreciated;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;

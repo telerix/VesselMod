@@ -1,6 +1,5 @@
 package vesselmod.events;
 
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -64,7 +63,7 @@ public class VoidCore extends AbstractImageEvent {
             case INTRO:
                 switch (buttonPressed) {
                     case 0:
-                        AbstractDungeon.actionManager.addToTop(new SFXAction(SFX_WRAITHS));
+                        CardCrawlGame.sound.play(SFX_WRAITHS);
                         getAbyssShriek();
                         this.imageEventText.updateDialogOption(0, OPTIONS[10]);
                         this.imageEventText.clearRemainingOptions();
@@ -72,7 +71,7 @@ public class VoidCore extends AbstractImageEvent {
                         return;
 
                     case 1:
-                        AbstractDungeon.actionManager.addToTop(new SFXAction(SFX_SHRIEK));
+                        CardCrawlGame.sound.play(SFX_SHRIEK);
                         voidCorruptSpells();
                         this.imageEventText.updateDialogOption(0, OPTIONS[10]);
                         this.imageEventText.clearRemainingOptions();

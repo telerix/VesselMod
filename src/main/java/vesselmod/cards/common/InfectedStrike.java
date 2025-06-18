@@ -28,7 +28,7 @@ public class InfectedStrike extends BaseCard {
     public InfectedStrike() {
         super(cardInfo);
         setDamage(6,2);
-        setMagic(3,1);
+        setMagic(4,1);
         tags.add(CardTags.STRIKE);
         tags.add(CustomTags.INFECT);
     }

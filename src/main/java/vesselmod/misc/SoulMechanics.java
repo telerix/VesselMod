@@ -1,5 +1,6 @@
 package vesselmod.misc;
 
+import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
+import vesselmod.modifiers.FreeSoulCostMod;
 import vesselmod.modifiers.SpellDamage;
 import vesselmod.relics.SoulEater;
 
@@ -68,9 +70,9 @@ public class SoulMechanics extends Vessel{
         return false;
     }
 
-    public static void duplicationSoulCostFix(AbstractCard dupeCard) {
-        if (dupeCard instanceof BaseCard) {
-            ((BaseCard) dupeCard).soulCost = 0;
+    public static void tempSetFreeSoul(AbstractCard card) {
+        if (card instanceof BaseCard && card.hasTag(CustomTags.COST_SOUL)) {
+            CardModifierManager.addModifier(card, new FreeSoulCostMod());
         }
     }
 

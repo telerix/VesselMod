@@ -10,7 +10,7 @@
     "NAMES": [
       "soul"
     ],
-    "DESCRIPTION": "When an enemy receives non-Spell attack damage, gain 1 Soul."},
+    "DESCRIPTION": "Auto-played cards do not cost Soul. When an enemy receives non-Spell attack damage, gain 1 Soul."},
 
   { "PROPER_NAME": "Spell",
     "NAMES": [
