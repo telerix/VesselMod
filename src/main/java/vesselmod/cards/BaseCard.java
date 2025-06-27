@@ -362,24 +362,4 @@ public abstract class BaseCard extends CustomCard {
         }
     }
 
-    /*@Override
-    public void setCostForTurn(int amt) {
-        if (this.costForTurn >= 0) { //normal behavior
-            this.costForTurn = amt;
-            if (this.costForTurn < 0) {
-                this.costForTurn = 0;
-            }
-
-            if (this.costForTurn != this.cost) {
-                this.isCostModifiedForTurn = true;
-            }
-        }
-        int soulCostBeforeEffect = this.soulCost; //set cards from pots/discovery soul cost to 0 for one play
-        if (this.costForTurn <= 0 && this.hasTag(CustomTags.COST_SOUL)) {
-            this.freeSoulCost() = true;
-            if (soulCostBeforeEffect != this.soulCost) {
-                this.isSoulCostModified = true;
-            }
-        }
-    }*/ //might come back to this later to make cards from discovery/pots cost 0 soul.
 }

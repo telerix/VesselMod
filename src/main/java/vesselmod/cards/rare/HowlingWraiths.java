@@ -34,7 +34,7 @@ public class HowlingWraiths extends BaseCard {
 
     public HowlingWraiths() {
         super(cardInfo);
-        setDamage(8, 2);
+        setDamage(7, 2);
         setMagic(2,0);
         tags.add(CustomTags.SPELL);
         tags.add(CustomTags.COST_SOUL);

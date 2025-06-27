@@ -31,12 +31,12 @@
   },
 
   "${modID}:GlowingWomb": {
-    "NAME": "Glowing Womb",
-    "FLAVOR": "radioactive(?) orange juice",
+    "NAME": "发光子宫",
+    "FLAVOR": "放射性（？）橙汁",
     "DESCRIPTIONS": [
-      "You are always considered to have #y${modID}:Infection. Whenever you apply #y${modID}:Infection to an enemy, apply #b",
-      " additional #y${modID}:Infection.",
-      "Extra Infection applied: ",
+      "你始终被视为拥有 #y${modID}:感染 。每当你给予敌人 #y${modID}:感染 状态时，额外给予 #b",
+      " 层 #y${modID}:感染 。",
+      "额外感染给予量：",
       " NL 每回合：",
       " NL 每场战斗："
     ]
@@ -84,6 +84,7 @@
       "% 。"
     ]
   },
+
   "${modID}:SpellTwister": {
     "NAME": "法术扭曲者",
     "FLAVOR": "用后返还一部分和减少消耗数是差不多的，对吧...?",
@@ -125,6 +126,19 @@
       " 点伤害。",
       "造成伤害量：",
       " NL 每场战斗："
+    ]
+  },
+
+  "${modID}:TyrantsSoul": {
+    "NAME": "暴君之魂",
+    "FLAVOR": "泄了气的气球",
+    "DESCRIPTIONS": [
+      "你在每回合第一次花费 #y${modID}:灵魂 时，获得 [E] 并抽 #b",
+      " 张牌。每场战斗开始时获得 #y${modID}:过载凝聚 效果。",
+      "卡牌灵魂花费量: NL 1灵魂：",
+      " NL 2灵魂：",
+      " NL 3灵魂：",
+      " NL 平均减少量："
     ]
   },
 

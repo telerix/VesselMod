@@ -31,8 +31,14 @@ public class Empower extends BaseCard {
         setExhaust(true, true);
         setSoulCost(soulCount, 0);
         tags.add(CustomTags.COST_SOUL);
+        tags.add(CustomTags.COST_SOUL_X);
         setMagic(2,0); //buff per X soul
         setCostUpgrade(2);
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        this.soulCost = soulCount;
     }
 
     @Override

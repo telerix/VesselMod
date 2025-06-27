@@ -4,13 +4,13 @@
       "infection",
       "infected"
     ],
-    "DESCRIPTION": "Infected creatures take damage whenever Infection is applied. Each turn, Infection is reduced by 1."},
+    "DESCRIPTION": "Infected creatures take damage whenever Infection is applied. Each turn, Infection is reduced by #b1."},
 
   { "PROPER_NAME": "Soul",
     "NAMES": [
       "soul"
     ],
-    "DESCRIPTION": "Auto-played cards do not cost Soul. When an enemy receives non-Spell attack damage, gain 1 Soul."},
+    "DESCRIPTION": "Auto-played cards do not cost Soul. When an enemy receives non-Spell attack damage, gain #b1 Soul."},
 
   { "PROPER_NAME": "Spell",
     "NAMES": [
@@ -31,14 +31,23 @@
       "Soul Vessel",
       "soul_vessel"
     ],
-    "DESCRIPTION": "You can only hold Souls up to the maximum capacity of your Soul Vessel."
+    "DESCRIPTION": "You can only hold #ySoul up to the maximum capacity of your Soul Vessel."
   },
 
   { "PROPER_NAME": "Metallicize",
     "NAMES": [
       "metallicize"
     ],
-    "DESCRIPTION": "At the end of every turn, gain Block."},
+    "DESCRIPTION": "At the end of every turn, gain Block."
+  },
+
+  { "PROPER_NAME": "Overloaded Focus",
+    "NAMES": [
+      "Overloaded Focus",
+      "overloaded_focus"
+    ],
+    "DESCRIPTION": "Whenever you draw a card that costs Soul, randomize its Soul cost."
+  },
 
   {
     "PROPER_NAME": "This is displayed in the tooltip.",

@@ -26,8 +26,8 @@
   },
 
   "${modID}:BattleCry": {
-    "NAME": "Battle Cry[TO-DO]",
-    "DESCRIPTION": "{@@}Draw !M! card{!M!|>1=s}. NL Put a card from your hand onto the top of your draw pile. NL Exhaust."
+    "NAME": "战嚎",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 将手牌中的一张牌放到你的抽牌堆顶部。 NL 消耗 。"
   },
 
   "${modID}:Bench": {
@@ -52,7 +52,7 @@
 
   "${modID}:ConjureShield": {
     "NAME": "魔术护盾",
-    "DESCRIPTION": "花费 !${modID}:S! 点 ${modID}:灵魂 。 获得 !B! 点 格挡 。 NL 如果你没有 ${modID}:灵魂 ，改为获得 !M! 点 ${modID}:灵魂 。"
+    "DESCRIPTION": "花费 !${modID}:S! 点 ${modID}:灵魂 。 获得 !B! 点 格挡 。 NL 如果 ${modID}:灵魂 不足 !${modID}:S! 点，改为获得 !M! 点 ${modID}:灵魂 。"
   },
 
   "${modID}:CrossGuard": {
@@ -177,7 +177,7 @@
 
   "${modID}:InfectedWall": {
     "NAME": "感染之墙",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL [TO-DO:下个回合，获得等同于你的 ${modID}:感染 层数的 格挡 => If you have ${modID}:Infection, gain !B! Block next turn.] 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果你有 ${modID}:感染 ，在下一回合获得  !B! 点 格挡 。 NL 消耗 。"
   },
 
   "${modID}:InfectionOutbreak": {
@@ -245,8 +245,8 @@
   },
 
   "${modID}:NailPogo": {
-    "NAME": "Nail Pogo[TO-DO]",
-    "DESCRIPTION": "Play the top card of your draw pile and Exhaust it. NL Exhaust."
+    "NAME": "下劈",
+    "DESCRIPTION": "打出抽牌堆顶部的牌，将其 消耗 。 NL 消耗 。"
   },
 
   "${modID}:PlanningAhead": {
@@ -255,7 +255,7 @@
   },
 
   "${modID}:PogoStrike": {
-    "NAME": "下劈打击",
+    "NAME": "下劈打击 [DEPRECIATED]",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 抽一张牌。 NL 丢弃一张牌。"
   },
 
@@ -328,7 +328,7 @@
   },
 
   "${modID}:SpikeWall": {
-    "NAME": "尖刺墙",
+    "NAME": "尖刺墙 [DEPRECIATED]",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你在这个回合每受到一次攻击，就对攻击者造成 !M! 点伤害。"
   },
 
@@ -440,7 +440,7 @@
 
   "${modID}:VoidLash": {
     "NAME": "虚空鞭打",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL [TO-DO: 如果敌人有 虚弱 ，给予 !M! 层 易伤 。 -> Deals !M! additional damage for each Exhausted or Ethereal card.]"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 你每有一张已 消耗 的牌或带有 虚无 的牌，额外造成 !M! 点伤害。"
   },
 
   "${modID}:VoidShackles": {

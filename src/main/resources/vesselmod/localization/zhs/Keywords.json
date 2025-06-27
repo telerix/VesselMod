@@ -9,7 +9,7 @@
     "NAMES": [
       "灵魂"
     ],
-    "DESCRIPTION": "[TO-DO: (new) Auto-played cards do not cost Soul.]当敌人受到非法术攻击伤害时，获得 #b1 点灵魂。"},
+    "DESCRIPTION": "自动打出的卡牌不会花费 #y灵魂 。 NL 当敌人受到非法术攻击伤害时，获得 #b1 点灵魂。"},
 
   { "PROPER_NAME": "法术",
     "NAMES": [
@@ -37,7 +37,15 @@
     "NAMES": [
       "金属化"
     ],
-    "DESCRIPTION": "在你的回合结束时获得 #y格挡 。"},
+    "DESCRIPTION": "在你的回合结束时获得 #y格挡 。"
+  },
+
+  { "PROPER_NAME": "过载凝聚",
+    "NAMES": [
+      "过载凝聚"
+    ],
+    "DESCRIPTION": "每当你抽到一张花费 #y灵魂 的牌，将其 #y灵魂 花费数量随机变化。"
+  },
 
   {
     "PROPER_NAME": "This is displayed in the tooltip.",

@@ -129,6 +129,19 @@
     ]
   },
 
+  "${modID}:TyrantsSoul": {
+    "NAME": "Tyrant's Soul",
+    "FLAVOR": "deflated balloon",
+    "DESCRIPTIONS": [
+      "The first time you use #y${modID}:Soul each turn, gain [E] and draw #b",
+      " card. Start each combat with #y${modID}:Overloaded_Focus.",
+      "Card Soul cost counts: NL 1 Soul: ",
+      " NL 2 Soul: ",
+      " NL 3 Soul: ",
+      " NL Average discount: "
+    ]
+  },
+
   "${modID}:VoidtouchedFocus": {
     "NAME": "Voidtouched Focus",
     "FLAVOR": "now with blueberry juice!",

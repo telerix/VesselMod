@@ -24,6 +24,7 @@ public class SFX extends VesselMod {
     public static final Pair<String, String> DDive = new Pair<>(sfxID("DDive"), sfxPath("DDive.ogg"));
     public static final Pair<String, String> DreamNail = new Pair<>(sfxID("DreamNail"), sfxPath("DreamNailSlash.ogg"));
     public static final Pair<String, String> GreatSlash = new Pair<>(sfxID("GreatSlash"), sfxPath("GreatSlash.ogg"));
+    public static final Pair<String, String> ShadeDash = new Pair<>(sfxID("ShadeDash"), sfxPath("ShadeDash.ogg"));
     public static final Pair<String, String> Wings = new Pair<>(sfxID("Wings"), sfxPath("Wings.ogg"));
 
     //rare

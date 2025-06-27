@@ -28,26 +28,29 @@ Translations credit:
 - Nail Parry: 7(9) Damage 4(6) Block -> 8(10) Damage 5(7) Block
 - Pogo Strike, Spike Wall: Removed.
 - Soul Flukeswarm: 2 -> 1 Soul cost, 3 Damage 4(5) times -> 4 Damage 3(4) times
-- Void Lash (Rework): Apply Vulnerable if enemy has Weak -> Deals 1(2) damage for each Exhausted or Ethereal card (No base damage increase on upgrade)
+- Void Lash (Rework): 2 Energy. Deals 16 base damage, +2(3) damage for each Exhausted or Ethereal card
 - Battle Cry (New common skill): Ironclad's Warcry clone.
-- Nail Pogo (New common skill): Ironclad's Havoc clone. Note: Cards played this way cost 0 Soul.
+- Nail Pogo (New common skill): Ironclad's Havoc clone. **Note: Cards played this way cost 0 Soul.
 - Channeled Beam: 1(2) -> 2(3) Infection to all enemies 3 times
 - Cyclone Slash: Also gives X Soul
 - Desolate Dive: 5(6) -> 6(7) Block
 - Descending Dark: 10(13) -> 12(15) damage to all enemies
 - Soul Blade: 7 + 2(3)xSoul -> 2 + 4(5)xSoul damage
 - Blunt Strike: 8(12) -> 10(14) damage
-- Howling Wraiths: 6(8) -> 8(10) damage 3 times
-- Abyss Shriek: 4(6) -> 6(8) damage 4 times
+- Howling Wraiths: 6(8) -> 7(9) damage 3 times
+- Abyss Shriek: 4(6) -> 7(9) damage 4 times
 - Infected Wall: 24(34) -> 20(28) Block; gain Block equal to current Infection next turn -> gain 20(28) Block next turn if you have Infection
-- Infection Outbreak: 8 -> 6 Self Infect
+- Infection Outbreak: 8 -> 6 Self Infect, 6(9) -> 4(7) Infection to all enemies
 - Glowing Womb (New uncommon relic): You are always considered to have Infection. Whenever you apply Infection to an enemy, apply 1 additional Infection.
+- Tyrant's Soul (New boss relic): The first time you use Soul each turn, gain 1 energy and draw 1 card. Whenever you draw a card that costs Soul, randomize its Soul cost.
 
 **Misc. Changes**
 - Added SFX for event options
 - Fixed Soul Blade showing damage at 0 Soul in your hand
 - Cards that gets auto-played from Havoc/Mayhem-like effects no longer costs Soul
 - Cards from potions or Discovery no longer costs Soul for the current turn until played
+- Fixed Empower not consuming Free Soul Cost buff (from Well Prepared)
+- Fixed Silent's Quick Slash not getting buffed by Mantis Training
 
 ### Version 0.5.1
 - Fixed Spirit Barrage not costing Soul on use

@@ -52,7 +52,7 @@
 
   "${modID}:ConjureShield": {
     "NAME": "Conjure Shield",
-    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. Gain !B! Block. NL If you do not have ${modID}:Soul, gain !M! ${modID}:Soul instead."
+    "DESCRIPTION": "Costs !${modID}:S! ${modID}:Soul. Gain !B! Block. NL If you do not have enough ${modID}:Soul, gain !M! ${modID}:Soul instead."
   },
 
   "${modID}:CrossGuard": {
@@ -255,7 +255,7 @@
   },
 
   "${modID}:PogoStrike": {
-    "NAME": "Pogo Strike",
+    "NAME": "Pogo Strike [DEPRECIATED]",
     "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Discard 1 card."
   },
 
@@ -328,7 +328,7 @@
   },
 
   "${modID}:SpikeWall": {
-    "NAME": "Spike Wall",
+    "NAME": "Spike Wall [DEPRECIATED]",
     "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, deal !M! damage back."
   },
 

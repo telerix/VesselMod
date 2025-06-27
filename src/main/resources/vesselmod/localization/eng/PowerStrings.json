@@ -54,11 +54,19 @@
       " #yInfection next turn."
     ]
   },
+
   "${modID}:NoMindToThink": {
     "NAME": "No Mind To Think",
     "DESCRIPTIONS": [
       "Whenever you gain #ySoul, gain #b",
       " #yBlock."
+    ]
+  },
+
+  "${modID}:OverloadedFocus": {
+    "NAME": "Overloaded Focus",
+    "DESCRIPTIONS": [
+      "Whenever you draw a card that costs #ySoul, randomize its #ySoul cost."
     ]
   },
 
@@ -94,6 +102,7 @@
       " #ySoul."
     ]
   },
+
   "${modID}:SoulDrain": {
     "NAME": "Soul Drain",
     "DESCRIPTIONS": [

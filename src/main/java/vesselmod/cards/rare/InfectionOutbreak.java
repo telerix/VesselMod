@@ -28,13 +28,13 @@ public class InfectionOutbreak extends BaseCard {
     public InfectionOutbreak() {
         super(cardInfo);
         setExhaust(true, true);
-        setMagic(6,3);
+        setMagic(4,3);
         tags.add(CustomTags.INFECT);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new InfectionPower(p, p, 8), 8));
+        this.addToBot(new ApplyPowerAction(p, p, new InfectionPower(p, p, 6), 6));
         this.addToBot(new GainEnergyAction(2));
         this.addToBot(new DrawCardAction(p,3));
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {

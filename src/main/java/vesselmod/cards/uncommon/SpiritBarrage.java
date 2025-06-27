@@ -37,6 +37,7 @@ public class SpiritBarrage extends BaseCard {
         setDamage(5,2);
         setSoulCost(soulCount, 0);
         tags.add(CustomTags.COST_SOUL);
+        tags.add(CustomTags.COST_SOUL_X);
         tags.add(CustomTags.SPELL);
         DamageModifierManager.addModifier(this, new SpellDamage());
     }

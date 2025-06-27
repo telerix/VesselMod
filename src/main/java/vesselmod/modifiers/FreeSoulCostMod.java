@@ -37,6 +37,9 @@ public class FreeSoulCostMod extends AbstractCardModifier {
             @Override
             public void update() {
                 ((BaseCard) card).soulCost = origSoulCost;
+                if (((BaseCard) card).baseSoulCost == origSoulCost) {
+                    ((BaseCard) card).isSoulCostModified = false;
+                }
                 this.isDone = true;
             }
         });
@@ -48,6 +51,9 @@ public class FreeSoulCostMod extends AbstractCardModifier {
             @Override
             public void update() {
                 ((BaseCard) card).soulCost = origSoulCost;
+                if (((BaseCard) card).baseSoulCost == origSoulCost) {
+                    ((BaseCard) card).isSoulCostModified = false;
+                }
                 this.isDone = true;
             }
         });

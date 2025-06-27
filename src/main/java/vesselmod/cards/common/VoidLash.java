@@ -18,7 +18,7 @@ import static vesselmod.VesselMod.makeID;
 public class VoidLash extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "VoidLash", //Card ID
-            1, //base cost [-1 = X, -2 = unplayable]
+            2, //base cost [-1 = X, -2 = unplayable]
             CardType.ATTACK, //[ATTACK/SKILL/POWER/CURSE/STATUS]
             CardTarget.ENEMY, //[ENEMY/ALL_ENEMY]
             CardRarity.COMMON, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]
@@ -28,8 +28,8 @@ public class VoidLash extends BaseCard {
 
     public VoidLash() {
         super(cardInfo);
-        setDamage(9, 0);
-        setMagic(1,1);
+        setDamage(16, 0);
+        setMagic(2,1);
     }
 
     private int additionalDamage() {
@@ -75,7 +75,7 @@ public class VoidLash extends BaseCard {
     }
 
     private AbstractGameAction.AttackEffect vfxAttackHeaviness() {
-        if (this.additionalDamage() > 6) return AbstractGameAction.AttackEffect.BLUNT_HEAVY;
+        if (this.additionalDamage() > 10) return AbstractGameAction.AttackEffect.BLUNT_HEAVY;
         else return AbstractGameAction.AttackEffect.BLUNT_LIGHT;
     }
 }

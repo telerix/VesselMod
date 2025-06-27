@@ -10,6 +10,7 @@ import vesselmod.cards.uncommon.EnergizingTorrent;
 import vesselmod.misc.SoulMechanics;
 import vesselmod.powers.NoMindToThinkPower;
 import vesselmod.powers.SoulDrainPower;
+import vesselmod.relics.TyrantsSoul;
 
 public class SoulChangeAction extends AbstractGameAction {
     private final AbstractPlayer player;
@@ -48,6 +49,7 @@ public class SoulChangeAction extends AbstractGameAction {
             }
 
             this.isDone = true;
+
         } else if (this.amount < 0 && !this.freeSoulCost) { //soul use
             SoulMechanics.soulCount += this.amount;
             if (SoulMechanics.soulCount < 0) {
@@ -65,6 +67,9 @@ public class SoulChangeAction extends AbstractGameAction {
                     if (card.cardID.equals(EnergizingTorrent.ID)) {
                         ((EnergizingTorrent) card).useSoul();
                     }
+                }
+                if (player.hasRelic(TyrantsSoul.ID)) {
+                    player.getRelic(TyrantsSoul.ID).onTrigger();
                 }
             }
 

@@ -8,6 +8,7 @@ import vesselmod.actions.SoulChangeAction;
 import vesselmod.cards.BaseCard;
 import vesselmod.character.Vessel;
 import vesselmod.misc.CustomTags;
+import vesselmod.powers.FreeSoulCostPower;
 import vesselmod.util.CardInfo;
 
 import static vesselmod.VesselMod.makeID;
@@ -34,12 +35,12 @@ public class ConjureShield extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (soulCount == 0) {
-            this.addToBot(new SoulChangeAction(p, this.magicNumber));
-        }
-        else {
+        if (soulCount >= this.soulCost || p.hasPower(FreeSoulCostPower.POWER_ID)) {
             this.addToBot(new SoulChangeAction(p, this.soulCost, this.freeSoulCost()));
             this.addToBot(new GainBlockAction(p ,p ,this.block));
+        }
+        else {
+            this.addToBot(new SoulChangeAction(p, this.magicNumber));
         }
     }
 
