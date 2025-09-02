@@ -203,7 +203,7 @@
   "${modID}:Mapping": {
     "NAME": "Mapping",
     "DESCRIPTION": "At the start of your turn, draw !M! additional card.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, draw !M! additional cards."
+    "UPGRADE_DESCRIPTION": "At the start of your turn, draw !M! additional card."
   },
 
   "${modID}:NailmastersGlory": {
