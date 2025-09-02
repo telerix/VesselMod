@@ -24,7 +24,8 @@ public class Mapping extends BaseCard {
 
     public Mapping() {
         super(cardInfo);
-        setMagic(1,1);
+        setMagic(1,0);
+        setCostUpgrade(0);
     }
 
     @Override

@@ -25,9 +25,11 @@ Translations credit:
 - Agility: 8(10) -> 8 Block
 - Void Unity: 3 -> 2 energy cost
 - Frenzied Slash: 6(8) x3 -> 6(7) x3 damage
+- Mapping: 1 -> 1(0) energy cost, +1(2) -> 1 draw
 
 **Misc. Changes**
 - Fixed Battle Cry not exhausting
+- Fixed Soul Absorption power description
 
 ### Version 0.6.0 
 **Balance Changes**
