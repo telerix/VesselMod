@@ -17,7 +17,7 @@ import static vesselmod.VesselMod.makeID;
 public class VoidUnity extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "VoidUnity", //Card ID
-            3, //base cost [-1 = X, -2 = unplayable]
+            2, //base cost [-1 = X, -2 = unplayable]
             CardType.POWER, //[ATTACK/SKILL/POWER/CURSE/STATUS]
             CardTarget.SELF, //[ENEMY/ALL_ENEMY]
             CardRarity.RARE, //[BASIC/COMMON/UNCOMMON/RARE/SPECIAL(event)/CURSE]

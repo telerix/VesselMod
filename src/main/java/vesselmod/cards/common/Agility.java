@@ -23,7 +23,7 @@ public class Agility extends BaseCard {
 
     public Agility() {
         super(cardInfo);
-        setBlock(8, 2);
+        setBlock(8, 0);
         setMagic(1,1);
     }
 

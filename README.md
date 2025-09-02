@@ -20,7 +20,16 @@ Translations credit:
 - Possibly higher infection stacks applying on enemies to make up for lack of passive dmg (compared to poison)
   - Alternatively remove turn end decay (not preferable due to breaking self-infect cards)
 
-### Version 0.6.0 (Current)
+### Version 0.6.1 (Current)
+**Balance Changes**
+- Agility: 8(10) -> 8 Block
+- Void Unity: 3 -> 2 energy cost
+- Frenzied Slash: 6(8) x3 -> 6(7) x3 damage
+
+**Misc. Changes**
+- Fixed Battle Cry not exhausting
+
+### Version 0.6.0 
 **Balance Changes**
 - Vengeful Spirit: 3 -> 2 Soul cost **Note: Shade Soul's Soul cost (3) remains unchanged
 - Forgotten Light: 2(3) -> 3(4) Infection twice

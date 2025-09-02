@@ -27,6 +27,7 @@ public class BattleCry extends BaseCard {
     public BattleCry() {
         super(cardInfo);
         setMagic(1,1);
+        setExhaust(true, true);
     }
 
     @Override

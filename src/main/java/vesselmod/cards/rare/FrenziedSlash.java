@@ -29,7 +29,7 @@ public class FrenziedSlash extends BaseCard {
 
     public FrenziedSlash() {
         super(cardInfo);
-        setDamage(6, 2);
+        setDamage(6, 1);
         setMagic(3,2);
         tags.add(CustomTags.SLASH);
     }
